@@ -1,29 +1,26 @@
-# Ren'Py generated files and directories
-*.bak
-*.old
-*.rpyc
-game/saves/
-game/traceback.txt
-renpy/common/_compat.py
-renpy/common/_compat.pyc
-renpy/common/_compat.pyo
+# Directories that Ren'Py changes files in.
+game/saves
+game/cache
 
-# Build and distribution files
-launcher.log
-renpy-*.zip
-renpy-*.tar.bz2
-renpy-*.dmg
-renpy-*.exe
-renpy-*.app
-renpy-*.sh
-renpy-*.bat
-renpy-*.deb
-renpy-*.rpm
+# Compiled script files. These are important for saving, and so should
+# be preserved by developer and build systems after the game has been released.
+game/**/*.rpyc
+game/**/*.rpymc
 
-# Editor and OS specific files
-.DS_Store
-Thumbs.db
-desktop.ini
-*.sublime-workspace
-*.vscode/
-.idea/
+# Files Ren'Py can generate.
+game/**/*.bak
+game/**/*.new
+game/**/*.old
+
+# Error, log, and output files.
+errors.txt
+files.txt
+image_cache.txt
+log.txt
+save_dump.txt
+traceback.txt
+
+# Launcher-generated files.
+dialogue.tab
+dialogue.txt
+strings.json
