@@ -36,6 +36,8 @@ label start:
 
     "Bzzz!"
 
+    "test"
+
     # play buzz sound to signify the alarm is turned off
 
     "Tristan woke up in his bed with a buzzing head-ache. He looks around in his room full of clutter and mess."
