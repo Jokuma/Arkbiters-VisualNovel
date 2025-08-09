@@ -1,4 +1,4 @@
-﻿# The script of the game goes in this file.
+# The script of the game goes in this file.
 
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
@@ -16,7 +16,7 @@ screen c1:
         xalign 0.5
         yalign 0.5
         text "Chapter 1: Pawn to H-eart's File " yalign 0.5 xalign 0.5
-        timer 5.0 action Return()
+        
         
         
 
@@ -25,8 +25,9 @@ screen c1:
 
 label start:
     
-    
+    with fade
     show screen c1
+    with fade
 
     "BEEP!..."
 

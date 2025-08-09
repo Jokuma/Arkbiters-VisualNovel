@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 renpy.geometry renpy.solid
 renpy.dissolve renpy.geometry
 renpy.dissolve renpy.dissolve
@@ -5,3 +6,12 @@ renpy.geometry renpy.texture
 renpy.solid
 renpy.ftl
 renpy.texture
+=======
+renpy.geometry renpy.texture
+renpy.dissolve renpy.dissolve
+renpy.texture
+renpy.geometry renpy.solid
+renpy.dissolve renpy.geometry
+renpy.solid
+renpy.ftl
+>>>>>>> Stashed changes
