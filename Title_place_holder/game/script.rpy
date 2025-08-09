@@ -3,31 +3,49 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
-define e = Character("Eileen")
+define Tristan = Character('Tristan', color="#1e4e9c")
+
+transform enlarge:
+    zoom 1.5
+    center
+
+screen c1:
+    frame:
+        xpadding 40
+        ypadding 20
+        xalign 0.5
+        yalign 0.5
+        text "Chapter 1: Pawn to H-eart's File " yalign 0.5 xalign 0.5
+        timer 5.0 action Return()
+        
+        
 
 
 # The game starts here.
 
 label start:
+    
+    
+    show screen c1
 
-    # Show a background. This uses a placeholder by default, but you can
-    # add a file (named either "bg room.png" or "bg room.jpg") to the
-    # images directory to show it.
+    "BEEP!..."
 
-    scene bg room
+    "BEEP!....."
 
-    # This shows a character sprite. A placeholder is used, but you can
-    # replace it by adding a file named "eileen happy.png" to the images
-    # directory.
+    "BEEP!......."
 
-    show eileen happy
+    "Bzzz!"
 
-    # These display lines of dialogue.
+    # play buzz sound to signify the alarm is turned off
 
-    e "You've created a new Ren'Py game."
+    "Tristan woke up in his bed with a buzzing head-ache. He looks around in his room full of clutter and mess."
 
-    e "Once you add a story, pictures, and music, you can release it to the world!"
-
-    # This ends the game.
+    show tristan normal at enlarge
+    Tristan "ughh my head hurts...."
+    Tristan "I overslept...."
+    Tristan "Wait...."
+    Tristan "What time is it?"
+    Tristan "Crap!!"
+    Tristan "I gotta go to work!"
 
     return
