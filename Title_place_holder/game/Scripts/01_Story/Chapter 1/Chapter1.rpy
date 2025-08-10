@@ -3,11 +3,6 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
-define Tristan = Character('(Tristan Garcia)', color="#1e4e9c")
-define Zoe = Character('(Zoe Gonzales)', color = "#e6379d")
-define Manager = Character('(Manager)', color="#8f491a")
-
-
 transform enlarge:
     zoom 1.5
     center
@@ -25,8 +20,6 @@ screen c1:
 
 label start:
     
-    ########################################################################################################
-    #                                               CHAPTER 1
     pause 3.0
 
     "BEEP!..."
@@ -74,7 +67,7 @@ label start:
         center
     
     Tristan "Wait..."
-    Tristan "I have School Today"
+    Tristan "I have school today"
     Tristan "..."
 
  
@@ -85,7 +78,7 @@ label start:
     hide tristan normal
     show tristan normal at enlarge
     "Tristan looking hesitant..."
-    Tristan "Oh well, who cares anyway"
+    Tristan "Oh well{w}, who cares anyway"
     hide tristan normal
     with moveoutright
     hide bg tristanroom 
@@ -196,4 +189,6 @@ label start:
     Tristan "EHHHHH!?!?" with hpunch
 
     ""
+    jump Chapter2
+    with dissolve
     return
