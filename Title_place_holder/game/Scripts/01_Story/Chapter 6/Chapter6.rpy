@@ -4,11 +4,15 @@ screen c6:
         ypadding 20
         xalign 0.5
         yalign 0.5
-        text "Chapter 5 : Pawn's Promotion " yalign 0.5 xalign 0.5
+        text "Chapter 6 : Breaking the Stalemate " yalign 0.5 xalign 0.5
 
 label Chapter6:
 
-    with fade
+    with dissolve
+    pause 3.0
+    show screen c6 with fade
+    pause 5.0
+    hide screen c6 with fade
 
     "The sun was setting, the sky was orange, and the perya was drawing to a close."
 
@@ -122,6 +126,6 @@ label Chapter6:
 
     ""
     with fade
-    jump Chapter71
+    jump Chapter7
     with fade
     return

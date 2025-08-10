@@ -1,12 +1,18 @@
-screen c6:
+screen c7:
     frame:
         xpadding 40
         ypadding 20
         xalign 0.5
         yalign 0.5
-        text "Chapter 5 : Pawn's Promotion " yalign 0.5 xalign 0.5
+        text "Chapter 7 : Checkmate! " yalign 0.5 xalign 0.5
 
 label Chapter7:
+
+    with dissolve
+    pause 3.0
+    show screen c7 with fade
+    pause 5.0
+    hide screen c7 with fade
 
     #-------------------SCENE 1: GYM-------------------
 
@@ -27,7 +33,7 @@ label Chapter7:
     "The two sat across the board, the crowd buzzing around them. Pieces clicked, clocks ticked, and tension filled the room."
 
     #Chess Minigame // The Evergreen Game
-    
+
     #over speaker ----
     Commentator "Checkmate! Tristan wins the tournament!"
     #----------
