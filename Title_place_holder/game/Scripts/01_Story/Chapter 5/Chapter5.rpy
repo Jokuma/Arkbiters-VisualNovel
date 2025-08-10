@@ -11,7 +11,10 @@ screen c5:
         text "Chapter 5 : Pawn's Promotion " yalign 0.5 xalign 0.5
 
 label Chapter5:
-
+    pause 3.0
+    show screen c5 with fade
+    pause 5.0
+    hide screen c5 with fade
 
     ""
     return
