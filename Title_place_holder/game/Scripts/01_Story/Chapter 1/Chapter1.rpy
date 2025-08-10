@@ -54,7 +54,7 @@ label start:
     hide tristan normal
     show tristan normal at enlarge
 
-    Tristan "I gotta [with hpunch] go to work!"
+    Tristan "I gotta go to work!"
 
     hide tristan normal
     show tristan normal:
