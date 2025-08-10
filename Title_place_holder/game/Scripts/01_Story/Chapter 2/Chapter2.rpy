@@ -15,6 +15,7 @@ screen c2:
 
 
 label Chapter2:
+    with dissolve
     pause 3.0
     show screen c2 with fade
     pause 5.0
@@ -146,6 +147,7 @@ label Chapter2:
 
 
     ""
+    with fade
     jump Chapter3
-    with dissolve
+    with fade
     return

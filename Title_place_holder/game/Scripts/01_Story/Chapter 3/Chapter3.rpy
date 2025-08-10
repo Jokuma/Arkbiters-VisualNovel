@@ -109,4 +109,7 @@ label Chapter3:
 
 
     ""
+    with fade
+    jump Chapter4
+    with fade
     return

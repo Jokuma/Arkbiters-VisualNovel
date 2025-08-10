@@ -1,7 +1,4 @@
-# The script of the game goes in this file.
 
-# Declare characters used by this game. The color argument colorizes the
-# name of the character.
 
 transform enlarge:
     zoom 1.5
@@ -16,7 +13,6 @@ screen c1:
         text "Chapter 1: Pawn to H-eart's File " yalign 0.5 xalign 0.5
         
         
-# The game starts here.
 
 label start:
     
@@ -28,7 +24,7 @@ label start:
 
     "BEEP!......."
 
-    "Bzzz!"
+    "Bzzzt!"
 
 
     # play buzz sound to signify the alarm is turned off
@@ -58,7 +54,7 @@ label start:
     hide tristan normal
     show tristan normal at enlarge
 
-    Tristan "I gotta go to work!"
+    Tristan "I gotta [with hpunch] go to work!"
 
     hide tristan normal
     show tristan normal:
@@ -189,6 +185,7 @@ label start:
     Tristan "EHHHHH!?!?" with hpunch
 
     ""
+    with fade
     jump Chapter2
-    with dissolve
+    with fade
     return
