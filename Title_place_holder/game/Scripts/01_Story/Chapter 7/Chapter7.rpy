@@ -6,7 +6,7 @@ screen c6:
         yalign 0.5
         text "Chapter 5 : Pawn's Promotion " yalign 0.5 xalign 0.5
 
-label chapter7:
+label Chapter7:
 
     #-------------------SCENE 1: GYM-------------------
 
@@ -27,7 +27,7 @@ label chapter7:
     "The two sat across the board, the crowd buzzing around them. Pieces clicked, clocks ticked, and tension filled the room."
 
     #Chess Minigame // The Evergreen Game
-
+    
     #over speaker ----
     Commentator "Checkmate! Tristan wins the tournament!"
     #----------
@@ -212,5 +212,10 @@ label chapter7:
     "Tristan Looks up… hearing a familiar voice."
 
     Tristan "eh?"
+
+    ""
+    with fade
+    jump FinalChapter
+    with fade
 
     return

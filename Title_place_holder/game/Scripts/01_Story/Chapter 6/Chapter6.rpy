@@ -120,7 +120,8 @@ label Chapter6:
 
     Tristan "Ow! Am I really having a headache at this time… anyway… I need to prepare for the upcoming chess tournament! I can't disappoint Zoe at all costs!"
 
+    ""
     with fade
-    jump Chapter7
+    jump Chapter71
     with fade
     return

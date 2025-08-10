@@ -127,7 +127,8 @@ default preferences.text_cps = 30
 
 default preferences.afm_time = 15
 
-default preferences.fullscreen = True
+#default preferences.fullscreen = True
+
 ## Save directory ##############################################################
 ##
 ## Controls the platform-specific place Ren'Py will place the save files for
