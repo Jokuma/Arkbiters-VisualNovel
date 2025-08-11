@@ -291,15 +291,20 @@ screen navigation():
 
     vbox:
         style_prefix "navigation"
-
-        xpos gui.navigation_xpos
-        yalign 0.5
-
+        
+        if renpy.get_screen("main_menu"):
+            xalign 0.25
+            yalign 0.4
+            
+        else:
+            xoffset 60
+            yalign 0.4
         spacing gui.navigation_spacing
 
         if main_menu:
 
-            textbutton _("Start") action Start()
+            textbutton _("Start")  action Start()
+                
 
         else:
 
@@ -307,13 +312,13 @@ screen navigation():
 
             textbutton _("Save") action ShowMenu("save")
 
-        textbutton _("Load") action ShowMenu("load")
+        textbutton _("Load")action ShowMenu("load")
 
-        textbutton _("Preferences") action ShowMenu("preferences")
+        textbutton _("Preferences")action ShowMenu("preferences")
 
         if _in_replay:
 
-            textbutton _("End Replay") action EndReplay(confirm=True)
+            textbutton _("End Replay")action EndReplay(confirm=True)
 
         elif not main_menu:
 
@@ -466,6 +471,7 @@ screen game_menu(title, scroll=None, yinitial=0.0, spacing=0):
 
     textbutton _("Return"):
         style "return_button"
+        xalign 0.04
 
         action Return()
 
