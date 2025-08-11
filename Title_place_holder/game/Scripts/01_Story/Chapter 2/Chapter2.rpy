@@ -12,8 +12,6 @@ screen c2:
         yalign 0.5
         text "Chapter 2: Opening Moves in Bloom " yalign 0.5 xalign 0.5
         
-
-
 label Chapter2:
     pause 3.0
     show screen c2 with fade

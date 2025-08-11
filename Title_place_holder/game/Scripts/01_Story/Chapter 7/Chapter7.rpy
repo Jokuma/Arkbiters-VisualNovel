@@ -8,11 +8,13 @@ screen c7:
 
 label Chapter7:
 
-    with dissolve
-    pause 3.0
+    pause 1.0
     show screen c7 with fade
     pause 5.0
     hide screen c7 with fade
+
+    define fade = Fade(0.5, 2.0, 0.5)
+    define dissolve = Dissolve(0.2)
 
     #-------------------SCENE 1: GYM-------------------
 
@@ -20,17 +22,67 @@ label Chapter7:
 
     "As he entered, Emil's eyes widened in surprise."
 
+    show emil happytalking:
+        xoffset -400
+        zoom 1.5
+
+    show tristan normal:
+        xoffset 750
+        zoom 1.5
+    with dissolve
+
     Emil "Tristan? You're really here."
+
+    show emil happy:
+        xoffset -400
+        zoom 1.5
+
+    show tristan normaltalking:
+        xoffset 750
+        zoom 1.5
+    with dissolve
 
     Tristan "Yeah… and Emil, about what happened before… I'm sorry."
 
+    show emil happy:
+        xoffset -400
+        zoom 1.5
+
+    show tristan normal:
+        xoffset 750
+        zoom 1.5
+    with dissolve
+
     "Emil shrugged and smirked."
 
-    Emil "If you're really sorry… beat me in chess."
+    show emil happytalking:
+        xoffset -400
+        zoom 1.5
+    with dissolve
+
+    Emil "If you're really sorry… give me an entertaining chess match."
+
+    show emil happy:
+        xoffset -400
+        zoom 1.5
+
+    show tristan happytalking:
+        xoffset 750
+        zoom 1.5
+    with dissolve
+
+    Tristan "Yeah, you're right... Let's have a fun match, Emil."
+
+    hide emil happy
+    hide tristan happytalking
+
+    with dissolve
 
     "As the tournament goes on… Emil and Tristan climbs through the ranks and faced each other in the final round"
 
     "The two sat across the board, the crowd buzzing around them. Pieces clicked, clocks ticked, and tension filled the room."
+
+    with dissolve
 
     #Chess Minigame // The Evergreen Game
 
@@ -40,29 +92,131 @@ label Chapter7:
 
     "Overwhelmed with joy, Tristan looked around the crowd to find Zoe… but she was nowhere."
 
+    show tristan nervoustalking:
+        xoffset 100
+        zoom 1.5
+    
+    with dissolve
+
+    Tristan "Wait where is she? Wasn't she here a few moments ago?"
+
+    Tristan "There's no way she went home immediately right?"
+
+    hide tristan nervoustalking
+    with dissolve
+
+    #-----------------Sky Scene-----------------
+
     "After nearly an hour of searching, frustration grew."
 
     #[Television static fx]
 
-    "Tristan thought back to the park — their first date — as night fell."
+    "Tristan thought back to the park... their first date..."
+
+    with dissolve
+
+    #-----------------Sky Scene-----------------
 
     #-------------------SCENE 2: PARK-------------------
 
-    "Zoe sat quietly on the worn wooden bench, the dark playground stretching before her like a silent witness. The faint rustle of leaves whispered in the cold night air, and distant streetlights cast long, shaky shadows. She didn't look at Tristan when he approached—her gaze fixed on the empty swings swaying gently in the breeze."
+    "Zoe sat quietly on the worn wooden bench, the dark playground stretching before her like a silent witness." 
+    "The faint rustle of leaves whispered in the cold night air, and distant streetlights cast long, shaky shadows." 
+    "She didn't look at Tristan when he approached... her gaze fixed on the empty swings swaying gently in the breeze."
 
     #Tristan (voice soft, tentative):
+
+    show tristan sadtalking:
+        xoffset 750
+        zoom 1.5
+
+    show zoe worried:
+        xoffset -400
+        zoom 1.5
+
+    with dissolve
     
     Tristan "There you are! Why did you leave the gym? Why come here, all alone?"
 
+    show tristan sad:
+        xoffset 750
+        zoom 1.5
+    with dissolve
+
     "Zoe's lips trembled, but her voice was barely more than a fragile whisper."
 
-    Zoe "I guess i have to tell you the truth now hehe {w} *cough* *cough*" #said sadly
+    show zoe worriedtalking:
+        xoffset -400
+        zoom 1.5
+    with dissolve
+
+    Zoe "I guess i have to tell you the truth now..." #said sadly
+
+    hide zoe worriedtalking
+    hide tristan sad
+    with dissolve
+
+    show zoe worried:
+        xoffset 100
+        zoom 1.5
+
+    show zoe worried:
+        yoffset 25
+    with move
+
+    show zoe worried:
+        yoffset 0
+    with move
+
+    with dissolve
+    
+    Zoe "*cough*"
+
+    show zoe worried:
+        yoffset 25
+    with move
+
+    show zoe worried:
+        yoffset 0
+    with move
+
+    with dissolve
+
+    Zoe "*cough*"
+
+    hide zoe worried
+
+    with dissolve
 
     "Her words hung in the air, heavy and fragile like glass about to shatter. Tristan's breath caught in his throat."
 
     #Tristan (voice tembling):
 
+    show tristan nervoustalking:
+        xoffset 750
+        zoom 1.5
+
+    show zoe worried:
+        xoffset -400
+        zoom 1.5
+    
+    with dissolve
+
     Tristan "What… what do you mean?"
+
+    show tristan nervous:
+        xoffset 750
+        zoom 1.5
+    
+    show zoe worried:
+        xoffset -400
+        zoom 1.5
+
+    hide zoe worried
+    hide tristan nervous
+
+    with dissolve
+
+    #------------Crying Scene------------
 
     "Zoe slowly turned to him, tears swelling up in her eyes but not falling... {w} yet."
 
@@ -100,7 +254,13 @@ label Chapter7:
 
     #Zoe (barely a breath):
 
+    Zoe "..."
+
     Zoe "I love you."
+
+    #------------Crying Scene------------
+
+    with dissolve
 
     #Tristan (voice trembling):
 
@@ -109,13 +269,30 @@ label Chapter7:
     #[Television static fx — fading slowly into silence]
     #Cuts to Black
 
-    "*cough* {w} *cough*"
+    
+    "*cough*{w} *cough*"
+
+    with vpunch
 
     "*Loud Thud sound*"
 
+    with fade
+
     #-------------------SCENE 3: HOSPITAL-------------------
 
+    show tristan sadtalking:
+        xoffset 100
+        zoom 1.5
+    
+    with dissolve
+    
     Tristan "What is happening… {w} Am I dreaming?"
+
+    hide tristan sad
+
+    with dissolve
+
+    #----------------Black Screen----------------
 
     "Tristan is in shock… not really understanding everything"
 
@@ -125,10 +302,16 @@ label Chapter7:
 
     "He tried to approach the room where Zoe is but he is not permitted it only added more anxiety and fear to him."
 
-    "Seconds passed… {p} Minutes passed… {p} Hours passed…"
+    "Seconds passed… {p}Minutes passed… {p}Hours passed…"
 
-    "Suddenly, Tristan saw some doctors and nurses running through the halls… He realized they are running towards the same direction where Zoe's room is"
+    "Suddenly, Tristan saw some doctors and nurses running through the halls… He realized they are running towards the same direction where Zoe's room is..."
 
+    with dissolve
+
+    #----------------Black Screen----------------
+
+    #----------------POV Scene----------------
+    
     "Panicked, he rushed over to see if they are going to Zoe's room"
 
     "As he came closer… he saw a crowd of panicked nurses and doctors around Zoe's room."
@@ -141,15 +324,31 @@ label Chapter7:
 
     "As he looks into the room…"
 
-    #[Flat line sounds]
+    #----------------POV Scene----------------
+
+    #----------------Black Screen----------------
+    with fade
 
     "Tristan stopped"
+    #----------------Black Screen----------------
+
+    #----------------Hospital Room----------------
+
+    #[Flat line sounds]
+
+    "beep..."
 
     #[Television static fx —]
 
     Doctor "Time of death-"
 
+    Tristan ".{w}.{w}.{w}.{w}."
+
+    #----------------Hospital Room----------------
+
     #[Television static fx —]
+
+    with fade
 
     #-------------------SCENE 4: PARK-NIGHT-------------------
 
@@ -164,6 +363,8 @@ label Chapter7:
     #*show a picture of Zoe’s bucket list with all check marks except one… “To live together with Tristan ”*
 
     "Tears came flowing down"
+
+    #----------------Show Paper----------------
 
     #[Television static fx —]
 
@@ -199,11 +400,15 @@ label Chapter7:
     
     Tristan "if only i knew… if only i was there for her"
 
+    Tristan "if....."
+
     Tristan "if..."
 
-    Tristan "if……"
+    Tristan "......."
 
-    Tristan "……"
+    Tristan "....."
+
+    Tristan "..."
 
     #[Long Television static fx —]
 
@@ -213,15 +418,14 @@ label Chapter7:
 
     #*cuts back to the very beginning*
 
+    with fade
+
     Girl "Earth to mister… Earth to mister!!"
 
     "Tristan Looks up… hearing a familiar voice."
 
     Tristan "eh?"
 
-    ""
-    with fade
     jump FinalChapter
-    with fade
 
     return
