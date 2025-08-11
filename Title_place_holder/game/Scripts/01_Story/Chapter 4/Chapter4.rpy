@@ -166,8 +166,8 @@ label Chapter4:
         zoom 2
         center
 
-    Emil "Man, it's really you."
-    Emil "I thought you dropped off the face of the earth."
+    Emil "\"Man, it's really you.\""
+    Emil "\"I thought you dropped off the face of the earth.\""
 
     show tristan nervoustalking:
         yoffset 1000
@@ -180,8 +180,8 @@ label Chapter4:
         xoffset 500
         zoom 2
         center
-    Emil "*sighs*{p=0} Busy, huh?"
-    Emil "I've been checking every tournament list for months. Your name's never there."
+    Emil "\"*sighs*{p=0} Busy, huh?\""
+    Emil "\"I've been checking every tournament list for months. Your name's never there.\""
 
     Tristan "\"...\""
     show tristan nervoustalking:
@@ -202,9 +202,9 @@ label Chapter4:
         zoom 2
         center
 
-    Emil "Moved on?!" 
-    Emil "Tristan...{w}you love the game.{p}You fought for every piece on the board."
-    Emil "What happened to you?!"
+    Emil "\"Moved on?!\"" 
+    Emil "\"Tristan...{w}you love the game.{p}You fought for every piece on the board.\""
+    Emil "\"What happened to you?!\""
 
     #  *Television static fx* 
     scene bg staticeffect
@@ -225,7 +225,7 @@ label Chapter4:
         center
     Tristan "\"...\""
     
-    Emil "Would you say something!"
+    Emil "\"Would you say something!\""
     show tristan nervoustalking:
         yoffset 1000
         xoffset 500
@@ -238,14 +238,14 @@ label Chapter4:
         zoom 2
         center
 
-    Emil "Don't give me that answer...{p=0}We both know you love chess."
-    Emil "As your rival I won't allow this!"
+    Emil "\"Don't give me that answer...{p=0}We both know you love chess.\""
+    Emil "\"As your rival I won't allow this!\""
 
     #  *Television static fx* 
 
     "Emil grabs Tristan by the collar."
 
-    Emil "As your friend...{w} I won't allow this!"
+    Emil "\"As your friend...{w} I won't allow this!\""
 
     "The air feels tense and heavy…"
 
@@ -314,7 +314,7 @@ label Chapter4:
 
     "Emil lets go of Tristan...{p=0}Tristan slowly walks toward Zoe."
 
-    Emil "I...{w}I did not mean to-"
+    Emil "\"I...{w}I did not mean to-\""
 
     show tristan nervoustalking:
         yoffset 1000

@@ -4,9 +4,9 @@ screen c7:
         ypadding 20
         xalign 0.5
         yalign 0.5
-        text "Chapter 7 : Checkmate! " yalign 0.5 xalign 0.5
+        text "Chapter 7 : When the Clock Runs Out " yalign 0.5 xalign 0.5
 
-label Chapter7:
+label start:
 
     pause 1.0
     show screen c7 with fade
@@ -84,8 +84,17 @@ label Chapter7:
 
     with dissolve
 
-    #Chess Minigame // The Evergreen Game
+    jump chess_game
+    return
 
+
+    ################################################################################
+
+
+
+    label Chapter7continue:
+    #Chess Minigame // The Evergreen Game
+    scene gymnasium
     #over speaker ----
     Commentator "\"Checkmate! Tristan wins the tournament!\""
     #----------

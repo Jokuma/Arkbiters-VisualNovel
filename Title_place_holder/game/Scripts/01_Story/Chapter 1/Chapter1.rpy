@@ -8,7 +8,7 @@ screen c1:
         
         
 
-label start:
+label Chapter7:
     "..."
     play sound "audio/beep.mp3"
     "BEEP!..."
@@ -135,7 +135,7 @@ label start:
     Manager "\"Oh well."
     Manager "\"Look out for yourself okay?\""
 
-    "Tristan nods as prepares to work the cash register.\""
+    "Tristan nods as prepares to work the cash register."
     hide manager normal
     hide tristan normal
     with squares
@@ -158,7 +158,7 @@ label start:
         zoom 2
         center
 
-    "??? \"Mhm, That will be all ... hehe\""
+    "???" "\"Mhm, That will be all ... hehe\""
 
     "A sudden wave of nostalgia--a deja-vu like feeling flows through him."
 

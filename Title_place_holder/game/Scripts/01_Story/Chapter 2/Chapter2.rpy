@@ -48,12 +48,7 @@ label Chapter2:
     Tristan "(In his head){p=0}Ugh!...{w} my head hurts." with hpunch
 
     show bg park
-    show tristan nervous:
-        yoffset 1000
-        zoom 2
-        center 
-
-
+ 
     show tristan normal:
         yoffset 1000
         xoffset 500
@@ -64,9 +59,8 @@ label Chapter2:
         yoffset 1000
         xoffset -500
         zoom 2
+        left
     with moveinleft
-    with dissolve
-    
 
     #zoe shows up
     pause 1

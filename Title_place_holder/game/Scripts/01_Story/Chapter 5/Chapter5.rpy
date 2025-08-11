@@ -240,7 +240,7 @@ label Chapter5:
 
     Zoe "\"Hey...{w} Why you are laughing?\""
 
-    show zoe happy:
+    show zoe giggle:
         xoffset -400
         zoom 1.5
     with dissolve
@@ -352,7 +352,7 @@ label Chapter5:
 
     Tristan "\"nothing...{w} hehe\""
 
-    show zoe happytalking:
+    show zoe teasetalking:
         xoffset -400
         zoom 1.5
 
@@ -371,7 +371,8 @@ label Chapter5:
         zoom 1.5
     with dissolve
 
-    "..."
+    "..." with hpunch
+
     "Its Super Effective!"
 
     show tristan annoyedtalking:
@@ -381,7 +382,7 @@ label Chapter5:
 
     Tristan "\"Hey cut it out!\""
 
-    show zoe happytalking:
+    show zoe teasetalking:
         xoffset -400
         zoom 1.5
     with dissolve
@@ -397,24 +398,29 @@ label Chapter5:
 
     "While the both of them were strolling around the fare, Tristan stumbled upon 2 people having an intense chess match..."
 
-    Chessplayer1 "Check!"
+    show tristan normal:
+        zoom 2
+        yoffset 1000
+        center
 
-    Chessplayer2 "What?!{w} I did not see that move! What the heck?!"
+    Chessplayer1 "\"Check!\""
 
-    Chessplayer1 "Well... Better look closer or you're going to lose in just a few moves"
+    Chessplayer2 "\"What?!{w} I did not see that move! What the heck?!\""
 
-    Chessplayer2 "Not gonna lie..{w} You're so good at this game I don't even know if you're joking anymore."
+    Chessplayer1 "\"Well... Better look closer or you're going to lose in just a few moves\""
 
-    Chessplayer1 "hehehe."
+    Chessplayer2 "\"Not gonna lie..{w} You're so good at this game I don't even know if you're joking anymore.\""
 
-    Tristan "\"{i}Looking at this match...{w} reminds me of what Emil said about me in school the other day…{\i}\""
+    Chessplayer1 "\"hehehe.\""
+
+    Tristan "(In his head){p=0}{i}Looking at this match...{w} reminds me of what Emil said about me in school the other day…{\i}"
 
     Tristan "\"...\""
 
     # Flashback to when that interaction happened between Tristan and Emil
 
     "Zoe and Tristan then proceed to conclude their perya date and are heading to the park..."
-
+    hide tristan normal with dissolve
     jump Chapter6
 
     return

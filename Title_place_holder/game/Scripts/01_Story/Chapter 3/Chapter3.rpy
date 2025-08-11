@@ -76,16 +76,17 @@ label Chapter3:
         xoffset 500
         zoom 2
         right
-    hide tristan normal
+    
     show zoe tease:
-        yoffset 1800
-        xoffset 0
-        zoom 3
-        center
+        yoffset 1000
+        xoffset -500
+        zoom 2
+        left
     Zoe "\"I'm fine... The song is just that hard.\""
     Zoe "\"With that said...{w}Everyone can sing!\""
     Zoe "\"Besides...\""
     
+    hide tristan normal
     show zoe tease:
         yoffset 1800
         xoffset 0

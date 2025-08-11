@@ -138,7 +138,7 @@ label FinalChapter:
 
     Tristan "\"Zoe!\""
     Tristan "\"Say...{w} uhmm...\""
-    Tristan "\"do you want to go on a date?\""
+    Tristan "\"Do you want to go on a date?\""
 
     Zoe "\"...\""
 
@@ -623,16 +623,12 @@ label FinalChapter:
     # [ Television static fx ]
     Zoe "\"Tristan!...{w} I'm scared\""
 
+    hide zoe worriedtalking
     with hpunch
     with fade
     # [ long Television static fx ]
 
     #-------------------Supermarket-------------------
-
-    show zoe worriedtalking:
-        xoffset 100
-        zoom 1.5
-    with dissolve
 
     Zoe "\"Earth to mister...{w} Earth to mister!!\""
     Zoe "\"Earth to mister...\""
@@ -911,5 +907,7 @@ label FinalChapter:
     "A soft, teasing voice across the board"
     
     "Checkmate."
+
+    ""
 
     return
