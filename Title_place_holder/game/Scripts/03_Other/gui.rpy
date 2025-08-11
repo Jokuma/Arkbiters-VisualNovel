@@ -13,7 +13,7 @@ init python:
 
 ## Enable checks for invalid or unstable properties in screens or transforms
 define config.check_conflicting_properties = True
-
+ 
 
 ################################################################################
 ## GUI Configuration Variables
@@ -248,7 +248,7 @@ define gui.file_slot_rows = 2
 
 ## The position of the left side of the navigation buttons, relative to the
 ## left side of the screen.
-define gui.navigation_xpos = 60
+define gui.navigation_xpos = 400
 
 ## The vertical position of the skip indicator.
 define gui.skip_ypos = 15
