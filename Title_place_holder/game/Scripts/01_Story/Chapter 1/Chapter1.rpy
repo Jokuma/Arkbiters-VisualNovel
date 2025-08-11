@@ -11,8 +11,6 @@ screen c1:
         xalign 0.5
         yalign 0.5
         text "Chapter 1: Pawn to H-eart's File " yalign 0.5 xalign 0.5
-        
-        
 
 label start:
     
@@ -34,7 +32,9 @@ label start:
     show bg tristanroom #place holder 
     with fade
 
-    show tristan normal at enlarge
+    show tristan normal:
+        yoffset 1000
+        zoom 2
     with fade
     Tristan "ughh my head hurts...."
 
@@ -46,8 +46,8 @@ label start:
 
     hide tristan normal
     show tristan normal:
-        yoffset 600
-        zoom 3
+        yoffset 1000
+        zoom 2
         center
     Tristan "Crap!!" with hpunch
     
