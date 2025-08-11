@@ -29,9 +29,9 @@ label Chapter4:
 
     show tristan talking at center
     
-    Tristan "*grunts*{p=0}I feel exhausted from last time… but it sure is fun." 
+    Tristan "\"*grunts*{p=0}I feel exhausted from last time… but it sure is fun.\""
 
-    Tristan "Well… I guess it's time to go to work."
+    Tristan "\"Well… I guess it's time to go to work.\""
 
     show tristan normal
 
@@ -41,7 +41,7 @@ label Chapter4:
         yoffset 1000
         zoom 2
         center
-    Tristan "What if… {w}Nah, not a chance. {w}You shouldn't get your hopes up, Tristan."
+    Tristan "\"What if… {w}Nah, not a chance. {w}You shouldn't get your hopes up, Tristan.\""
     show tristan nervous:
         yoffset 1000
         zoom 2
@@ -65,15 +65,15 @@ label Chapter4:
         yoffset 1000
         zoom 2
         center
-    Tristan "It's been awhile since I last went here…"
+    Tristan "\"It's been awhile since I last went here…\""
 
-    Tristan "I honestly can't recall the last time I set foot in this university."
+    Tristan "\"I honestly can't recall the last time I set foot in this university.\""
 
-    Tristan "I don't even know what gave me the courage to go back here…"
+    Tristan "\"I don't even know what gave me the courage to go back here…\""
 
-    Tristan "What was the drive that made me go to this university anyway, was it really…"
+    Tristan "\"What was the drive that made me go to this university anyway, was it really…\""
 
-    Tristan "Her?"
+    Tristan "\"Her?\""
     show tristan flustered:
         yoffset 1000
         zoom 2
@@ -97,9 +97,9 @@ label Chapter4:
         zoom 2
         center
 
-    Tristan "Ow! This stupid headache again…"
+    Tristan "\"Ow! This stupid headache again…\""
 
-    Tristan "Welp, whatever the reason may be I am here anyways, so might as well…"
+    Tristan "\"Welp, whatever the reason may be I am here anyways, so might as well…\""
     show tristan normal:
         yoffset 1000
         zoom 2
@@ -159,7 +159,7 @@ label Chapter4:
         xoffset 500
         zoom 2
         center
-    Tristan "…Emil."
+    Tristan "\"…Emil.\""
     show tristan nervous:
         yoffset 1000
         xoffset 500
@@ -174,7 +174,7 @@ label Chapter4:
         xoffset 500
         zoom 2
         center
-    Tristan "Been...{w}busy."
+    Tristan "\"Been...{w}busy.\""
     show tristan nervous:
         yoffset 1000
         xoffset 500
@@ -183,13 +183,13 @@ label Chapter4:
     Emil "*sighs*{p=0} Busy, huh?"
     Emil "I've been checking every tournament list for months. Your name's never there."
 
-    Tristan "..."
+    Tristan "\"...\""
     show tristan nervoustalking:
         yoffset 1000
         xoffset 500
         zoom 2
         center
-    Tristan "Guess I moved on."
+    Tristan "\"Guess I moved on.\""
     show tristan nervous:
         yoffset 1000
         xoffset 500
@@ -223,7 +223,7 @@ label Chapter4:
         xoffset -500
         zoom 2
         center
-    Tristan "..."
+    Tristan "\"...\""
     
     Emil "Would you say something!"
     show tristan nervoustalking:
@@ -231,7 +231,7 @@ label Chapter4:
         xoffset 500
         zoom 2
         center
-    Tristan "Like I said…{w}I moved on!"
+    Tristan "\"Like I said…{w}I moved on!\""
     show tristan normal:
         yoffset 1000
         xoffset 500
@@ -250,15 +250,15 @@ label Chapter4:
     "The air feels tense and heavy…"
 
     scene bg thoughts
-    show zoe normal:
+    show zoe talking:
         yoffset 1000
         zoom 2
         center
     with fade
     Zoe "(in her head){p=0}Is that Tristan's voice?"
-    Zoe "I don't doubt that monotonous voice hehehe."
-    Zoe "Yo Tristan!"
-    Zoe "Zoe Gonzales is reporting for du-"
+    Zoe "\"I don't doubt that monotonous voice hehehe.\""
+    Zoe "\"Yo Tristan!\""
+    Zoe "\"Zoe Gonzales is reporting for du-\""
 
     scene bg schoolhallway
     show zoe normal:
@@ -286,15 +286,22 @@ label Chapter4:
         yoffset 1000
         zoom 2
         center
-    Tristan "Oh… perfect timing. Want to go home together?"
+    Tristan "\"Oh… perfect timing. Want to go home together?\""
     show tristan nervous:
         yoffset 1000
         zoom 2
         center
-
+    
     "Zoe is still in shock."
 
-    Zoe "U-hmm… yes, let's go together."
+    show zoe worriedtalking:
+        yoffset 1000
+        xoffset 700
+        zoom 2
+        right
+    with dissolve
+
+    Zoe "\"U-hmm… yes, let's go together.\""
 
     "She says reluctantly."
 
@@ -314,8 +321,8 @@ label Chapter4:
         zoom 2
         center
 
-    Tristan "It's okay...{p=0}I'm all out of pieces...{p=0}My king is cornered..."
-    Tristan "I resign...{w}I quit chess."
+    Tristan "\"It's okay...{p=0}I'm all out of pieces...{p=0}My king is cornered...\""
+    Tristan "\"I resign...{w}I quit chess.\""
     show tristan nervous:
         yoffset 1000
         zoom 2
@@ -329,7 +336,7 @@ label Chapter4:
     "A rival without adversary — {p=0}A lone king on an empty board.{p=0}Every square a silent grave where knights once leapt and queens once danced."
     "Now only the ticking clock remains...{p=0}making moves for no one."
 
-    Zoe "What happened...{w}Tristan?"
+    Zoe "\"What happened...{w}Tristan?\""
 
     scene bg schoolhallway
     show tristan nervoustalking:
@@ -344,7 +351,7 @@ label Chapter4:
         right
     with dissolve
 
-    Tristan "It's nothing...{w}just a little bit of catching up with an old friend."
+    Tristan "\"It's nothing...{w}just a little bit of catching up with an old friend.\""
     show tristan nervous:
         yoffset 1000
         xoffset -500
@@ -355,7 +362,7 @@ label Chapter4:
         xoffset 500
         zoom 2
         right
-    Zoe "Well, if you say so..."
+    Zoe "\"Well, if you say so...\""
     show zoe worried:
         yoffset 1000
         xoffset 500
@@ -373,8 +380,8 @@ label Chapter4:
         xoffset 500
         zoom 2
         right
-    Zoe "I have an idea..."
-    Zoe "hehe."
+    Zoe "\"I have an idea...\""
+    Zoe "\"hehe.\""
 
 
     show bg thoughts

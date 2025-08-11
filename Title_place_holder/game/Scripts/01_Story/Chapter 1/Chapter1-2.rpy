@@ -15,15 +15,15 @@ label FinalChapter:
 
     define dissolve = Dissolve(0.2)
 
-    "Girl" "Are you okay?"
-    "Girl" "Mister!{w} hehehehe"
+    "Girl" "\"Are you okay?\""
+    "Girl" "\"Mister!{w} hehehehe\""
 
     # [ Television static fx ]
 
-    Tristan "Zoe?!"
+    Tristan "\"Zoe?!\""
 
-    "Girl" "Hmm?"
-    "Girl" "..."
+    "Girl" "\"Hmm?\""
+    "Girl" "\"...\""
 
     show zoe happytalking:
         xoffset 100
@@ -31,7 +31,7 @@ label FinalChapter:
     
     with dissolve
 
-    Zoe "How did you know my name?"
+    Zoe "\"How did you know my name?\""
 
     show zoe happy:
         xoffset 100
@@ -49,14 +49,14 @@ label FinalChapter:
     
     with dissolve
 
-    Zoe "Ehhh!?"
+    Zoe "\"Ehhh!?\""
 
     show zoe worried:
         xoffset 100
         zoom 1.5
     with dissolve
 
-    Zoe "..."
+    Zoe "\"...\""
 
     show zoe worriedtalking:
         xoffset 100
@@ -64,15 +64,15 @@ label FinalChapter:
     
     with dissolve
 
-    Zoe "Did I said something wrong?{p}... oh no!"    
+    Zoe "\"Did I said something wrong?{p}... oh no!\""    
 
     show zoe worried:
         xoffset 100
         zoom 1.5
     with dissolve
 
-    Tristan "Oh sorry..."
-    Tristan "You looked like someone from the manga I read"
+    Tristan "\"Oh sorry...\""
+    Tristan "\"You looked like someone from the manga I read\""
 
     show zoe happytalking:
         xoffset 100
@@ -80,7 +80,7 @@ label FinalChapter:
     
     with dissolve
 
-    Zoe "Oh really? ..."
+    Zoe "\"Oh really? ...\""
 
     show zoe giggle:
         xoffset 100
@@ -88,7 +88,7 @@ label FinalChapter:
     
     with dissolve
     
-    Zoe "haha..."
+    Zoe "\"haha...\""
 
     "Zoe laughs as if he is mocking Tristan."
 
@@ -97,35 +97,35 @@ label FinalChapter:
         zoom 1.5
     with dissolve
 
-    Zoe "Zoe Gonzales reporting in!"
+    Zoe "\"Zoe Gonzales reporting in!\""
 
     show zoe giggle:
         xoffset 100
         zoom 1.5
     with dissolve
 
-    Zoe "Hehehe."
+    Zoe "\"Hehehe.\""
 
     show zoe happytalking:
         xoffset 100
         zoom 1.5
     with dissolve
 
-    Zoe "What's your name, Mister?"
+    Zoe "\"What's your name, Mister?\""
 
     show zoe happy:
         xoffset 100
         zoom 1.5
     with dissolve
 
-    Tristan "Tristan"
+    Tristan "\"Tristan\""
 
     show zoe happytalking:
         xoffset 100
         zoom 1.5
     with dissolve
 
-    Zoe "Pleasure meeting you Tristan."
+    Zoe "\"Pleasure meeting you Tristan.\""
 
     show zoe happy:
         xoffset 100
@@ -136,30 +136,30 @@ label FinalChapter:
 
     "As Zoe was about to leave Tristan shouted and stopped her"
 
-    Tristan "Zoe!"
-    Tristan "Say...{w} uhmm..."
-    Tristan "do you want to go on a date?"
+    Tristan "\"Zoe!\""
+    Tristan "\"Say...{w} uhmm...\""
+    Tristan "\"do you want to go on a date?\""
 
-    Zoe "..."
+    Zoe "\"...\""
 
     show zoe flustered:
         xoffset 100
         zoom 1.5
     with dissolve
 
-    Zoe "eh?"
+    Zoe "\"eh?\""
 
     show zoe surprisedflustered:
         xoffset 100
         zoom 1.5
     with dissolve
 
-    Zoe "eh!?"
+    Zoe "\"eh!?\""
 
     hide zoe surprisedflustered
     with dissolve
 
-    Zoe "EHHHHH!?!?" with hpunch
+    Zoe "\"EHHHHH!?!?!\"" with hpunch
 
     with dissolve
 
@@ -172,7 +172,7 @@ label FinalChapter:
         zoom 1.5
     with dissolve
 
-    Zoe "Reporting late again, Tristan Garcia?"
+    Zoe "\"Reporting late again, Tristan Garcia?\""
 
     show zoe giggle:
         xoffset 100
@@ -191,12 +191,12 @@ label FinalChapter:
 
     with dissolve
     
-    Tristan "Hey! at least I showed up"
+    Tristan "\"Hey! at least I showed up\""
 
     hide zoe happy
     hide tristan annoyed
 
-    with dissolve
+    with dissolve #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
     "They walk, talk, laugh. For him, this feels like one of many easy afternoons."
 
@@ -205,14 +205,14 @@ label FinalChapter:
         zoom 1.5
     with dissolve
 
-    Zoe "You shocked me..."
+    Zoe "\"You shocked me...\""
 
     show zoe happytalking:
         xoffset 100
         zoom 1.5
     with dissolve
 
-    Zoe "I was just about to ask you if you want to go on a date, you beat me right to it"
+    Zoe "\"I was just about to ask you if you want to go on a date, you beat me right to it\""
 
     hide zoe happytalking
 
@@ -225,7 +225,7 @@ label FinalChapter:
         zoom 1.5
     with dissolve
 
-    Tristan "T-The words just came right out of my mouth for some reason"
+    Tristan "\"T-The words just came right out of my mouth for some reason\""
 
     show tristan nervous:
         xoffset 750
@@ -236,15 +236,15 @@ label FinalChapter:
         zoom 1.5
     with dissolve
 
-    Zoe "And for that..."
-    Zoe "Let's race to the ice cream truck!{p}Losers pays the other"
+    Zoe "\"And for that...\""
+    Zoe "\"Let's race to the ice cream truck!{p}Losers pays the other\""
 
     show zoe giggle:
         xoffset -400
         zoom 1.5
     with dissolve
 
-    Zoe "hehehe~"
+    Zoe "\"hehehe~\""
 
     hide zoe giggle
 
@@ -258,7 +258,7 @@ label FinalChapter:
     
     with dissolve
 
-    Tristan "Hey no fair!!!"
+    Tristan "\"Hey no fair!!!\""
 
     hide tristan nervoustalking
 
@@ -294,8 +294,8 @@ label FinalChapter:
 
     with moveinright
 
-    Zoe "Come on, Tristan!"
-    Zoe "It's been years since I've been to one of these."
+    Zoe "\"Come on, Tristan!\""
+    Zoe "\"It's been years since I've been to one of these.\""
 
     hide zoe happytalking
 
@@ -313,8 +313,14 @@ label FinalChapter:
 
     with dissolve
 
-    Tristan "Years?{w} I can't remember the last time I went either."
-    Tristan "{i}Feels like another lifetime{\i}"
+    Tristan "\"Years?{w} I can't remember the last time I went either.\""
+
+    show tristan normal:
+        xoffset 750
+        zoom 1.5
+    with dissolve
+
+    Tristan "{i}Feels like another lifetime{/i}"
 
     hide zoe happy
     hide tristan normaltalking
@@ -338,19 +344,23 @@ label FinalChapter:
 
     with dissolve
 
-    Zoe "First stop...{w}Darts!"
+    Zoe "\"First stop...{w}Darts!\""
 
     show zoe smug:
         xoffset -400
         zoom 1.5
     with dissolve
 
-    Zoe "Loser buys Kwek-kwek"
+    Zoe "\"Loser buys Kwek-kwek\""
 
-    Tristan "That's...{w} an oddly specific bet."
+    show tristan normaltalking:
+        xoffset 750
+        zoom 1.5
+
+    Tristan "\"That's...{w} an oddly specific bet.\""
 
     hide zoe smug
-    hide tristan normal
+    hide tristan normaltalking
 
     with dissolve
     
@@ -362,8 +372,8 @@ label FinalChapter:
         zoom 1.5
     with dissolve
 
-    Zoe "Waahhh..."
-    Zoe "No fair... Just a single balloon!!"
+    Zoe "\"Waahhh...\""
+    Zoe "\"No fair... Just a single balloon!!\""
 
     hide zoe worriedtalking
 
@@ -383,7 +393,7 @@ label FinalChapter:
         zoom 1.5
     with dissolve
 
-    Zoe "Don't give me that look!!"
+    Zoe "\"Don't give me that look!!\""
 
     hide tristan happy
 
@@ -392,18 +402,18 @@ label FinalChapter:
         zoom 1.5
     with dissolve
 
-    Zoe "...."
+    Zoe "\"....\""
 
     show tristan normal:
         xoffset 750
-        zoom 1.5
+        zoom 1.5 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
     show zoe giggle:
         xoffset -400
         zoom 1.5
     with dissolve
 
-    Zoe "What the heck?! HAHAHAHAHAHAHA"
+    Zoe "\"What the heck?! HAHAHAHAHAHAHA\""
 
     show tristan happy:
         xoffset 750
@@ -420,7 +430,7 @@ label FinalChapter:
 
     with dissolve
 
-    Zoe "..."
+    Zoe "\"...\""
 
     show zoe worried:
         yoffset 25
@@ -430,7 +440,7 @@ label FinalChapter:
         yoffset 0
     with move
     
-    Zoe "*Cough*" 
+    Zoe "\"*Cough*\"" 
 
     show zoe worried:
         yoffset 25
@@ -440,7 +450,7 @@ label FinalChapter:
         yoffset 0
     with move
     
-    Zoe "*Cough*"
+    Zoe "\"*Cough*\""
 
     hide zoe worried
 
@@ -453,7 +463,7 @@ label FinalChapter:
         zoom 1.5
     with dissolve
 
-    Tristan "You okay Zoe? That's one nasty cough"
+    Tristan "\"You okay Zoe? That's one nasty cough\""
 
     show tristan sad:
         xoffset 750
@@ -464,22 +474,22 @@ label FinalChapter:
         zoom 1.5
     with dissolve
 
-    Zoe "More okay than you!"
+    Zoe "\"More okay than you!\""
 
     show zoe giggle:
         xoffset -400
         zoom 1.5
     with dissolve
 
-    Zoe "BWAHAHAHAHAHA"
+    Zoe "\"BWAHAHAHAHAHA\""
 
     show zoe happytalking:
         xoffset -400
         zoom 1.5
     with dissolve
 
-    Zoe "Dont worry about me..."
-    Zoe "Besides...{w} I brought you here to have fun--"
+    Zoe "\"Dont worry about me...\""
+    Zoe "\"Besides...{w} I brought you here to have fun--\""
 
     show zoe happy:
         xoffset -400
@@ -493,14 +503,14 @@ label FinalChapter:
         zoom 1.5
     with dissolve
 
-    Tristan "Zoe..."
+    Tristan "\"Zoe...\""
 
     show tristan sad:
         xoffset 750
         zoom 1.5
     with dissolve
 
-    Tristan "..."
+    Tristan "\"...\""
 
     show tristan sadtalking:
         xoffset 750
@@ -511,7 +521,7 @@ label FinalChapter:
         zoom 1.5
     with dissolve
 
-    Tristan "You have an illness...{w} Don't you?"
+    Tristan "\"You have an illness...{w} Don't you?\""
 
     show tristan sad:
         xoffset 750
@@ -522,14 +532,14 @@ label FinalChapter:
         zoom 1.5
     with dissolve
 
-    Zoe "hm?...{w} What do you mean?"
+    Zoe "\"hm?...{w} What do you mean?\""
 
     show zoe happytalking:
         xoffset -400
         zoom 1.5
     with dissolve
 
-    Zoe "I'm perfectly in tip top shape!"
+    Zoe "\"I'm perfectly in tip top shape!\""
     
     # [ Television static fx ]
 
@@ -542,21 +552,21 @@ label FinalChapter:
         zoom 1.5
     with dissolve
 
-    Tristan "Stop hiding it..."
-    Tristan "Everytime we go on a date..."
-    Tristan "You are struggling breathe or even move sometimes."
-    Tristan "...{w} Don't shrug it off."
-    Tristan "Please......"
-    Tristan "Please..."
+    Tristan "\"Stop hiding it...\""
+    Tristan "\"Everytime we go on a date...\""
+    Tristan "\"You are struggling breathe or even move sometimes.\""
+    Tristan "\"...{w} Don't shrug it off.\""
+    Tristan "\"Please......\""
+    Tristan "\"Please...\""
     # [ Television static fx ]
-    Tristan "Tell me the truth"
+    Tristan "\"Tell me the truth\""
 
     show zoe worriedtalking:
         xoffset -400
         zoom 1.5
     with dissolve
 
-    Zoe "bzztt no fair"
+    Zoe "\"bzztt no fair\""
 
     
     hide zoe worriedtalking
@@ -566,14 +576,14 @@ label FinalChapter:
         zoom 1.5
     with dissolve
 
-    Zoe "..."
+    Zoe "\"...\""
 
     show zoe worriedtalking:
         xoffset 100
         zoom 1.5
     with dissolve
 
-    Zoe "What a bad sport"
+    Zoe "\"What a bad sport\""
 
     show zoe worried:
         xoffset 100
@@ -587,31 +597,31 @@ label FinalChapter:
         zoom 1.5
     with dissolve
 
-    Zoe "H-How...{w} How did you find--"
+    Zoe "\"H-How...{w} How did you find--\""
 
     with hpunch
     # [ Television static fx ]
-    Zoe "What's that pain...{w} What's that noise"
+    Zoe "\"What's that pain...{w} What's that noise\""
 
     with hpunch
 
-    Tristan "It's that same feeling again...{w} You're feeling it too?"
-
-    with hpunch
-    # [ Television static fx ]
-
-    Zoe "It hurts!"
+    Tristan "\"It's that same feeling again...{w} You're feeling it too?\"" #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
     with hpunch
     # [ Television static fx ]
 
-    with hpunch
-
-    Tristan "Zoe!!"
+    Zoe "\"It hurts!\""
 
     with hpunch
     # [ Television static fx ]
-    Zoe "Tristan!...{w} I'm scared"
+
+    with hpunch
+
+    Tristan "\"Zoe!!\""
+
+    with hpunch
+    # [ Television static fx ]
+    Zoe "\"Tristan!...{w} I'm scared\""
 
     with hpunch
     with fade
@@ -624,29 +634,29 @@ label FinalChapter:
         zoom 1.5
     with dissolve
 
-    Zoe "Earth to mister...{w} Earth to mister!!"
-    Zoe "Earth to mister..."
+    Zoe "\"Earth to mister...{w} Earth to mister!!\""
+    Zoe "\"Earth to mister...\""
 
     show zoe worried:
         xoffset 100
         zoom 1.5
     with dissolve
 
-    Zoe "..."
+    Zoe "\"...\""
 
     show zoe worriedtalking:
         xoffset 100
         zoom 1.5
     with dissolve
 
-    Zoe "T-Tristan?"
+    Zoe "\"T-Tristan?\""
 
     show zoe worried:
         xoffset 100
         zoom 1.5
     with dissolve
 
-    Tristan "Z-Zoe?"
+    Tristan "\"Z-Zoe?\""
 
     with hpunch
 
@@ -657,7 +667,7 @@ label FinalChapter:
         zoom 1.5
     with dissolve
 
-    Zoe "What is happening... That noise again"
+    Zoe "\"What is happening... That noise again\""
 
     hide zoe worried
     with dissolve
@@ -669,7 +679,7 @@ label FinalChapter:
     "Suddenly...{p}The ground shakes."
     "The surrounding area of Tristan and Zoe began to disappear.{p}It's almost like the squares of the chess board are slowly falling apart one by one"
 
-    Tristan "Zoe!...{w} Grab my Hand!!!"
+    Tristan "\"Zoe!...{w} Grab my Hand!!!\""
 
     with hpunch
     # [ Television static fx ]
@@ -685,7 +695,7 @@ label FinalChapter:
         zoom 1.5
     with dissolve
 
-    Zoe "Where...{w}where are we"
+    Zoe "\"Where...{w}where are we\""
 
     hide zoe worriedtalking
     show tristan sadtalking:
@@ -697,7 +707,7 @@ label FinalChapter:
         zoom 1.5
     with dissolve
 
-    Tristan "I've...{w} seen this place before."
+    Tristan "\"I've...{w} seen this place before.\""
 
     "The squares fall away into the dark{p}like pawns swept off the board by an unseen hand{p}In the distance, a faint ticking sound echoes — deliberate, cold, mechanical."
 
@@ -709,7 +719,7 @@ label FinalChapter:
         zoom 1.5
     with dissolve
 
-    Zoe "Tristan...{w} I'm scared"
+    Zoe "\"Tristan...{w} I'm scared\""
 
     hide tristan sad
     hide zoe worriedtalking
@@ -724,15 +734,6 @@ label FinalChapter:
 
     # [ Television static fx ]
 
-    #siguro dito like monologe yung wala nayung dialogue box muna tas yung text nasa gitna
-    #[Flashback – Countless Loops]
-    #Rapid, fragmented images tear through Tristan’s mind:
-    #Zoe laughing in the park.
-    #Zoe coughing in the karaoke booth.
-    #Zoe Winning at the Perya
-    #Tristan's fight in the hallway.
-    #The same conversation, the same tears… repeated hundreds of times.
-
     with fade
 
     "Tristan's grip loosens...{p}His eyes are wide, but no longer frantic."
@@ -742,7 +743,7 @@ label FinalChapter:
         zoom 1.5
     with dissolve
     
-    Tristan "...{w}I remember it now"
+    Tristan "\"...{w}I remember it now\""
 
     hide tristan normaltalking
     show zoe worriedtalking:
@@ -750,21 +751,17 @@ label FinalChapter:
         zoom 1.5
     with dissolve
 
-    Zoe "Remember what?"
+    Zoe "\"Remember what?\""
 
     hide zoe worriedtalking
     with dissolve
 
     "He swallows hard. The void feels heavier, as if the unseen ticking is pressing against his chest."
 
-    #Siguro Scenes dati like flashback ito---------------------------
-
-    Tristan "We've been here before...{p}We've done this before{p}So many times..."
-    Tristan "I...{w}Thought if I changed something..."
-    Tristan "If I made a different choice..."
-    Tristan "I could save you."
-
-    #Siguro Scenes dati like flashback ito---------------------------
+    Tristan "\"We've been here before...{p}We've done this before{p}So many times...\""
+    Tristan "\"I...{w}Thought if I changed something...\""
+    Tristan "\"If I made a different choice...\""
+    Tristan "\"I could save you.\""
 
     with hpunch
 
@@ -775,7 +772,7 @@ label FinalChapter:
         zoom 1.5
     with dissolve
 
-    Zoe "...{w} I remember it now too."
+    Zoe "\"...{w} I remember it now too.\""
 
     "A tear slips down Tristan's cheek"
 
@@ -789,7 +786,7 @@ label FinalChapter:
         zoom 1.5
     with dissolve
 
-    Tristan "And I can't"
+    Tristan "\"And I can't\""
 
     hide zoe worried
     hide tristan sadtalking
@@ -802,21 +799,21 @@ label FinalChapter:
         zoom 1.5
     with dissolve
 
-    Zoe "So...{w}This is really it?"
+    Zoe "\"So...{w}This is really it?\""
 
     show zoe worriedtalking:
         xoffset 100
         zoom 1.5
     with dissolve
 
-    Zoe "At least i got to complete my bucket list..." 
+    Zoe "\"At least i got to complete my bucket list...\""
 
     show zoe giggle:
         xoffset 100
         zoom 1.5
     with dissolve
     
-    Zoe "hehe"
+    Zoe "\"hehe\""
 
     hide zoe giggle
 
@@ -829,7 +826,7 @@ label FinalChapter:
         zoom 1.5
     with dissolve
 
-    Tristan "Liar...{w} You forgot one"
+    Tristan "\"Liar...{w} You forgot one\""
 
     hide tristan annoyedtalking
     hide zoe giggle
@@ -841,9 +838,9 @@ label FinalChapter:
 
     #-------------------------Hugging Scene-------------------------
 
-    Zoe "Buzztt! You are wrong hehe... "   
-    Zoe "Even if i am gone...{p}I'm still here...{p}In your heart"
-    Zoe "Just like in chess right?{p}Even if a piece is taken...{p}It's on the side watching other pieces moving."
+    Zoe "\"Buzztt! You are wrong hehe... \""   
+    Zoe "\"Even if i am gone...{p}I'm still here...{p}In your heart\""
+    Zoe "\"Just like in chess right?{p}Even if a piece is taken...{p}It's on the side watching other pieces moving.\""
 
     #-------------------------Hugging Scene-------------------------
 
@@ -866,43 +863,42 @@ label FinalChapter:
         zoom 1.5
     with dissolve
 
-    Zoe "Thank you... Tristan."
-    Zoe "Sorry for being selfish..."
+    Zoe "\"Thank you... Tristan.\""
+    Zoe "\"Sorry for being selfish...\""
 
     show zoe worried:
         xoffset 100
         zoom 1.5
     with dissolve
 
-    Zoe "..."
+    Zoe "\"...\""
 
     show zoe happytalking:
         xoffset 100
         zoom 1.5
     with dissolve
 
-    Zoe "bye-bye"
+    Zoe "\"bye-bye\""
 
     show zoe happy:
         xoffset 100
         zoom 1.5
     with dissolve
 
-    Zoe "..."
+    Zoe "\"...\""
 
     show zoe smile:
         xoffset 100
         zoom 1.5
     with dissolve
 
-    Zoe "Checkmate!"
+    Zoe "\"Checkmate!\""
 
     hide zoe smile
     with hpunch
     with fade
     #[ Final Television static fx ]
     #cut to white.. i think??
-
 
     #--------------------------montage style--------------------------
     "Months pass..."
