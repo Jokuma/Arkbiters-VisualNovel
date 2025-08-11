@@ -30,19 +30,19 @@ label Chapter3:
         zoom 2
         center
     with dissolve
-    Zoe "Alright, Tristan Garcia--"
+    Zoe "\"Alright, Tristan Garcia--\""
     show zoe worriedtalking:
         yoffset 1000
         xoffset 0
         zoom 2
         center
-    Zoe "*cough* *cough*" with hpunch
+    Zoe "\"*cough* *cough*\"" with hpunch
     show zoe talking:
         yoffset 1000
         xoffset 0
         zoom 2
         center
-    Zoe "It's your turn to sing!"
+    Zoe "\"It's your turn to sing!\""
 
     "Zoe throws the microphone towards him with a grin"
     show zoe normal:
@@ -57,20 +57,20 @@ label Chapter3:
         zoom 2
         right
     with moveinright
-    Tristan " M-me?"
-    Tristan "No way!"
+    Tristan "\"M-me?\""
+    Tristan "\"No way!\""
     show tristan nervoustalking:
         yoffset 1000
         xoffset 500
         zoom 2
         right
-    Tristan "...{w}I cant't sing."
+    Tristan "\"...{w}I cant't sing.\""
     show tristan talking:
         yoffset 1000
         xoffset 500
         zoom 2
         right
-    Tristan "Besides, are you okay?... That's a harsh cough"
+    Tristan "\"Besides, are you okay?... That's a harsh cough\""
     show tristan normal:
         yoffset 1000
         xoffset 500
@@ -82,22 +82,22 @@ label Chapter3:
         xoffset 0
         zoom 3
         center
-    Zoe "I'm fine... The song is just that hard."
-    Zoe "With that said...{w}Everyone can sing!"
-    Zoe "Besides..."
+    Zoe "\"I'm fine... The song is just that hard.\""
+    Zoe "\"With that said...{w}Everyone can sing!\""
+    Zoe "\"Besides...\""
     
     show zoe tease:
         yoffset 1800
         xoffset 0
         zoom 3
         center
-    Zoe "(Leans closer to Tristan)"
+    Zoe "\"(Leans closer to Tristan)\""
     show zoe teasetalking:
         yoffset 1800
         xoffset 0
         zoom 3
         center
-    Zoe "You owe me for losing our ice cream race...{w} hehe."
+    Zoe "\"You owe me for losing our ice cream race...{w} hehe.\""
     show zoe tease:
         yoffset 1000
         xoffset -500
@@ -140,7 +140,7 @@ label Chapter3:
 
     #  *Television static fx* 
     
-   
+    
     "Tristan flinches slightly, clutching the mic."
     ####################
     hide zoe normal
@@ -154,7 +154,7 @@ label Chapter3:
 
     Tristan "(In his head){p=0}Again?"
     Tristan "(In his head){p=0}Everytime I'm with her...{w} It's like...{w} The board resets."
-    Zoe "Earth to Tristan!!!{p}oh no, not this again."
+    Zoe "\"Earth to Tristan!!!{p}oh no, not this again.\""
 
     scene bg karaoke
     show tristan nervous:
@@ -174,8 +174,8 @@ label Chapter3:
         xoffset 500
         zoom 2
         right
-    Tristan "Oh...{w}sorry"
-    Tristan "I'm fine, just picking a song."
+    Tristan "\"Oh...{w}sorry\""
+    Tristan "\"I'm fine, just picking a song.\""
     show tristan normal:
         yoffset 1000
         xoffset 500
@@ -194,8 +194,8 @@ label Chapter3:
         xoffset -500
         zoom 2
         left
-    Zoe "This one!"
-    Zoe "It's simple... You'll do great!"
+    Zoe "\"This one!\""
+    Zoe "\"It's simple... You'll do great!\""
     show zoe tease:
         yoffset 1000
         xoffset -500
@@ -206,13 +206,13 @@ label Chapter3:
         xoffset 500
         zoom 2
         right
-    Tristan "I...{w}fine."
+    Tristan "\"I...{w}fine.\""
     show tristan flusteredtalking:
         yoffset 1000
         xoffset 500
         zoom 2
         right
-    Tristan "But dont laugh!"
+    Tristan "\"But dont laugh!\""
 
     hide tristan flusteredtalking
     hide zoe normal
@@ -265,8 +265,8 @@ label Chapter3:
     show bg karaoke
     with dissolve
 
-    Zoe "Hey...{w} That was pretty good!"
-    Zoe "Not bad for a \"useless loser\" huh? "
+    Zoe "\"Hey...{w} That was pretty good!\""
+    Zoe "\"Not bad for a \"useless loser\" huh? \""
     show zoe normal:
         yoffset 1000
         xoffset -500
@@ -278,7 +278,7 @@ label Chapter3:
         xoffset 500
         zoom 2
         right
-    Tristan "H-hey...when did I call myself—"
+    Tristan "\"H-hey...when did I call myself—\""
     show tristan nervous:
         yoffset 1000
         xoffset 500
@@ -289,19 +289,19 @@ label Chapter3:
         xoffset -500
         zoom 2
         left
-    Zoe "You didn't have to...{p}I can read it in your eyes.."
+    Zoe "\"You didn't have to...{p}I can read it in your eyes..\""
     show zoe tease:
         yoffset 1000
         xoffset -500
         zoom 2
         left
-    Zoe "..."
+    Zoe "\"...\""
     show zoe teasetalking:
         yoffset 1000
         xoffset -500
         zoom 2
         left
-    Zoe "But i think you're wrong...hehe"
+    Zoe "\"But i think you're wrong...hehe\""
     show tristan flustered:
         yoffset 1000
         xoffset 500
@@ -327,7 +327,7 @@ label Chapter3:
         xoffset -500
         zoom 2
         left
-    Zoe "Uwaaa… I forgot I have school tomorrow! Man that sucks! I was having a lot of fun."
+    Zoe "\"Uwaaa… I forgot I have school tomorrow! Man that sucks! I was having a lot of fun.\""
     show tristan talking:
         yoffset 1000
         xoffset 500
@@ -338,7 +338,7 @@ label Chapter3:
         xoffset -500
         zoom 2
         left
-    Tristan "Now that you said it… I have school tomorrow too."
+    Tristan "\"Now that you said it… I have school tomorrow too.\""
     show tristan normal:
         yoffset 1000
         xoffset 500
@@ -349,7 +349,7 @@ label Chapter3:
         xoffset -500
         zoom 2
         left
-    Zoe "Really? Which school do you go to?"
+    Zoe "\"Really? Which school do you go to?\""
     show zoe normal:
         yoffset 1000
         xoffset -500
@@ -360,7 +360,7 @@ label Chapter3:
         xoffset 500
         zoom 2
         right
-    Tristan "ARK-University."
+    Tristan "\"ARK-University.\""
     show tristan normal:
         yoffset 1000
         xoffset 500
@@ -371,7 +371,7 @@ label Chapter3:
         xoffset -500
         zoom 2
         left
-    Zoe "NO WAY!! … we go to the same school then hehe!" with hpunch
+    Zoe "\"NO WAY!! … we go to the same school then hehe!\"" with hpunch
     show zoe normal:
         yoffset 1000
         xoffset -500
@@ -394,7 +394,7 @@ label Chapter3:
         xoffset -500
         zoom 2
         left
-    Zoe "Alright enough of that… let's make the most of today, your turn to pick my song. And no mercy!"
+    Zoe "\"Alright enough of that… let's make the most of today, your turn to pick my song. And no mercy!\""
     show zoe normal:
         yoffset 1000
         xoffset -500
@@ -407,9 +407,6 @@ label Chapter3:
         zoom 2
         right
     "His eyes keep darting toward Zoe— {p}like a player glancing at a chessboard{p}unsure if the next move will win or lose the game."
-
-
-
     
     show bg thoughts
     hide zoe normal

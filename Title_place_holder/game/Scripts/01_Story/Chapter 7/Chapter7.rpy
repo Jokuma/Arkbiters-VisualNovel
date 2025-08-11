@@ -31,7 +31,7 @@ label Chapter7:
         zoom 1.5
     with dissolve
 
-    Emil "Tristan? You're really here."
+    Emil "\"Tristan? You're really here.\""
 
     show emil happy:
         xoffset -400
@@ -42,7 +42,7 @@ label Chapter7:
         zoom 1.5
     with dissolve
 
-    Tristan "Yeah… and Emil, about what happened before… I'm sorry."
+    Tristan "\"Yeah… and Emil, about what happened before… I'm sorry.\""
 
     show emil happy:
         xoffset -400
@@ -60,7 +60,7 @@ label Chapter7:
         zoom 1.5
     with dissolve
 
-    Emil "If you're really sorry… give me an entertaining chess match."
+    Emil "\"If you're really sorry… give me an entertaining chess match.\""
 
     show emil happy:
         xoffset -400
@@ -71,7 +71,7 @@ label Chapter7:
         zoom 1.5
     with dissolve
 
-    Tristan "Yeah, you're right... Let's have a fun match, Emil."
+    Tristan "\"Yeah, you're right... Let's have a fun match, Emil.\""
 
     hide emil happy
     hide tristan happytalking
@@ -87,7 +87,7 @@ label Chapter7:
     #Chess Minigame // The Evergreen Game
 
     #over speaker ----
-    Commentator "Checkmate! Tristan wins the tournament!"
+    Commentator "\"Checkmate! Tristan wins the tournament!\""
     #----------
 
     "Overwhelmed with joy, Tristan looked around the crowd to find Zoe… but she was nowhere."
@@ -98,9 +98,9 @@ label Chapter7:
     
     with dissolve
 
-    Tristan "Wait where is she? Wasn't she here a few moments ago?"
+    Tristan "\"Wait where is she? Wasn't she here a few moments ago?\""
 
-    Tristan "There's no way she went home immediately right?"
+    Tristan "\"There's no way she went home immediately right?\""
 
     hide tristan nervoustalking
     with dissolve
@@ -135,7 +135,7 @@ label Chapter7:
 
     with dissolve
     
-    Tristan "There you are! Why did you leave the gym? Why come here, all alone?"
+    Tristan "\"There you are! Why did you leave the gym? Why come here, all alone?\""
 
     show tristan sad:
         xoffset 750
@@ -149,7 +149,7 @@ label Chapter7:
         zoom 1.5
     with dissolve
 
-    Zoe "I guess i have to tell you the truth now..." #said sadly
+    Zoe "\"I guess i have to tell you the truth now...\"" #said sadly
 
     hide zoe worriedtalking
     hide tristan sad
@@ -201,7 +201,7 @@ label Chapter7:
     
     with dissolve
 
-    Tristan "What… what do you mean?"
+    Tristan "\"What… what do you mean?\""
 
     show tristan nervous:
         xoffset 750
@@ -220,7 +220,7 @@ label Chapter7:
 
     "Zoe slowly turned to him, tears swelling up in her eyes but not falling... {w} yet."
 
-    Zoe "I have been a selfish girl"
+    Zoe "\"I have been a selfish girl\""
 
     "For a moment, everything went silent except the pounding of Tristan's heart—louder than anything else in the world."
 
@@ -228,11 +228,11 @@ label Chapter7:
 
     #Tristan (voice tembling):
 
-    Tristan "Y-y-you are not making any sense!"
+    Tristan "\"Y-y-you are not making any sense!\""
 
     #Zoe voice breaking:
 
-    Zoe "I tried to run away so you don't see me like this… Every time we play, I beat you… I guess i can't beat you in a simple game of hide and seek hehe"
+    Zoe "\"I tried to run away so you don't see me like this… Every time we play, I beat you… I guess i can't beat you in a simple game of hide and seek hehe\""
 
     #[Television static fx]
 
@@ -240,11 +240,11 @@ label Chapter7:
 
     #Zoe Whispers, Barely Audible
 
-    Zoe "Thank you… for everything. For the laughter, the dreams, the moments I never thought I'd have. Because of you… I got to cross off my bucket list."
+    Zoe "\"Thank you… for everything. For the laughter, the dreams, the moments I never thought I'd have. Because of you… I got to cross off my bucket list.\""
 
     #Tristan (voice trembling):
 
-    Tristan "wait..."
+    Tristan "\"wait...\""
 
     "Her voice trembled with emotion, as if speaking these words used the last of her strength."
 
@@ -254,9 +254,9 @@ label Chapter7:
 
     #Zoe (barely a breath):
 
-    Zoe "..."
+    Zoe "\"...\""
 
-    Zoe "I love you."
+    Zoe "\"I love you.\""
 
     #------------Crying Scene------------
 
@@ -264,7 +264,7 @@ label Chapter7:
 
     #Tristan (voice trembling):
 
-    Tristan "wait..."
+    Tristan "\"wait...\""
 
     #[Television static fx — fading slowly into silence]
     #Cuts to Black
@@ -286,7 +286,7 @@ label Chapter7:
     
     with dissolve
     
-    Tristan "What is happening… {w} Am I dreaming?"
+    Tristan "\"What is happening… {w} Am I dreaming?\""
 
     hide tristan sad
 
@@ -296,7 +296,7 @@ label Chapter7:
 
     "Tristan is in shock… not really understanding everything"
 
-    Tristan "Why..."
+    Tristan "\"Why...\""
 
     "Whilst Tristan is thinking about the past events that may cause what happened"
 
@@ -340,9 +340,9 @@ label Chapter7:
 
     #[Television static fx —]
 
-    Doctor "Time of death-"
+    Doctor "\"Time of death-\""
 
-    Tristan ".{w}.{w}.{w}.{w}."
+    Tristan "\".{w}.{w}.{w}.{w}.\""
 
     #----------------Hospital Room----------------
 
@@ -370,45 +370,45 @@ label Chapter7:
 
     #Tristan (voice trembling):
 
-    Tristan "I keep thinking back… to all those moments with her."
+    Tristan "\"I keep thinking back… to all those moments with her.\""
 
-    Tristan "The times she smiled… the times she looked at me like I mattered."
+    Tristan "\"The times she smiled… the times she looked at me like I mattered.\""
     
-    Tristan "And I… I just took it for granted."
+    Tristan "\"And I… I just took it for granted.\""
 
-    Tristan "I thought… there would always be more time."
+    Tristan "\"I thought… there would always be more time.\""
 
-    Tristan "But time… just slipped away before I even realized it."
+    Tristan "\"But time… just slipped away before I even realized it.\""
 
     #clenches his fists
 
-    Tristan "I didn't listen closely enough… I didn't see the signs."
+    Tristan "\"I didn't listen closely enough… I didn't see the signs.\""
 
-    Tristan "And now… all I'm left with is this emptiness, this ache that won't go away."
+    Tristan "\"And now… all I'm left with is this emptiness, this ache that won't go away.\""
     
-    Tristan "What I regret most of all is that I didn't even get to confess to her properly"
+    Tristan "\"What I regret most of all is that I didn't even get to confess to her properly\""
 
-    Tristan "I didn't even get the chance to say those words to her yet…"
+    Tristan "\"I didn't even get the chance to say those words to her yet…\""
 
-    Tristan "I didn't even get to say…"
+    Tristan "\"I didn't even get to say…\""
 
-    Tristan "..."
+    Tristan "\"...\""
 
-    Tristan "I love you…"
+    Tristan "\"I love you…\""
 
-    Tristan "ughhh why didn't I notice sooner!!! Why am I feeling this way again!!!"
+    Tristan "\"ughhh why didn't I notice sooner!!! Why am I feeling this way again!!!\""
     
-    Tristan "if only i knew… if only i was there for her"
+    Tristan "\"if only i knew… if only i was there for her\""
 
-    Tristan "if....."
+    Tristan "\"if.....\""
 
-    Tristan "if..."
+    Tristan "\"if...\""
 
-    Tristan "......."
+    Tristan "\".......\""
 
-    Tristan "....."
+    Tristan "\".....\""
 
-    Tristan "..."
+    Tristan "\"...\""
 
     #[Long Television static fx —]
 
@@ -420,11 +420,11 @@ label Chapter7:
 
     with fade
 
-    Girl "Earth to mister… Earth to mister!!"
+    Girl "\"Earth to mister… Earth to mister!!\""
 
     "Tristan Looks up… hearing a familiar voice."
 
-    Tristan "eh?"
+    Tristan "\"eh?\""
 
     jump FinalChapter
 

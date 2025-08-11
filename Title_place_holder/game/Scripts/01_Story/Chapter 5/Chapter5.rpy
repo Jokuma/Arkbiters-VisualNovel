@@ -29,8 +29,8 @@ label Chapter5:
 
     with moveinright
 
-    Zoe "Come on Tristan!!!"
-    Zoe "It's been years since I've been to one of these."
+    Zoe "\"Come on Tristan!!!\""
+    Zoe "\"It's been years since I've been to one of these.\""
 
     hide zoe happytalking
 
@@ -48,7 +48,7 @@ label Chapter5:
 
     with dissolve
         
-    Tristan "Years?{w} I can't even remember the last time I went either..."
+    Tristan "\"Years?{w} I can't even remember the last time I went either...\""
     Tristan "{i}Feels like another lifetime...{/i}"
 
     hide zoe happy
@@ -71,21 +71,21 @@ label Chapter5:
 
     with dissolve
 
-    Zoe "First stop, darts!"
+    Zoe "\"First stop, darts!\""
 
     show zoe smugtalking:
         xoffset -400
         zoom 1.5
     with dissolve
     
-    Zoe "Loser buys isaw~"
+    Zoe "\"Loser buys isaw~\""
 
     show tristan normaltalking:
         xoffset 750
         zoom 1.5
     with dissolve
     
-    Tristan "That's...{w} an oddly specific bet."
+    Tristan "\"That's...{w} an oddly specific bet.\""
 
     hide zoe smugtalking
     hide tristan normal
@@ -108,7 +108,7 @@ label Chapter5:
     
     with dissolve
    
-    Zoe "You're overthinking it...{w} It's not chess Tristan."
+    Zoe "\"You're overthinking it...{w} It's not chess Tristan.\""
 
     show zoe happy:
         xoffset -400
@@ -120,7 +120,7 @@ label Chapter5:
     
     with dissolve
 
-    Tristan "Everything's chess if you stare long enough"
+    Tristan "\"Everything's chess if you stare long enough\""
 
     hide zoe happy
     hide tristan normaltalking
@@ -137,13 +137,13 @@ label Chapter5:
 
     with dissolve
     
-    Zoe "Man...{w} That was sooo fun!"
-    Zoe "But so tiring! hehe"
+    Zoe "\"Man...{w} That was sooo fun!\""
+    Zoe "\"But so tiring! hehe\""
 
     show zoe worried 
     with dissolve
     
-    Zoe "..."
+    Zoe "\"...\""
 
     show zoe worried:
         yoffset 25
@@ -177,7 +177,7 @@ label Chapter5:
 
     with dissolve
 
-    Zoe "So… {w}why've you been so quiet lately?"
+    Zoe "\"So… {w}why've you been so quiet lately?\""
 
     hide zoe worried
 
@@ -195,14 +195,14 @@ label Chapter5:
     
     with dissolve
 
-    Tristan "Just...{w} thinking about some stuff."
+    Tristan "\"Just...{w} thinking about some stuff.\""
 
     show zoe happytalking:
         xoffset -400
         zoom 1.5
     with dissolve
 
-    Zoe "bzzt...{w} Wrong answer!"
+    Zoe "\"bzzt...{w} Wrong answer!\""
 
     hide tristan nervoustalking
     
@@ -212,9 +212,9 @@ label Chapter5:
     
     with dissolve
 
-    Tristan "Huh?!"
+    Tristan "\"Huh?!\""
 
-    Zoe "I brought you here to have fun and take your mind off of things."
+    Zoe "\"I brought you here to have fun and take your mind off of things.\""
 
     #new expression?
     
@@ -229,7 +229,7 @@ label Chapter5:
         zoom 1.5
     with dissolve
 
-    Tristan "What the heck?...{w} HAHAHAHAHAHAHAHA"
+    Tristan "\"What the heck?...{w} hahaha\""
 
     "Tristan laugh showing full expression and laughter"
 
@@ -238,7 +238,7 @@ label Chapter5:
         zoom 1.5
     with dissolve
 
-    Zoe "Hey...{w} Why you are laughing?"
+    Zoe "\"Hey...{w} Why you are laughing?\""
 
     show zoe happy:
         xoffset -400
@@ -252,7 +252,7 @@ label Chapter5:
         zoom 1.5
     with dissolve
 
-    Zoe "That's the spirit!!!"
+    Zoe "\"That's the spirit!!!\""
 
     hide tristan laugh
     hide zoe happytalking
@@ -262,7 +262,7 @@ label Chapter5:
         zoom 1.5
     with dissolve
     
-    Zoe "..."
+    Zoe "\"...\""
 
     show zoe worried:
         yoffset 25
@@ -299,7 +299,7 @@ label Chapter5:
         zoom 1.5
     with dissolve
 
-    Tristan "You okay Zoe?"
+    Tristan "\"You okay Zoe?\""
 
     show tristan nervous
     with dissolve
@@ -309,7 +309,7 @@ label Chapter5:
         zoom 1.5
     with dissolve
         
-    Zoe "More okay than you.{p}HAHAHAHAHAHAHA!"
+    Zoe "\"More okay than you.{p}HAHAHAHAHAHAHA!\""
 
     show zoe happy:
         xoffset -400
@@ -324,7 +324,7 @@ label Chapter5:
 
     with dissolve
 
-    Tristan "It's fine...{w} if you're happy{w} then it's all fine"
+    Tristan "\"It's fine...{w} if you're happy{w} then it's all fine\""
 
     show tristan normal:
         xoffset 750
@@ -341,7 +341,7 @@ label Chapter5:
         zoom 1.5
     with dissolve
 
-    Zoe "hmm??{w} What did you say?"
+    Zoe "\"hmm??{w} What did you say?\""
 
     show tristan happytalking
 
@@ -350,7 +350,7 @@ label Chapter5:
         zoom 1.5
     with dissolve
 
-    Tristan "nothing...{w} hehe"
+    Tristan "\"nothing...{w} hehe\""
 
     show zoe happytalking:
         xoffset -400
@@ -360,7 +360,7 @@ label Chapter5:
     
     with dissolve
 
-    Zoe "Hooo...{w} So you're taking revenge on me"
+    Zoe "\"Hooo...{w} So you're taking revenge on me\""
 
     with hpunch
 
@@ -379,14 +379,14 @@ label Chapter5:
         zoom 1.5
     with dissolve
 
-    Tristan "Hey cut it out!"
+    Tristan "\"Hey cut it out!\""
 
     show zoe happytalking:
         xoffset -400
         zoom 1.5
     with dissolve
 
-    Zoe "hehe~"
+    Zoe "\"hehe~\""
 
     #fade transition siguro dito
 
@@ -407,9 +407,9 @@ label Chapter5:
 
     Chessplayer1 "hehehe."
 
-    Tristan "{i}Looking at this match...{w} reminds me of what Emil said about me in school the other day…{\i}"
+    Tristan "\"{i}Looking at this match...{w} reminds me of what Emil said about me in school the other day…{\i}\""
 
-    Tristan "..."
+    Tristan "\"...\""
 
     # Flashback to when that interaction happened between Tristan and Emil
 
