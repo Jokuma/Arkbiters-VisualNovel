@@ -11,9 +11,9 @@ screen c5:
         text "Chapter 5 : Pawn's Promotion " yalign 0.5 xalign 0.5
 
 label Chapter5:
-    pause 3.0
+
     show screen c5 with fade
-    pause 5.0
+    pause 3.0
     hide screen c5 with fade
 
     define dissolve = Dissolve(0.2)
@@ -26,7 +26,6 @@ label Chapter5:
     show zoe happytalking:
         xoffset -400
         zoom 1.5
-
     with moveinright
 
     Zoe "\"Come on Tristan!!!\""

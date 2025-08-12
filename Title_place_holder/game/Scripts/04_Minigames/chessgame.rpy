@@ -169,7 +169,7 @@ label prompt_for_move(correct_move):
     $ move_correct = False
     
     while not move_correct:
-        $ user_move = renpy.input("White to play Mate in 5 Enter your move:").strip()
+        $ user_move = renpy.input("White to play Mate in 5 Enter your move (Rook):").strip()
         $ user_move_upper = user_move.upper()
         $ correct_move_upper = correct_move.upper()
         if user_move_upper == correct_move_upper:
@@ -296,7 +296,7 @@ label prompt_for_secondmove(correct_secondmove):
     $ correct_secondmove_upper = correct_secondmove.upper()
 
     while not move_correct:
-        $ user_move = renpy.input("White to play Mate in 5 Enter your move:").strip()
+        $ user_move = renpy.input("White to play Mate in 5 Enter your move (Queen):").strip()
         $ user_move_upper = user_move.upper()
         if user_move_upper == correct_secondmove_upper:
             $ move_correct = True
@@ -417,7 +417,7 @@ label prompt_for_thirdmove(correct_thirdmove):
     $ correct_thirdmove_upper = correct_thirdmove.upper()
 
     while not move_correct:
-        $ user_move = renpy.input("White to play Mate in 5 Enter your move:").strip()
+        $ user_move = renpy.input("White to play Mate in 5 Enter your move (Bishop):").strip()
         $ user_move_upper = user_move.upper()
         if user_move_upper == correct_thirdmove_upper:
             $ move_correct = True
@@ -538,7 +538,7 @@ label prompt_for_fourthmove(correct_fourthmove):
     $ correct_fourthmove_upper = correct_fourthmove.upper()
 
     while not move_correct:
-        $ user_move = renpy.input("White to play Mate in 5 Enter your move:").strip()
+        $ user_move = renpy.input("White to play Mate in 5 Enter your move (Bishop):").strip()
         $ user_move_upper = user_move.upper()
         if user_move_upper == correct_fourthmove_upper:
             $ move_correct = True
@@ -658,7 +658,7 @@ label prompt_for_CheckMatemove(correct_CheckMatemove):
     $ correct_CheckMatemove_upper = correct_CheckMatemove.upper()
 
     while not move_correct:
-        $ user_move = renpy.input("White to play Mate in 5 Enter your move:").strip()
+        $ user_move = renpy.input("White to play Mate in 5 Enter your move (Bishop):").strip()
         $ user_move_upper = user_move.upper()
         if user_move_upper == correct_CheckMatemove_upper:
             $ move_correct = True

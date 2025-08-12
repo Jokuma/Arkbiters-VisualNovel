@@ -6,7 +6,7 @@ screen c7:
         yalign 0.5
         text "Chapter 7 : When the Clock Runs Out " yalign 0.5 xalign 0.5
 
-label start:
+label Chapter7:
 
     pause 1.0
     show screen c7 with fade

@@ -11,7 +11,8 @@ screen c3:
         text "Chapter 3 : Harmony on the Board " yalign 0.5 xalign 0.5
 
 label Chapter3:
-    show bg thoughts
+    
+    show black screen
     with dissolve
     "The faint hum of other rooms singing drifts through the walls. "
     "A table sits between Tristan and Zoe, cluttered with empty cups of soda and a plate of untouched fries."
@@ -24,7 +25,7 @@ label Chapter3:
     ".{w=0.3}.{w=0.3}."
     scene bg karaoke with dissolve
     
-    show zoe talking:
+    show zoe happytalking:
         yoffset 1000
         xoffset 0
         zoom 2
@@ -37,7 +38,7 @@ label Chapter3:
         zoom 2
         center
     Zoe "\"*cough* *cough*\"" with hpunch
-    show zoe talking:
+    show zoe happytalking:
         yoffset 1000
         xoffset 0
         zoom 2
@@ -45,7 +46,7 @@ label Chapter3:
     Zoe "\"It's your turn to sing!\""
 
     "Zoe throws the microphone towards him with a grin"
-    show zoe normal:
+    show zoe happy:
         yoffset 1000
         xoffset -500
         zoom 2
@@ -65,7 +66,7 @@ label Chapter3:
         zoom 2
         right
     Tristan "\"...{w}I cant't sing.\""
-    show tristan talking:
+    show tristan normaltalking:
         yoffset 1000
         xoffset 500
         zoom 2
@@ -77,7 +78,7 @@ label Chapter3:
         zoom 2
         right
     
-    show zoe tease:
+    show zoe smug:
         yoffset 1000
         xoffset -500
         zoom 2
@@ -87,19 +88,19 @@ label Chapter3:
     Zoe "\"Besides...\""
     
     hide tristan normal
-    show zoe tease:
+    show zoe smug:
         yoffset 1800
         xoffset 0
         zoom 3
         center
     Zoe "\"(Leans closer to Tristan)\""
-    show zoe teasetalking:
+    show zoe smugtalking:
         yoffset 1800
         xoffset 0
         zoom 3
         center
     Zoe "\"You owe me for losing our ice cream race...{w} hehe.\""
-    show zoe tease:
+    show zoe smug:
         yoffset 1000
         xoffset -500
         zoom 2
@@ -117,7 +118,7 @@ label Chapter3:
         right
     pause 1
     
-    hide zoe normal
+    hide zoe happy
     scene bg thoughts
     show tristan nervous:
         yoffset 1000
@@ -144,7 +145,7 @@ label Chapter3:
     
     "Tristan flinches slightly, clutching the mic."
     ####################
-    hide zoe normal
+    hide zoe happy
     scene bg thoughts
     show tristan nervous:
         yoffset 1000
@@ -170,7 +171,7 @@ label Chapter3:
         left
     with dissolve
     ####################
-    show tristan talking:
+    show tristan normaltalking:
         yoffset 1000
         xoffset 500
         zoom 2
@@ -184,25 +185,25 @@ label Chapter3:
         right
 
     "He scrolls through the screen, fingers hovering."
-    show zoe tease:
+    show zoe smug:
         yoffset 1000
         xoffset -500
         zoom 2
         left
     "His mind is blank...{w}until Zoe reaches over and taps a title."
-    show zoe teasetalking:
+    show zoe smugtalking:
         yoffset 1000
         xoffset -500
         zoom 2
         left
     Zoe "\"This one!\""
     Zoe "\"It's simple... You'll do great!\""
-    show zoe tease:
+    show zoe smug:
         yoffset 1000
         xoffset -500
         zoom 2
         left
-    show tristan talking:
+    show tristan normaltalking:
         yoffset 1000
         xoffset 500
         zoom 2
@@ -216,11 +217,16 @@ label Chapter3:
     Tristan "\"But dont laugh!\""
 
     hide tristan flusteredtalking
-    hide zoe normal
+    hide zoe happy
     hide bg karaoke
     with squares
     #** Karaoke Minigame **
     # Rhythm game (Friday Night Funkin, Osu!Mania basta rhythm game na madaling ma implement HAHAHAHAHAHA)
+    jump minigamerhythm
+    return
+    #####################################################################
+    label Chapter3continue:
+    with squares
 
     
     scene bg karaoke
@@ -229,7 +235,7 @@ label Chapter3:
         xoffset 500
         zoom 2
         right
-    show zoe tease:
+    show zoe smug:
         yoffset 1000
         xoffset -500
         zoom 2
@@ -245,7 +251,7 @@ label Chapter3:
     with hpunch
     with hpunch
 
-    hide zoe normal
+    hide zoe happy
     show bg thoughts
     show tristan nervous:
         yoffset 1000
@@ -258,7 +264,7 @@ label Chapter3:
         xoffset 500
         zoom 2
         right
-    show zoe talking:
+    show zoe happytalking:
         yoffset 1000
         xoffset -500
         zoom 2
@@ -268,7 +274,7 @@ label Chapter3:
 
     Zoe "\"Hey...{w} That was pretty good!\""
     Zoe "\"Not bad for a \"useless loser\" huh? \""
-    show zoe normal:
+    show zoe happy:
         yoffset 1000
         xoffset -500
         zoom 2
@@ -285,19 +291,19 @@ label Chapter3:
         xoffset 500
         zoom 2
         right
-    show zoe talking:
+    show zoe happytalking:
         yoffset 1000
         xoffset -500
         zoom 2
         left
     Zoe "\"You didn't have to...{p}I can read it in your eyes..\""
-    show zoe tease:
+    show zoe smug:
         yoffset 1000
         xoffset -500
         zoom 2
         left
     Zoe "\"...\""
-    show zoe teasetalking:
+    show zoe smugtalking:
         yoffset 1000
         xoffset -500
         zoom 2
@@ -311,7 +317,7 @@ label Chapter3:
 
     "Zoe leans back, sipping her drink. Tristan stares at her for a moment longer, the lyrics of the song still echoing in his head."
     "..."
-    show zoe normal:
+    show zoe happy:
         yoffset 1000
         xoffset -500
         zoom 2
@@ -323,18 +329,18 @@ label Chapter3:
         xoffset 500
         zoom 2
         right
-    show zoe talking:
+    show zoe happytalking:
         yoffset 1000
         xoffset -500
         zoom 2
         left
     Zoe "\"Uwaaa… I forgot I have school tomorrow! Man that sucks! I was having a lot of fun.\""
-    show tristan talking:
+    show tristan normaltalking:
         yoffset 1000
         xoffset 500
         zoom 2
         right
-    show zoe normal:
+    show zoe happy:
         yoffset 1000
         xoffset -500
         zoom 2
@@ -345,18 +351,18 @@ label Chapter3:
         xoffset 500
         zoom 2
         right
-    show zoe talking:
+    show zoe happytalking:
         yoffset 1000
         xoffset -500
         zoom 2
         left
     Zoe "\"Really? Which school do you go to?\""
-    show zoe normal:
+    show zoe happy:
         yoffset 1000
         xoffset -500
         zoom 2
         left
-    show tristan talking:
+    show tristan normaltalking:
         yoffset 1000
         xoffset 500
         zoom 2
@@ -367,13 +373,13 @@ label Chapter3:
         xoffset 500
         zoom 2
         right
-    show zoe talking:
+    show zoe happytalking:
         yoffset 1000
         xoffset -500
         zoom 2
         left
     Zoe "\"NO WAY!! … we go to the same school then hehe!\"" with hpunch
-    show zoe normal:
+    show zoe happy:
         yoffset 1000
         xoffset -500
         zoom 2
@@ -390,13 +396,13 @@ label Chapter3:
         xoffset 500
         zoom 2
         right
-    show zoe talking:
+    show zoe happytalking:
         yoffset 1000
         xoffset -500
         zoom 2
         left
     Zoe "\"Alright enough of that… let's make the most of today, your turn to pick my song. And no mercy!\""
-    show zoe normal:
+    show zoe happy:
         yoffset 1000
         xoffset -500
         zoom 2
@@ -410,7 +416,7 @@ label Chapter3:
     "His eyes keep darting toward Zoe— {p}like a player glancing at a chessboard{p}unsure if the next move will win or lose the game."
     
     show bg thoughts
-    hide zoe normal
+    hide zoe happy
     with dissolve
     pause 1
     hide tristan flustered
