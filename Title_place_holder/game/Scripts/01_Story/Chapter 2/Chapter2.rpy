@@ -18,23 +18,24 @@ label Chapter2:
 
     define dissolve = Dissolve(0.2)
 
-    "The warm afternoon sun spills over the park. Gentle wind carries the faint scent of flowers. Birds chirp as children run around laughing."
     scene bg park
+    with dissolve
+
+    "The warm afternoon sun spills over the park. Gentle wind carries the faint scent of flowers. Birds chirp as children run around laughing."
+
     show tristan nervous:
         yoffset 1000
         zoom 2
-        center 
+        center
     with dissolve
    
     "Tristan waits nervously in the park"
-
-    pause 1
 
     show bg thoughts
     show tristan nervous:
         yoffset 1000
         zoom 2
-        center 
+        center
     with dissolve
 
     Tristan "(In his head){p=0}Why am I here?!"
@@ -44,10 +45,10 @@ label Chapter2:
     Tristan "..."
     Tristan "(In his head){p=0}A useless loser like me is on a date?"
     Tristan "(In his head){p=0}Heck..."
-    Tristan "(In his head){p=0}Why did I even agree."
-    Tristan "(In his head){p=0}Ugh!...{w} my head hurts." with hpunch
+    Tristan "(In his head){p=0}Why did I even agree to this..."
 
     show bg park
+    with dissolve
  
     show tristan normal:
         yoffset 1000
@@ -55,30 +56,28 @@ label Chapter2:
         zoom 2
     with move
 
-    show zoe normal:
+    play sound "audio/SFX/walk.mp3"
+    show zoe happy:
         yoffset 1000
         xoffset -500
         zoom 2
         left
     with moveinleft
-
-    #zoe shows up
-    pause 1
     
-    show zoe teasetalking:
+    show zoe smugtalking:
         yoffset 1000
         xoffset -500
         zoom 2
     with dissolve
 
     Zoe "\"Tristan Garcia, reporting late are we?\""
-    show zoe giggletalking:
+    show zoe giggle:
         yoffset 1000
         xoffset -500
         zoom 2
     with dissolve
 
-    Zoe "\"*giggles* *giggles*\""
+    Zoe "{i}giggles{/i}"
 
     "Zoe hands him a drink"
 
@@ -99,7 +98,7 @@ label Chapter2:
     Zoe "\"You looked like you'd melt if you sat here alone too long.\""
 
     #  *Television static fx* 
-    play sound "audio/static.mp3"
+    play sound "audio/SFX/static.mp3"
     scene bg staticeffect
     with hpunch
     with hpunch
@@ -108,25 +107,20 @@ label Chapter2:
     Tristan "(In his head){p=0}Why does it feel like I've seen it a before"
 
     scene bg park
-    with dissolve
-    show zoe normal:
+    show zoe worried:
         yoffset 1000
         xoffset -500
         zoom 2
         left
-    with dissolve
+
     show tristan nervous:
         yoffset 1000
         xoffset 300
         zoom 2
         left
+    
     with dissolve
-    show zoe talking:
-        yoffset 1000
-        xoffset -500
-        zoom 2
-        left
-    with dissolve
+
     "Zoe notices his expression."
     show zoe worriedtalking:
         yoffset 1000
@@ -134,14 +128,15 @@ label Chapter2:
         zoom 2
         left
     with dissolve
+
     Zoe "\"Headache again?\""
     show zoe worried:
         yoffset 1000
         xoffset -500
         zoom 2
         left
-    with dissolve
-    show tristan talking:
+
+    show tristan normaltalking:
         yoffset 1000
         xoffset 300
         zoom 2
@@ -154,8 +149,8 @@ label Chapter2:
         xoffset 300
         zoom 2
         left
-    with dissolve
-    show zoe talking:
+
+    show zoe happytalking:
         yoffset 1000
         xoffset -500
         zoom 2
@@ -163,14 +158,14 @@ label Chapter2:
     with dissolve
     Zoe "\"Hmm...\""
     Zoe "\"If you say so.\""
-    show zoe normal:
+    show zoe happy:
         yoffset 1000
         xoffset -500
         zoom 2
         left
-    with dissolve
+
     Zoe "\"...\""
-    show zoe talking:
+    show zoe happytalking:
         yoffset 1000
         xoffset -500
         zoom 2
@@ -178,242 +173,301 @@ label Chapter2:
     with dissolve
     Zoe "\"Come on.{w} Let's take a walk!\""
     hide tristan normal
-    hide zoe normal
+    hide zoe happy
     with dissolve
 
     "They start walking along a shaded path lined with trees, their shadows overlapping on the pavement."
-    show zoe normal:
-        yoffset 1000
-        xoffset -500
-        zoom 2
-        left
-    with dissolve
+
     show tristan normal:
         yoffset 1000
         xoffset 300
         zoom 2
         left
-    with dissolve
 
-    show zoe talking:
+    show zoe happytalking:
         yoffset 1000
         xoffset -500
         zoom 2
         left
+    with dissolve
     Zoe "\"So...\""
     Zoe "\"You have any hobbies?\""
-    show zoe teasetalking:
+    show zoe smugtalking:
         yoffset 1000
         xoffset -500
         zoom 2
         left
+    with dissolve
     Zoe "\"Don't say sleeping!\""
     show tristan nervous:
         yoffset 1000
         xoffset 300
         zoom 2
         left
-    show zoe normal:
+    show zoe happy:
         yoffset 1000
         xoffset -500
         zoom 2
         left
+    with dissolve
+
     "Tristan, hesitant at first, but he felt that Zoe would understand"
-    show tristan talking:
-        yoffset 1000
-        xoffset 300
-        zoom 2
-        left
+    
     Tristan "\"I used to play chess...\""
+
     show tristan normal:
         yoffset 1000
         xoffset 300
         zoom 2
         left
-    show zoe talking:
+
+    show zoe happytalking:
         yoffset 1000
         xoffset -500
         zoom 2
         left
+    with dissolve
+
     Zoe "\"Used to?\""
     Zoe "\"What happened?\""
-    show zoe teasetalking:
+
+    show zoe smugtalking:
         yoffset 1000
         xoffset -500
         zoom 2
         left
+    with dissolve
+
     Zoe "\"Hooo...{w} Did the king sue you?\""
-    show zoe normal:
+
+    show zoe happy:
         yoffset 1000
         xoffset -500
         zoom 2
         left
-    show tristan talking:
+    show tristan normaltalking:
         yoffset 1000
         xoffset 300
         zoom 2
         left
+    with dissolve
+
     Tristan "\"No...\""
+
     show tristan nervoustalking:
         yoffset 1000
         xoffset 300
         zoom 2
         left
+    with dissolve
+
     Tristan "\"I just...{w} Stopped.\""
     Tristan "\"Lost interest...{w} I guess.\""
+    
     show tristan nervous:
         yoffset 1000
         xoffset 300
         zoom 2
         left
+    with dissolve
+
     "..."
+
     show tristan normal:
         yoffset 1000
         xoffset 300
         zoom 2
         left
-    show zoe talking:
+    show zoe happytalking:
         yoffset 1000
         xoffset -500
         zoom 2
         left
+    with dissolve
+
     Zoe "\"Such a Shame.\""
     Zoe "\"You probably would've crushed me in a match.\""
-    show zoe normal:
+
+    show zoe happy:
         yoffset 1000
         xoffset -500
         zoom 2
         left
-    show tristan talking:
+    show tristan normaltalking:
         yoffset 1000
         xoffset 300
         zoom 2
         left
+    with dissolve
+
     Tristan "\"N-not really...\""
     Tristan "\"I'm not that good.\""
+
     show tristan normal:
         yoffset 1000
         xoffset 300
         zoom 2
         left
 
-    show zoe teasetalking:
+    show zoe smugtalking:
         yoffset 1000
         xoffset -500
         zoom 2
         left
+    with dissolve
+
     Zoe "\"Hah!\""
     Zoe "\"You're just saying that so I'll underestimate you.\""
-    show zoe normal:
+
+    show zoe happy:
         yoffset 1000
         xoffset -500
         zoom 2
         left
-    "She nudges Tristan shoulder lightly." with hpunch
+    with dissolve
+
+    play sound "audio/SFX/hit.mp3" volume 0.3
+
+    with hpunch
+
+    "She nudges Tristan shoulder lightly." 
 
     Zoe "\"...\""
-    show zoe talking:
+
+    show zoe happytalking:
         yoffset 1000
         xoffset -500
         zoom 2
         left
+    with dissolve
+
     Zoe "\"Well...\""
     Zoe "\"Since you're stuck walking with me, you might as well learn something about me.\""
-    show zoe normal:
+
+    show zoe happy:
         yoffset 1000
         xoffset -500
         zoom 2
         left
-    show tristan talking:
+    show tristan normaltalking:
         yoffset 1000
         xoffset 300
         zoom 2
         left
+    with dissolve
+
     Tristan "\"Yeah, honestly speaking...\""
+
     show tristan normal:
         yoffset 1000
         xoffset 300
         zoom 2
         left
-    show zoe talking:
+    show zoe happytalking:
         yoffset 1000
         xoffset -500
         zoom 2
         left
+    with dissolve
+
     Zoe "\"Because...\""
-    show zoe teasetalking:
+
+    show zoe smugtalking:
         yoffset 1800
         xoffset 0
         zoom 3
         center
+    
     hide tristan normal
-    Zoe "\"Deep down...{w}You're curious.\""
-    show tristan talking:
+    with dissolve
+
+    Zoe "\"Deep down...{w} You're curious.\""
+
+    show tristan normaltalking:
         yoffset 1000
         xoffset 300
         zoom 2
         left
-    show zoe tease:
+    show zoe smug:
         yoffset 1000
         xoffset -500
         zoom 2
         left
+    with dissolve
+
     Tristan "\"M-maybe...\""
+
     show tristan normal:
         yoffset 1000
         xoffset 300
         zoom 2
         left
 
-    show zoe normal:
+    show zoe happy:
         yoffset 1000
         xoffset -500
         zoom 2
         left
+    with dissolve
+
     "She looks away briefly, her smile softening."
 
-    show zoe talking:
+    show zoe happytalking:
         yoffset 1000
         xoffset -500
         zoom 2
         left
+    with dissolve
+
     Zoe "\"Let's just say...{w} I like doing things I really want to do.\""
-    show zoe normal:
+
+    show zoe happy:
         yoffset 1000
         xoffset -500
         zoom 2
         left
+    with dissolve
+
     Tristan "..."
-    show tristan talking:
+
+    show tristan normaltalking:
         yoffset 1000
         xoffset 300
         zoom 2
         left
+    with dissolve
+
     Tristan "\"That seems very vague.\""
+
     show tristan normal:
         yoffset 1000
         xoffset 300
         zoom 2
         left
 
-    show zoe talking:
+    show zoe happytalking:
         yoffset 1000
         xoffset -500
         zoom 2
         left
+    with dissolve
+
     Zoe "\"Good.\""
+
     hide tristan normal
-    show zoe teasetalking:
+    show zoe smugtalking:
         yoffset 1800
         xoffset 0
         zoom 3
         center
+    with dissolve
+
     Zoe "\"I like being mysterious.\""
 
     #  *Television static fx* 
-    show bg staticeffect
+    scene bg staticeffect
     play sound "audio/static.mp3"
-    hide zoe teasetalking
+    hide zoe smugtalking
     with hpunch
     with hpunch
     show tristan nervous:
@@ -422,17 +476,20 @@ label Chapter2:
         zoom 2
         left
 
-    hide zoe normal
+    hide zoe happy
     show bg thoughts
     show tristan nervous:
         yoffset 1000
         xoffset 300
         zoom 2
         left
+    with dissolve
+
     Tristan "(In his head){p=0}That again?!"
     Tristan "..."
     Zoe "\"Earth to Tristan!!!\""
-    show tristan talking:
+
+    show tristan normaltalking:
         yoffset 1000
         xoffset 300
         zoom 2
@@ -447,31 +504,41 @@ label Chapter2:
 
     Tristan "\"S-sorry...\""
     Tristan "\"I just...\""
-    show tristan talking:
+
+    show tristan normaltalking:
         yoffset 1000
         xoffset 300
         zoom 2
         left
+    with dissolve
+
     Tristan "\"You remind me of someone.\""
+
     show tristan normal:
         yoffset 1000
         xoffset 300
         zoom 2
         left
-    show zoe tease:
+    show zoe smug:
         yoffset 1000
         xoffset -500
         zoom 2
         left
+    with dissolve
+
     Zoe "\"Hooo...\""
-    show zoe teasetalking:
+
+    show zoe smugtalking:
         yoffset 1000
         xoffset -500
         zoom 2
         left
+    with dissolve
+
     Zoe "\"An ex-girlfriend?\""
     Zoe "\"Daydreaming of another when you have a real one here.\""
-    show zoe tease:
+
+    show zoe smug:
         yoffset 1000
         xoffset -500
         zoom 2
@@ -481,27 +548,38 @@ label Chapter2:
         xoffset 300
         zoom 2
         left
+    with dissolve
+
     Tristan "\"N-no!\""
     Tristan "\"I mean...\""
+
     show tristan nervoustalking:
         yoffset 1000
         xoffset 300
         zoom 2
         left
+    with dissolve
+
     Tristan "\"I don't...{w} It's just\""
-    show zoe giggle:
+
+    show zoe smile:
         yoffset 1000
         xoffset -500
         zoom 2
         left
+    with dissolve
 
     "..."
-    show zoe giggle:
+
+    show zoe smile:
         yoffset 1000
         xoffset -500
         zoom 2
         left
+    with dissolve
+
     "Zoe laughs, brushing it off, and starts walking again."
+    
     show tristan flustered:
         yoffset 1000
         xoffset 300
@@ -513,20 +591,24 @@ label Chapter2:
         xoffset 300
         zoom 2
         left
-    show zoe talking:
+    show zoe happytalking:
         yoffset 1000
         xoffset -500
         zoom 2
         left
+    with dissolve
+
     Zoe "\"Alright, enough yapping. Race you to the ice cream stand!\""
     Zoe "\"Loser has to pay\""
-    show zoe normal:
+
+    show zoe happy:
         yoffset 1000
         xoffset -500
         zoom 2
         left
-    hide zoe normal
+    hide zoe happy
     with moveoutleft
+
     "Zoe bolted ahead"
     
     show tristan flusteredtalking:
@@ -534,9 +616,12 @@ label Chapter2:
         xoffset 300
         zoom 2
         left
+    with dissolve
+
     Tristan "\"Hey! No fair!\""
 
     "Tristan showed a conflicted expression before he breaks into a small, genuine smile and chases after her."
+
     hide tristan flusteredtalking
     with moveoutleft
     with dissolve
