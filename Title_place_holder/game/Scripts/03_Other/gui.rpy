@@ -19,7 +19,6 @@ define config.check_conflicting_properties = True
 ## GUI Configuration Variables
 ################################################################################
 
-
 ## Colors ######################################################################
 ##
 ## The colors of text in the interface.
@@ -35,7 +34,7 @@ define gui.idle_color = '#888888'
 define gui.idle_small_color = '#aaaaaa'
 
 ## The color that is used for buttons and bars that are hovered.
-define gui.hover_color = '#66c1e0'
+define gui.hover_color = '#000000'
 
 ## The color used for a text button when it is selected but not focused. A
 ## button is selected if it is the current screen or preference value.
@@ -60,7 +59,7 @@ define gui.interface_text_color = '#ffffff'
 define gui.text_font = "DejaVuSans.ttf"
 
 ## The font used for character names.
-define gui.name_text_font = "DejaVuSans.ttf"
+define gui.name_text_font = "Hangyaboly.ttf"
 
 ## The font used for out-of-game text.
 define gui.interface_text_font = "Hangyaboly.ttf"
@@ -85,9 +84,18 @@ define gui.title_text_size = 75
 
 
 ## Main and Game Menus #########################################################
-
+image main_menu_animated:
+    "gui/main_menu_1.png"
+    pause 0.5
+    "gui/main_menu_2.png"
+    pause 0.5
+    "gui/main_menu_3.png"
+    pause 0.5
+    "gui/main_menu_2.png"
+    pause 0.5
+    repeat
 ## The images used for the main and game menus.
-define gui.main_menu_background = "gui/main_menu.png"
+define gui.main_menu_background = "main_menu_animated"
 define gui.game_menu_background = "gui/game_menu.png"
 
 
@@ -107,7 +115,7 @@ define gui.textbox_yalign = 1.0
 ## The placement of the speaking character's name, relative to the textbox.
 ## These can be a whole number of pixels from the left or top, or 0.5 to center.
 define gui.name_xpos = 360
-define gui.name_ypos = 0
+define gui.name_ypos = 10
 
 ## The horizontal alignment of the character's name. This can be 0.0 for left-
 ## aligned, 0.5 for centered, and 1.0 for right-aligned.

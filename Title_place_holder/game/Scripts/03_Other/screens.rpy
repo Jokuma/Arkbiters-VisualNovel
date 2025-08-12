@@ -288,7 +288,13 @@ style quick_button_text:
 ## to other menus, and to start the game.
 
 screen navigation():
+    
+    
 
+
+
+
+    ##############################
     vbox:
         style_prefix "navigation"
         
@@ -303,8 +309,9 @@ screen navigation():
 
         if main_menu:
 
-            textbutton _("Start")  action Start()
-                
+            textbutton _("Start") action Start()
+         
+         
 
         else:
 
@@ -701,7 +708,7 @@ style page_label:
     xalign 0.5
 
 style page_label_text:
-    textalign 0.5
+    textalign 0.1
     layout "subtitle"
     hover_color gui.hover_color
 
@@ -1362,6 +1369,7 @@ style nvl_dialogue is say_dialogue
 
 style nvl_button is button
 style nvl_button_text is button_text
+
 
 style nvl_window:
     xfill True

@@ -218,11 +218,19 @@ label Chapter3:
     hide tristan flusteredtalking
     hide zoe normal
     hide bg karaoke
+    show karaoke_animated
+    $ quick_menu = False
     with squares
     #** Karaoke Minigame **
     # Rhythm game (Friday Night Funkin, Osu!Mania basta rhythm game na madaling ma implement HAHAHAHAHAHA)
-
     
+    jump minigamerhythm
+    return
+    #####################################################################
+    label Chapter3continue:
+    $ _game_menu_screen = 'save'
+    $ quick_menu = True
+    $ renpy.block_rollback()
     scene bg karaoke
     show tristan flusteredtalking:
         yoffset 1000
@@ -234,7 +242,8 @@ label Chapter3:
         xoffset -500
         zoom 2
         left
-    with dissolve
+    with squares
+
 
     "As Tristan is singing...{p=0}Zoe smiles at him—warm, genuine, unguarded."
 

@@ -62,24 +62,7 @@ image black_knight_right:
 image black_rook_right:
     "images/bR.png"
 
-'''
-label start:
-    scene black
-    call screen start_menu
-    return
 
-screen start_menu():
-    tag menu
-    frame:
-        style "menu_frame"
-        xalign 0.5
-        yalign 0.5
-        vbox:
-            spacing 20
-            text "Do you want to play chess?"
-            textbutton "Yes" action Jump("chess_game")
-            textbutton "No" action Quit(confirm=False)
-'''
 # Chess game
 label chess_game:
     scene black

@@ -6,9 +6,9 @@ screen c1:
         yalign 0.5
         text "Chapter 1: Pawn to H-eart's File " yalign 0.5 xalign 0.5
         
-        
+    
 
-label Chapter7:
+label start:
     "..."
     play sound "audio/beep.mp3"
     "BEEP!..."
