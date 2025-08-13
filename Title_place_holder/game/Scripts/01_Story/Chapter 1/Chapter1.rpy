@@ -6,8 +6,13 @@ screen c1:
         yalign 0.5
         text "Chapter 1: Pawn to H-eart's File " yalign 0.5 xalign 0.5
 
+<<<<<<< Updated upstream
 label start:
     stop music
+=======
+label Chapter5:
+
+>>>>>>> Stashed changes
     define dissolve = Dissolve(0.2)
     define fade1 = Fade(0.5, 0.0, 0.5)
 
@@ -31,6 +36,8 @@ label start:
     show tristan normal
     play music "audio/Music/tristanhome.ogg" volume 0.03 fadein 1.0 loop
     with fade1
+
+    play sound "audio/SFX/explosion.wav" volume 0.2
     with hpunch
     
     show tristan normaltalking
@@ -52,7 +59,11 @@ label start:
         zoom 2
         center
     
+<<<<<<< Updated upstream
     play sound "audio/SFX/explosion.wav" volume 3
+=======
+    play sound "audio/SFX/explosion.wav" volume 0.2
+>>>>>>> Stashed changes
     Tristan "\"Crap!!\"" with hpunch 
     
     show thoughts
@@ -82,6 +93,8 @@ label start:
     Tristan "\"...\""
 
     "Tristan looking hesitant..."
+
+    play music "audio/Music/tristanhome.ogg" volume 0.09 fadein 1.0 loop
 
     scene bg tristanroom
     show tristan normal:

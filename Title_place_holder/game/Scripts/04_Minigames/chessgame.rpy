@@ -65,7 +65,9 @@ image black_rook_right:
 
 # Chess game
 label chess_game:
-    scene black
+    
+    scene bg chessdark
+    with dissolve
     "Let's play chess!"
 
     show chessboard at Position(xalign=0.5, yalign=0.1)
@@ -106,7 +108,8 @@ label chess_game:
     "You now enter the ChessGame."
 
 label mate_in_5_puzzle:
-    scene black
+    
+    scene bg chessdark
     "Let's look at the chessboard. Find the best move to mate in 5."
     "Please enter your move using standard algebraic notation.\nExamples:Qh5, Re1, Nf3. If capturing, add 'x' (e.g., Qxa7)."
     show chessboard at Position(xalign=0.5, yalign=0.1)
@@ -162,7 +165,8 @@ label prompt_for_move(correct_move):
     return
 
     label sequence_move:
-    scene black
+        
+    scene bg chessdark
     "Your move"
     show chessboard at Position(xalign=0.5, yalign=0.1)
     # Show black pieces
@@ -199,7 +203,7 @@ label prompt_for_move(correct_move):
     pause
 
     label enemy_move:
-    scene black
+    scene bg chessdark
     "Enemy move"
     show chessboard at Position(xalign=0.5, yalign=0.1)
     # Show black piecesx
@@ -235,7 +239,7 @@ label prompt_for_move(correct_move):
     pause
 
     label second_move:
-    scene black
+    scene bg chessdark
     "Let's look at the chessboard new position. Find the next best move."
     show chessboard at Position(xalign=0.5, yalign=0.1)
     # Show black pieces
@@ -288,7 +292,7 @@ label prompt_for_secondmove(correct_secondmove):
     return
 
     label QueenSequence_move:
-    scene black
+    scene bg chessdark
     "Your move"
     show chessboard at Position(xalign=0.5, yalign=0.1)
     # Show black pieces
@@ -323,7 +327,7 @@ label prompt_for_secondmove(correct_secondmove):
     pause
 
     label QueenSequenceEnemy_move:
-    scene black
+    scene bg chessdark
     "Enemy move"
     show chessboard at Position(xalign=0.5, yalign=0.1)
     # Show black pieces
@@ -358,7 +362,7 @@ label prompt_for_secondmove(correct_secondmove):
 
 
     label third_move:
-    scene black
+    scene bg chessdark
     "Let's look at the chessboard new position. Find the next best move."
     show chessboard at Position(xalign=0.5, yalign=0.1)
     # Show black pieces
@@ -410,7 +414,7 @@ label prompt_for_thirdmove(correct_thirdmove):
 
 
     label BishopSequence_move:
-    scene black
+    scene bg chessdark
     "Your move"
     show chessboard at Position(xalign=0.5, yalign=0.1)
     # Show black pieces
@@ -444,7 +448,7 @@ label prompt_for_thirdmove(correct_thirdmove):
     pause
 
     label BishopSequenceEnemy_move:
-    scene black
+    scene bg chessdark
     "Enemy move"
     show chessboard at Position(xalign=0.5, yalign=0.1)
     # Show black pieces
@@ -479,7 +483,7 @@ label prompt_for_thirdmove(correct_thirdmove):
     
 
     label fourth_move:
-    scene black
+    scene bg chessdark
     "Let's look at the chessboard new position. Find the next best move."
     show chessboard at Position(xalign=0.5, yalign=0.1)
     # Show black pieces
@@ -530,7 +534,7 @@ label prompt_for_fourthmove(correct_fourthmove):
     return
 
     label NextBishopSequence_move:
-    scene black
+    scene bg chessdark
     "Your move"
     show chessboard at Position(xalign=0.5, yalign=0.1)
 
@@ -565,7 +569,7 @@ label prompt_for_fourthmove(correct_fourthmove):
     pause
 
     label NextBishopSequenceEnemy_move:
-    scene black
+    scene bg chessdark
     "Enemy move"
     show chessboard at Position(xalign=0.5, yalign=0.1)
     # Show black pieces
@@ -599,7 +603,7 @@ label prompt_for_fourthmove(correct_fourthmove):
     pause
 
     label CheckMate_move:
-    scene black
+    scene bg chessdark
     "Let's look at the chessboard new position. Find the Last move to win the Game."
     show chessboard at Position(xalign=0.5, yalign=0.1)
     # Show black pieces
@@ -650,7 +654,7 @@ label prompt_for_CheckMatemove(correct_CheckMatemove):
     return
 
     label Final_move:
-    scene black
+    scene bg chessdark
     "Your move"
     show chessboard at Position(xalign=0.5, yalign=0.1)
     # Show black pieces

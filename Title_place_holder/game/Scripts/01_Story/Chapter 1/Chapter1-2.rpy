@@ -8,7 +8,6 @@ screen cFinal:
 
 label FinalChapter:
 
-    pause 3.0
     show screen cFinal with fade
     pause 5.0
     hide screen cFinal with fade
@@ -18,12 +17,21 @@ label FinalChapter:
     "Girl" "\"Are you okay?\""
     "Girl" "\"Mister!{w} hehehehe\""
 
-    # [ Television static fx ]
+    play sound "audio/SFX/static.mp3"
+    scene bg staticeffect
+    with hpunch
+    show static2
+    with hpunch
+    scene bg blackscreen
 
     Tristan "\"Zoe?!\""
 
     "Girl" "\"Hmm?\""
     "Girl" "\"...\""
+
+    scene bg supermarket
+    play music "audio/Music/parknight.mp3" volume 0.3 loop
+    with dissolve
 
     show zoe happytalking:
         xoffset 100
@@ -64,7 +72,7 @@ label FinalChapter:
     
     with dissolve
 
-    Zoe "\"Did I said something wrong?{p}... oh no!\""    
+    Zoe "\"Did I say something wrong?{p}... oh no!\""    
 
     show zoe worried:
         xoffset 100
@@ -127,18 +135,25 @@ label FinalChapter:
 
     Zoe "\"Pleasure meeting you Tristan.\""
 
+    play sound "audio/SFX/static.mp3"
+    scene bg staticeffect
+    with hpunch
+    show static2
+    with hpunch
+    scene bg supermarket
+
     show zoe happy:
         xoffset 100
         zoom 1.5
     with dissolve
-
-    # [ Television static fx ]
 
     "As Zoe was about to leave Tristan shouted and stopped her"
 
     Tristan "\"Zoe!\""
     Tristan "\"Say...{w} uhmm...\""
     Tristan "\"Do you want to go on a date?\""
+    
+    stop music fadeout 1.0
 
     Zoe "\"...\""
 
@@ -153,6 +168,7 @@ label FinalChapter:
         xoffset 100
         zoom 1.5
     with dissolve
+    with hpunch
 
     Zoe "\"eh!?\""
 
@@ -161,7 +177,10 @@ label FinalChapter:
 
     Zoe "\"EHHHHH!?!?!\"" with hpunch
 
-    with dissolve
+    scene bg daypark
+    with fade
+
+    play music "audio/Music/parkday.mp3" volume 0.3 loop
 
     "Same park. Same golden sunlight through the leaves."
 
@@ -248,6 +267,8 @@ label FinalChapter:
 
     hide zoe giggle
 
+    play sound "audio/SFX/running.mp3" volume 0.3 fadeout 1.5
+
     with moveoutleft
 
     "Zoe rushes to the truck leaving Tristan"
@@ -262,6 +283,8 @@ label FinalChapter:
 
     hide tristan nervoustalking
 
+    play sound "audio/SFX/running.mp3" volume 0.3 fadeout 1.5
+
     with moveoutleft
 
     with dissolve
@@ -270,15 +293,21 @@ label FinalChapter:
 
     "As days go by..."
 
+    scene bg karaoke
     with dissolve
     # karaoke bg
     "They went to the karaoke booth ang sang their hearts out..."
 
+    scene bg schoolhallway
     with dissolve
     # show School hallway bg
     "Tristan decided to go to school after knowing that Zoe also goes to the same one"
-    "What greeted him was not Zoe...{w} But his old chess rival-Emil Navaro"
+    "What greeted him was not Zoe...{w} But his old chess rival... Emil Navaro"
 
+    stop music fadeout 2.0
+    play music "audio/Music/perya.mp3" volume 0.3 loop
+    
+    scene bg perya
     with dissolve
 
     #Transition ulitt bakushin!!!
@@ -286,11 +315,11 @@ label FinalChapter:
     "The faint smell of grilled street food, burnt sugar, and engine oil mixes into a strangely comforting haze."
     "The music from the rides is tinny, slightly warped by old speakers{p}the laughter of children cuts through crisp and bright."
 
-    with dissolve
-
     show zoe happytalking:
         xoffset -400
         zoom 1.5
+
+    play sound "audio/SFX/walk.mp3" volume 0.3 fadeout 2.0
 
     with moveinright
 
@@ -327,9 +356,14 @@ label FinalChapter:
 
     with dissolve
 
-    # [ Television static fx ]
+    play sound "audio/SFX/static.mp3"
+    scene bg staticeffect
+    with hpunch
+    show static2
+    with hpunch
+    scene bg perya
 
-    "They pass rows of booths—ring toss...{p}Balloon darts...{p}The shaky old Ferris wheel that creaks like it's telling ghost stories to the wind."
+    "They pass rows of booths ring toss...{p}Balloon darts...{p}The shaky old Ferris wheel that creaks like it's telling ghost stories to the wind."
     "The perya is alive, but not spotless."
     "There's something imperfect about it..."
     "As if every stall is a little chipped, every prize a little faded."
@@ -344,7 +378,7 @@ label FinalChapter:
 
     with dissolve
 
-    Zoe "\"First stop...{w}Darts!\""
+    Zoe "\"First stop...{w} Darts!\""
 
     show zoe smug:
         xoffset -400
@@ -430,27 +464,19 @@ label FinalChapter:
 
     with dissolve
 
+    stop music fadeout 1.0
+
     Zoe "\"...\""
 
-    show zoe worried:
-        yoffset 25
-    with move
-
-    show zoe worried:
-        yoffset 0
-    with move
+    play sound "audio/SFX/explosion.wav"
+    with vpunch
     
-    Zoe "\"*Cough*\"" 
+    Zoe "*Cough*" 
 
-    show zoe worried:
-        yoffset 25
-    with move
-
-    show zoe worried:
-        yoffset 0
-    with move
+    play sound "audio/SFX/explosion.wav"
+    with vpunch
     
-    Zoe "\"*Cough*\""
+    Zoe "*Cough*"
 
     hide zoe worried
 
@@ -458,14 +484,14 @@ label FinalChapter:
         xoffset -400
         zoom 1.5
     
-    show tristan sadtalking:
+    show tristan nervoustalking:
         xoffset 750
         zoom 1.5
     with dissolve
 
     Tristan "\"You okay Zoe? That's one nasty cough\""
 
-    show tristan sad:
+    show tristan nervous:
         xoffset 750
         zoom 1.5
 
@@ -491,28 +517,31 @@ label FinalChapter:
     Zoe "\"Dont worry about me...\""
     Zoe "\"Besides...{w} I brought you here to have fun--\""
 
+    play sound "audio/SFX/static.mp3"
+    scene bg staticeffect
+    with hpunch
+    show static2
+    with hpunch
+    scene bg perya
+
     show zoe happy:
         xoffset -400
         zoom 1.5
-    with dissolve
-
-    #   [ Television static fx ]
-
-    show tristan sadtalking:
+    show tristan nervoustalking:
         xoffset 750
         zoom 1.5
     with dissolve
 
     Tristan "\"Zoe...\""
 
-    show tristan sad:
+    show tristan nervous:
         xoffset 750
         zoom 1.5
     with dissolve
 
     Tristan "\"...\""
 
-    show tristan sadtalking:
+    show tristan nervoustalking:
         xoffset 750
         zoom 1.5
 
@@ -523,7 +552,7 @@ label FinalChapter:
 
     Tristan "\"You have an illness...{w} Don't you?\""
 
-    show tristan sad:
+    show tristan nervous:
         xoffset 750
         zoom 1.5
     
@@ -541,13 +570,18 @@ label FinalChapter:
 
     Zoe "\"I'm perfectly in tip top shape!\""
     
-    # [ Television static fx ]
+    play sound "audio/SFX/static.mp3"
+    scene bg staticeffect
+    with hpunch
+    show static2
+    with hpunch
+    scene bg perya
 
     show zoe worried:
         xoffset -400
         zoom 1.5
 
-    show tristan sadtalking:
+    show tristan nervoustalking:
         xoffset 750
         zoom 1.5
     with dissolve
@@ -558,7 +592,23 @@ label FinalChapter:
     Tristan "\"...{w} Don't shrug it off.\""
     Tristan "\"Please......\""
     Tristan "\"Please...\""
-    # [ Television static fx ]
+
+    play sound "audio/SFX/static.mp3"
+    scene bg staticeffect
+    with hpunch
+    show static2
+    with hpunch
+    scene bg perya
+
+    show zoe worried:
+        xoffset -400
+        zoom 1.5
+
+    show tristan nervoustalking:
+        xoffset 750
+        zoom 1.5
+    with dissolve
+    
     Tristan "\"Tell me the truth\""
 
     show zoe worriedtalking:
@@ -570,7 +620,7 @@ label FinalChapter:
 
     
     hide zoe worriedtalking
-    hide tristan sadtalking
+    hide tristan nervoustalking
     show zoe worried:
         xoffset 100
         zoom 1.5
@@ -599,33 +649,80 @@ label FinalChapter:
 
     Zoe "\"H-How...{w} How did you find--\""
 
+    play sound "audio/SFX/static.mp3"
+    scene bg staticeffect
     with hpunch
-    # [ Television static fx ]
+    show static2
+    with hpunch
+    scene bg perya
+
+    show zoe worriedtalking:
+        xoffset 100
+        zoom 1.5
+    with dissolve
+
     Zoe "\"What's that pain...{w} What's that noise\""
 
+    play sound "audio/SFX/static.mp3"
+    scene bg staticeffect
     with hpunch
+    show static2
+    with hpunch
+    scene bg perya
+
+    show zoe worried:
+        xoffset -400
+        zoom 1.5
+
+    show tristan nervoustalking:
+        xoffset 750
+        zoom 1.5
+    with dissolve
 
     Tristan "\"It's that same feeling again...{w} You're feeling it too?\"" #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+    play sound "audio/SFX/static.mp3"
+    scene bg staticeffect
     with hpunch
-    # [ Television static fx ]
+    show static2
+    with hpunch
+    scene bg perya
+
+    show zoe worriedtalking:
+        xoffset 100
+        zoom 1.5
+    with dissolve
 
     Zoe "\"It hurts!\""
 
+    play sound "audio/SFX/static.mp3"
+    scene bg staticeffect
     with hpunch
-    # [ Television static fx ]
-
+    show static2
     with hpunch
+    scene bg perya
 
     Tristan "\"Zoe!!\""
 
+    play sound "audio/SFX/static.mp3"
+    scene bg staticeffect
     with hpunch
-    # [ Television static fx ]
+    show static2
+    with hpunch
+    scene bg perya
+
     Zoe "\"Tristan!...{w} I'm scared\""
 
     hide zoe worriedtalking
+    play sound "audio/SFX/static.mp3"
+    scene bg staticeffect
     with hpunch
-    with fade
+    show static2
+    with hpunch
+    with dissolve
+    scene bg blackscreen
+
+    pause 3.5
     # [ long Television static fx ]
 
     #-------------------Supermarket-------------------
@@ -654,9 +751,13 @@ label FinalChapter:
 
     Tristan "\"Z-Zoe?\""
 
+    play sound "audio/SFX/static.mp3"
+    scene bg staticeffect
     with hpunch
-
-    # [ Television static fx ]
+    show static2
+    with hpunch
+    with dissolve
+    scene bg blackscreen
     
     show zoe worriedtalking:
         xoffset 100
@@ -670,15 +771,28 @@ label FinalChapter:
 
     "The random noise and pain shows up frequently...{p}The both of them don't know what's happening and what's causing it.."
 
+    "Suddenly..."
+
+    play sound "audio/SFX/quake.mp3"
     with hpunch
 
-    "Suddenly...{p}The ground shakes."
+    pause 3.0
+
+    "The ground shakes."
+
     "The surrounding area of Tristan and Zoe began to disappear.{p}It's almost like the squares of the chess board are slowly falling apart one by one"
 
     Tristan "\"Zoe!...{w} Grab my Hand!!!\""
 
+    play sound "audio/SFX/static.mp3"
+    scene bg staticeffect
     with hpunch
-    # [ Television static fx ]
+    show static2
+    with hpunch
+    with dissolve
+    scene bg blackscreen
+
+    play music "audio/Music/BlackVoid.mp3" volume 0.3 loop
 
     #--------------------------------Black Void--------------------------------
 
@@ -691,10 +805,10 @@ label FinalChapter:
         zoom 1.5
     with dissolve
 
-    Zoe "\"Where...{w}where are we\""
+    Zoe "\"Where...{w} where are we\""
 
     hide zoe worriedtalking
-    show tristan sadtalking:
+    show tristan nervoustalking:
         xoffset 750
         zoom 1.5
     
@@ -707,7 +821,7 @@ label FinalChapter:
 
     "The squares fall away into the dark{p}like pawns swept off the board by an unseen hand{p}In the distance, a faint ticking sound echoes — deliberate, cold, mechanical."
 
-    show tristan sad:
+    show tristan nervous:
         xoffset 750
         zoom 1.5
     show zoe worriedtalking:
@@ -717,7 +831,7 @@ label FinalChapter:
 
     Zoe "\"Tristan...{w} I'm scared\""
 
-    hide tristan sad
+    hide tristan nervous
     hide zoe worriedtalking
 
     with dissolve
@@ -725,21 +839,32 @@ label FinalChapter:
     "He looks at her..."
     "he's trembling — not from the cold, but from something deeper{p}Her breaths are short, strained, like every inhale is borrowed time"
 
+
+    play sound "audio/SFX/static.mp3"
+    scene bg staticeffect
     with hpunch
-    with fade
+    show static2
+    with hpunch
+    with dissolve
+    scene bg blackscreen
 
-    # [ Television static fx ]
-
-    with fade
 
     "Tristan's grip loosens...{p}His eyes are wide, but no longer frantic."
+
+    play sound "audio/SFX/static.mp3"
+    scene bg staticeffect
+    with hpunch
+    show static2
+    with hpunch
+    with dissolve
+    scene bg blackscreen
 
     show tristan normaltalking:
         xoffset 100
         zoom 1.5
     with dissolve
     
-    Tristan "\"...{w}I remember it now\""
+    Tristan "\"...{w} I remember it now\""
 
     hide tristan normaltalking
     show zoe worriedtalking:
@@ -759,9 +884,13 @@ label FinalChapter:
     Tristan "\"If I made a different choice...\""
     Tristan "\"I could save you.\""
 
+    play sound "audio/SFX/static.mp3"
+    scene bg staticeffect
     with hpunch
-
-    # [ Television static fx ]
+    show static2
+    with hpunch
+    with dissolve
+    scene bg blackscreen
 
     show zoe worriedtalking:
         xoffset 100
@@ -773,7 +902,7 @@ label FinalChapter:
     "A tear slips down Tristan's cheek"
 
     hide zoe worriedtalking
-    show tristan sadtalking:
+    show tristan nervoustalking:
         xoffset 750
         zoom 1.5
 
@@ -785,7 +914,7 @@ label FinalChapter:
     Tristan "\"And I can't\""
 
     hide zoe worried
-    hide tristan sadtalking
+    hide tristan nervoustalking
     with dissolve
 
     "She blinks.{p}Then, softly, she smiles — not the bright, teasing grin from the park, but a fragile one{p}like she's been waiting for him to say it."
@@ -795,7 +924,7 @@ label FinalChapter:
         zoom 1.5
     with dissolve
 
-    Zoe "\"So...{w}This is really it?\""
+    Zoe "\"So...{w} This is really it?\""
 
     show zoe worriedtalking:
         xoffset 100
@@ -830,6 +959,8 @@ label FinalChapter:
 
     "He pulls her close, holding her as if the void itself will have to pry her from his arms."
 
+    stop music fadeout 1.0
+
     with dissolve
 
     #-------------------------Hugging Scene-------------------------
@@ -845,9 +976,14 @@ label FinalChapter:
     "Tristan loud cry echoes in the endless void they are in"
     "Zoe exhales — a slow, shaky breath — and rests her head against his chest."
 
+    play sound "audio/SFX/static.mp3"
+    scene bg staticeffect
     with hpunch
+    show static2
+    with hpunch
+    with dissolve
+    scene bg blackscreen
 
-    # [ Television static fx ]
     # The screen floods with harsh white noise.
 
     #push sound effect
@@ -891,9 +1027,14 @@ label FinalChapter:
     Zoe "\"Checkmate!\""
 
     hide zoe smile
+    play sound "audio/SFX/static.mp3"
+    scene bg staticeffect
     with hpunch
+    show static2
+    with hpunch
+    scene bg blackscreen
+
     with fade
-    #[ Final Television static fx ]
     #cut to white.. i think??
 
     #--------------------------montage style--------------------------
@@ -901,13 +1042,11 @@ label FinalChapter:
     "The seasons change{p}squares of light and shadow shifting across the city."
     "Tristan visits the park — the same square where the game had begun."
     "Sometimes he stops at the perya{p}buys kwek-kwek and isaw, and leaves half on the bench beside him{p}as if saving it for a missing piece."
-    "When people ask about Zoe...{w}he doesn't speak of the loss."
+    "When people ask about Zoe...{w} he doesn't speak of the loss."
     "He tells them of her daring move...{p}her sharp laughter...{p}the way she'd tilt the game in her favor with a single smile."
     "Some nights, when the room is quiet and the pieces rest in still formation, he almost hears it —"
     "A soft, teasing voice across the board"
     
     "Checkmate."
-
-    ""
 
     return

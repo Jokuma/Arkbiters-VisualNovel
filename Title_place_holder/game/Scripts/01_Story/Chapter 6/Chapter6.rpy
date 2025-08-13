@@ -8,12 +8,18 @@ screen c6:
 
 label Chapter6:
 
-    pause 3.0
     show screen c6 with fade
     pause 5.0
-    hide screen c6 with fade
+    
+    hide screen c6 
+    scene bg parknight
+    with fade
 
     define dissolve = Dissolve(0.2)
+
+    play music "audio/Music/parknight.mp3" volume 0.5 loop
+
+    with dissolve
 
     "The sun was setting, the sky was orange, and the perya was drawing to a close."
 
@@ -23,7 +29,7 @@ label Chapter6:
         xoffset -400
         zoom 1.5
     
-    show tristan sad:
+    show tristan nervous:
         xoffset 750
         zoom 1.5
 
@@ -31,7 +37,7 @@ label Chapter6:
 
     Zoe "\"Wow! Today was so fun~! I haven't had this much fun in awhile!\""
 
-    show tristan sadtalking:
+    show tristan nervoustalking:
         xoffset 750
         zoom 1.5
     
@@ -43,7 +49,7 @@ label Chapter6:
 
     Tristan "\"Yeah I agree…\""
 
-    show tristan sad:
+    show tristan nervous:
         xoffset 750
         zoom 1.5
 
@@ -67,14 +73,14 @@ label Chapter6:
         xoffset -400
         zoom 1.5
 
-    show tristan sadtalking:
+    show tristan nervoustalking:
         xoffset 750
         zoom 1.5
     with dissolve
 
     Tristan "\"Zoe I have a question… Is there something that you really love to do but you're too afraid to face it head on because of the outcome?\""
 
-    show tristan sad:
+    show tristan nervous:
         xoffset 750
         zoom 1.5
 
@@ -85,9 +91,10 @@ label Chapter6:
 
     Zoe "\"What made you ask?\""
 
-    hide tristan sad
+    hide bg park night
+    hide tristan nervous
     hide zoe worriedtalking
-    with dissolve
+    with fade
 
     #--------------Backstory--------------
     #--------------scene 1--------------
@@ -128,7 +135,10 @@ label Chapter6:
     #--------------scene 4--------------
     #--------------Backstory--------------
 
-    show tristan happytalking:
+    scene bg parknight
+    with fade
+
+    show tristan sadhappytalking:
         xoffset 750
         zoom 1.5
 
@@ -139,7 +149,7 @@ label Chapter6:
     
     Tristan "\"hahaha… {w} you might think I'm pretty pathetic letting something like failure bring me down so much…\""
 
-    show tristan sad:
+    show tristan sadhappy:
         xoffset 750
         zoom 1.5
     
@@ -160,7 +170,7 @@ label Chapter6:
         xoffset -400
         zoom 1.5
 
-    show tristan sadtalking:
+    show tristan nervoustalking:
         xoffset 750
         zoom 1.5
     with dissolve
@@ -168,28 +178,29 @@ label Chapter6:
     Tristan "\"… {w} But what if I go through that pain again?\""
 
     hide zoe worried
-    hide tristan sadtalking
+    hide tristan nervoustalking
+    hide bg parknight
     with dissolve
 
     #High Impact Scene
     Zoe "\"Then you face it. {w} In chess and in life you can't win without moving a piece, fear of losing is just a check… {p}Your courage is the move that leads to checkmate.\""
-    #----------
+    #---------------------------------------
+
+    scene bg parknight
+    with dissolve
 
     "She chuckles softly, leaning back on the bench."
 
     show zoe happytalking:
-        xoffset -400
+        xoffset 100
         zoom 1.5
     
-    show tristan sad:
-        xoffset 750
-        zoom 1.5
     with dissolve
 
     Zoe "\"If it's something that makes you feel alive… isn't it worth fighting for?\""
 
     show zoe happy:
-        xoffset -400
+        xoffset 100
         zoom 1.5
     with dissolve
 
@@ -198,11 +209,17 @@ label Chapter6:
     "Tristan's eyes light up and a little tear drop can be seen"
 
     show zoe smug:
-        xoffset -400
+        xoffset 100
         zoom 1.5
     with dissolve
 
     Zoe "\"Hmmm~ {w} never thought Mister Tristan would show such an emotion I'm so shocked! hehe~\""
+
+    hide zoe smug
+
+    show zoe smug:
+        xoffset -400
+        zoom 1.5
 
     show tristan flusteredtalking:
         xoffset 750
@@ -233,14 +250,14 @@ label Chapter6:
 
     "Tristan looking a bit annoyed"
 
-    show tristan happytalking:
+    show tristan sadhappytalking:
         xoffset 750
         zoom 1.5
     with dissolve
 
     Tristan "\"Hey Zoe thanks for the advice… It really helped clear things that are going through my mind…\""
 
-    show tristan happy:
+    show tristan sadhappy:
         xoffset 750
         zoom 1.5
     
@@ -287,7 +304,7 @@ label Chapter6:
         xoffset -400
         zoom 1.5
 
-    show tristan happytalking:
+    show tristan sadhappytalking:
         xoffset 750
         zoom 1.5
     with dissolve
@@ -298,7 +315,7 @@ label Chapter6:
         xoffset -400
         zoom 1.5
 
-    show tristan happy:
+    show tristan sadhappy:
         xoffset 750
         zoom 1.5
     with dissolve
@@ -309,7 +326,7 @@ label Chapter6:
         xoffset -400
         zoom 1.5
 
-    show tristan happytalking:
+    show tristan sadhappytalking:
         xoffset 750
         zoom 1.5
     with dissolve
@@ -320,7 +337,7 @@ label Chapter6:
         xoffset -400
         zoom 1.5
 
-    show tristan happy:
+    show tristan sadhappy:
         xoffset 750
         zoom 1.5
     with dissolve
@@ -331,7 +348,7 @@ label Chapter6:
         xoffset -400
         zoom 1.5
 
-    show tristan happytalking:
+    show tristan sadhappytalking:
         xoffset 750
         zoom 1.5
     with dissolve
@@ -339,7 +356,7 @@ label Chapter6:
     Tristan "\"Yeah, I promise to not disappoint!\""
 
     hide zoe happy
-    hide tristan happytalking
+    hide tristan sadhappytalking
     with dissolve
 
     # looks at sky siguro?
@@ -355,9 +372,20 @@ label Chapter6:
 
     Tristan "\"I think after the chess tournament I will confess to her…\""
 
-    # *static noise*
+    play sound "audio/SFX/static.mp3"
+    scene bg staticeffect
+    with hpunch
+    show static2
+    with hpunch
+    scene bg parknight
 
-    Tristan "\"Ow! Am I really having a headache at this time… anyway… I need to prepare for the upcoming chess tournament! I can't disappoint Zoe at all costs!\""
+    Tristan "\"Ow! Am I really having a headache at this time…\""
+
+    Tristan "\"Anyway… {w}I need to prepare for the upcoming chess tournament! I can't disappoint Zoe at all costs!\""
+
+    stop music fadeout 1.0
+    scene black screen
+    with dissolve
 
     jump Chapter7
     

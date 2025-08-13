@@ -10,7 +10,7 @@ screen c5:
         yalign 0.5
         text "Chapter 5 : Pawn's Promotion " yalign 0.5 xalign 0.5
 
-label Chapter5:
+label start:
 
     show screen c5 with fade
     pause 3.0
@@ -20,8 +20,18 @@ label Chapter5:
 
     #possible sound effect here
 
+    
+    play music "audio/Music/perya.mp3" volume 0.3 loop
+    scene bg perya
+    with dissolve
+
     "The faint smell of grilled street food, burnt sugar, and engine oil mixes into a strangely comforting haze."
     "The music from the rides is tiny, slightly warped by old speakers, but the laughter of children cuts through crisp and bright."
+
+    scene bg perya
+    with dissolve
+
+    play sound "audio/SFX/walk.mp3" volume 0.3   
 
     show zoe happytalking:
         xoffset -400
@@ -55,7 +65,7 @@ label Chapter5:
 
     with dissolve
     
-    "They pass rows of booths—ring toss...{p}Balloon darts...{p}The shaky old Ferris wheel that creaks like it's telling ghost stories to the wind."
+    "They pass rows of booths like the, ring toss...{p}Balloon darts...{p}And the shaky old Ferris wheel that creaks like it's telling ghost stories to the wind."
     "The perya is alive, but not spotless."
     "There's something imperfect about it..."
     "As if every stall is a little chipped, every prize a little faded."
@@ -92,8 +102,31 @@ label Chapter5:
     with dissolve
 
     "They step up to the dart booth. A man with a cigarette hanging from his lips hands them three dull-looking darts each."
-    "Zoe throws first—one balloon pops instantly."
+    #-----------------------------------------------------------------------------------------------------------------------------
+    hide bg perya
+    with dissolve
+
+    "Zoe throws first..."
+    "She takes a slow breath, feeling the weight of the dart in her fingers."
+    "Her eyes trace the distance, locking on the bright, water-filled target swaying gently in the breeze."
+    "Her grip tightens, the sharp tip glinting under the light."
+    "She draws her arm back, feeling the quiet tension in her shoulder."
+    "For a split second, time feels heavy and still—only the faint hum of the crowd around them."
+    "Then, with a smooth flick of her wrist, the dart flies—"
+
+    play sound "audio/SFX/pop.mp3" volume 0.3
+
+    "One balloon pops instantly."
     "She smirks."
+
+    Zoe "Let's go! I got a balloon to pop!"
+    Zoe "hehe~"
+
+    Zoe "You give it a try next, {w}Tristan!"
+
+    scene bg perya
+    with dissolve
+    #-----------------------------------------------------------------------------------------------------------------------------
     "Tristan throws, his first dart landing just shy of the target."
     "he exhales, steadying his hand like a chess player hovering over a piece before committing to the move."
 
@@ -127,6 +160,32 @@ label Chapter5:
     with dissolve
 
     "By the end, Zoe wins by a single balloon."
+
+    show zoe smugtalking:
+        xoffset -400
+        zoom 1.5
+
+    show tristan normal:
+        xoffset 750
+        zoom 1.5
+
+    with dissolve
+
+    Zoe "hehe~"
+
+    Zoe "I guess you're buying isaw this time~"
+
+    show tristan sadhappytalking:
+        xoffset 750
+        zoom 1.5
+    with dissolve
+
+    Tristan "{i}sigh{/i} {p}I guess I don't mind losing this time..."
+
+    hide zoe smugtalking
+    hide tristan sadhappytalking
+    with dissolve
+
     "She cheers, and Tristan hands the vendor a few bills."
     "Soon, they're walking away with skewers of sizzling isaw{p}the smoky aroma wrapping around them like a blanket."
 
@@ -141,26 +200,18 @@ label Chapter5:
 
     show zoe worried 
     with dissolve
+
+    stop music fadeout 1.0
     
     Zoe "\"...\""
 
-    show zoe worried:
-        yoffset 25
-    with move
-
-    show zoe worried:
-        yoffset 0
-    with move
+    play sound "audio/SFX/explosion.wav"
+    with vpunch
     
     Zoe "*cough*"
 
-    show zoe worried:
-        yoffset 25
-    with move
-
-    show zoe worried:
-        yoffset 0
-    with move
+    play sound "audio/SFX/explosion.wav"
+    with vpunch
 
     Zoe "*cough*"
 
@@ -176,7 +227,7 @@ label Chapter5:
 
     with dissolve
 
-    Zoe "\"So… {w}why've you been so quiet lately?\""
+    Zoe "\"Tristan?\""
 
     hide zoe worried
 
@@ -201,6 +252,8 @@ label Chapter5:
         zoom 1.5
     with dissolve
 
+    play music "audio/Music/perya.mp3" volume 0.3 loop
+
     Zoe "\"bzzt...{w} Wrong answer!\""
 
     hide tristan nervoustalking
@@ -214,8 +267,6 @@ label Chapter5:
     Tristan "\"Huh?!\""
 
     Zoe "\"I brought you here to have fun and take your mind off of things.\""
-
-    #new expression?
     
     hide tristan normal
     
@@ -260,26 +311,18 @@ label Chapter5:
         xoffset 100
         zoom 1.5
     with dissolve
+
+    stop music fadeout 1.0
     
     Zoe "\"...\""
 
-    show zoe worried:
-        yoffset 25
-    with move
-
-    show zoe worried:
-        yoffset 0
-    with move
+    play sound "audio/SFX/explosion.wav"
+    with vpunch
     
     Zoe "*cough*"
 
-    show zoe worried:
-        yoffset 25
-    with move
-
-    show zoe worried:
-        yoffset 0
-    with move
+    play sound "audio/SFX/explosion.wav"
+    with vpunch
 
     Zoe "*cough*"
 
@@ -324,16 +367,17 @@ label Chapter5:
     with dissolve
 
     Tristan "\"It's fine...{w} if you're happy{w} then it's all fine\""
+    
+    play sound "audio/SFX/static.mp3"
+    scene bg staticeffect
+    with hpunch
+    show static2
+    with hpunch
+    scene bg perya
 
     show tristan normal:
         xoffset 750
         zoom 1.5
-
-    with dissolve
-
-    with hpunch
-
-    # Television static fx — 
 
     show zoe happytalking:
         xoffset -400
@@ -351,7 +395,7 @@ label Chapter5:
 
     Tristan "\"nothing...{w} hehe\""
 
-    show zoe teasetalking:
+    show zoe smugtalking:
         xoffset -400
         zoom 1.5
 
@@ -361,6 +405,7 @@ label Chapter5:
 
     Zoe "\"Hooo...{w} So you're taking revenge on me\""
 
+    play sound "audio/SFX/hit.mp3" volume 0.3
     with hpunch
 
     "Zoe uses punch on Tristan"
@@ -370,7 +415,7 @@ label Chapter5:
         zoom 1.5
     with dissolve
 
-    "..." with hpunch
+    "..."
 
     "Its Super Effective!"
 
@@ -379,9 +424,11 @@ label Chapter5:
         zoom 1.5
     with dissolve
 
+    play music "audio/Music/perya.mp3" volume 0.3 loop
+
     Tristan "\"Hey cut it out!\""
 
-    show zoe teasetalking:
+    show zoe smugtalking:
         xoffset -400
         zoom 1.5
     with dissolve
@@ -401,6 +448,8 @@ label Chapter5:
         zoom 2
         yoffset 1000
         center
+    stop music fadeout 1.0
+    with dissolve
 
     Chessplayer1 "\"Check!\""
 
@@ -412,14 +461,17 @@ label Chapter5:
 
     Chessplayer1 "\"hehehe.\""
 
-    Tristan "(In his head){p=0}{i}Looking at this match...{w} reminds me of what Emil said about me in school the other day…{\i}"
+    Tristan "{i}In his head{/i}{p=0}Looking at this match...{w} reminds me of what Emil said about me in school the other day…"
 
     Tristan "\"...\""
 
     # Flashback to when that interaction happened between Tristan and Emil
 
     "Zoe and Tristan then proceed to conclude their perya date and are heading to the park..."
-    hide tristan normal with dissolve
+
+    scene black screen
+    with dissolve
+
     jump Chapter6
 
     return

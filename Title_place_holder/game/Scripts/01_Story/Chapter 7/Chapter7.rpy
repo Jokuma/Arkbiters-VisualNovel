@@ -7,14 +7,18 @@ screen c7:
         text "Chapter 7 : When the Clock Runs Out " yalign 0.5 xalign 0.5
 
 label Chapter7:
-
-    pause 1.0
+    
     show screen c7 with fade
     pause 5.0
     hide screen c7 with fade
 
     define fade = Fade(0.5, 2.0, 0.5)
     define dissolve = Dissolve(0.2)
+    
+    play music "audio/Music/chess.mp3" volume 0.3 loop
+
+    scene bg gym
+    with dissolve
 
     #-------------------SCENE 1: GYM-------------------
 
@@ -66,39 +70,168 @@ label Chapter7:
         xoffset -400
         zoom 1.5
 
-    show tristan happytalking:
+    show tristan sadhappytalking:
         xoffset 750
         zoom 1.5
     with dissolve
 
     Tristan "\"Yeah, you're right... Let's have a fun match, Emil.\""
 
+    show bg bracket
     hide emil happy
-    hide tristan happytalking
+    hide tristan sadhappytalking
 
     with dissolve
 
-    "As the tournament goes on… Emil and Tristan climbs through the ranks and faced each other in the final round"
+    "The Chess Tournament has officially started..."
+
+    "Each battle was heated, no one wants to back down without showing a proper fight..."
+
+    hide bg bracket
+    show bg finalbracket
+    with dissolve
+    
+    "As the tournament goes on… Emil and Tristan climbs through the ranks and faced each other in the final round."
 
     "The two sat across the board, the crowd buzzing around them. Pieces clicked, clocks ticked, and tension filled the room."
+
+    scene bg gym
+
+    show emil happytalking:
+        xoffset -400
+        zoom 1.5
+
+    show tristan sadhappy:
+        xoffset 750
+        zoom 1.5
+    with dissolve
+
+    Emil "\"Hey, never thought we will be facing head to head again on the big stage...{p}I guess you still have it, huh?\""
+
+    show emil happy:
+        xoffset -400
+        zoom 1.5
+
+    show tristan sadhappytalking:
+        xoffset 750
+        zoom 1.5
+    with dissolve
+
+    Tristan "\"Yeah, guess so... I've been preparing after all.\""
+
+    show emil happytalking:
+        xoffset -400
+        zoom 1.5
+
+    show tristan sadhappy:
+        xoffset 750
+        zoom 1.5
+    with dissolve
+
+    Emil "\"Looks like I can't underestimate you...\""
+
+    Emil "\"Don't come crying when I win hehehe...\""
+
+    show emil happy:
+        xoffset -400
+        zoom 1.5
+
+    show tristan sadhappytalking:
+        xoffset 750
+        zoom 1.5
+    with dissolve
+
+    Tristan "\"Right back at you!\""
+
+    hide emil happy
+    hide tristan sadhappytalking
 
     with dissolve
 
     jump chess_game
     return
 
-
     ################################################################################
-
-
 
     label Chapter7continue:
     #Chess Minigame // The Evergreen Game
     with squares
-    scene gymnasium
+    scene bg gym
     #over speaker ----
     Commentator "\"Checkmate! Tristan wins the tournament!\""
     #----------
+
+    play sound "audio/SFX/applause.mp3" volume 0.5
+
+    Tristan "\"Wow I... {w}Actually won...\""
+
+    show emil happytalking:
+        xoffset -400
+        zoom 1.5
+
+    show tristan normal:
+        xoffset 750
+        zoom 1.5
+    with dissolve
+
+    Emil "\"Damn I lost... haha...\""
+
+    show emil happytalking:
+        xoffset -400
+        zoom 1.5
+
+    show tristan normal:
+        xoffset 750
+        zoom 1.5
+    with dissolve
+
+    Emil "\"I guess I need to get better...\""
+
+    show emil happy:
+        xoffset -400
+        zoom 1.5
+
+    show tristan sadhappytalking:
+        xoffset 750
+        zoom 1.5
+    with dissolve
+
+    Tristan "\"Emil...\""
+
+    show emil happytalking:
+        xoffset -400
+        zoom 1.5
+
+    show tristan sadhappy:
+        xoffset 750
+        zoom 1.5
+    with dissolve
+
+    Emil "\"Hey, Tristan...\""
+
+    show emil happy:
+        xoffset -400
+        zoom 1.5
+
+    show tristan sadhappytalking:
+        xoffset 750
+        zoom 1.5
+    with dissolve
+
+    Tristan "\"Yeah...?\""
+
+    hide tristan sadhappytalking
+
+    show emil happytalking:
+        xoffset 100
+        zoom 1.5
+
+    with dissolve
+
+    Emil "\"Welcome back!\""
+
+    hide emil happytalking
+    with dissolve
 
     "Overwhelmed with joy, Tristan looked around the crowd to find Zoe… but she was nowhere."
 
@@ -112,14 +245,25 @@ label Chapter7:
 
     Tristan "\"There's no way she went home immediately right?\""
 
+    stop music fadeout 1.0
+
+    play music "audio/Music/parknight.mp3" volume 0.3 loop
+
     hide tristan nervoustalking
     with dissolve
+    scene bg parknight
+    with fade
 
     #-----------------Sky Scene-----------------
 
     "After nearly an hour of searching, frustration grew."
 
-    #[Television static fx]
+    play sound "audio/SFX/static.mp3"
+    scene bg staticeffect
+    with hpunch
+    show static2
+    with hpunch
+    scene bg parknight
 
     "Tristan thought back to the park... their first date..."
 
@@ -135,7 +279,7 @@ label Chapter7:
 
     #Tristan (voice soft, tentative):
 
-    show tristan sadtalking:
+    show tristan nervoustalking:
         xoffset 750
         zoom 1.5
 
@@ -147,7 +291,7 @@ label Chapter7:
     
     Tristan "\"There you are! Why did you leave the gym? Why come here, all alone?\""
 
-    show tristan sad:
+    show tristan nervous:
         xoffset 750
         zoom 1.5
     with dissolve
@@ -162,32 +306,20 @@ label Chapter7:
     Zoe "\"I guess i have to tell you the truth now...\"" #said sadly
 
     hide zoe worriedtalking
-    hide tristan sad
+    hide tristan nervous
     with dissolve
 
     show zoe worried:
         xoffset 100
         zoom 1.5
 
-    show zoe worried:
-        yoffset 25
-    with move
-
-    show zoe worried:
-        yoffset 0
-    with move
-
-    with dissolve
+    play sound "audio/SFX/explosion.wav"
+    with vpunch
     
     Zoe "*cough*"
 
-    show zoe worried:
-        yoffset 25
-    with move
-
-    show zoe worried:
-        yoffset 0
-    with move
+    play sound "audio/SFX/explosion.wav"
+    with vpunch
 
     with dissolve
 
@@ -224,6 +356,8 @@ label Chapter7:
     hide zoe worried
     hide tristan nervous
 
+    hide bg parknight
+
     with dissolve
 
     #------------Crying Scene------------
@@ -244,7 +378,12 @@ label Chapter7:
 
     Zoe "\"I tried to run away so you don't see me like this… Every time we play, I beat you… I guess i can't beat you in a simple game of hide and seek hehe\""
 
-    #[Television static fx]
+    play sound "audio/SFX/static.mp3"
+    scene bg staticeffect
+    with hpunch
+    show static2
+    with hpunch
+    scene bg parknight
 
     "Tears spilled over Zoe's cheeks, glistening like fragile diamonds in the dim light. Yet through the sorrow, she managed a small, bittersweet smile—a smile filled with both gratitude and farewell."
 
@@ -258,7 +397,12 @@ label Chapter7:
 
     "Her voice trembled with emotion, as if speaking these words used the last of her strength."
 
-    #[Television static fx — rising, wavering]
+    play sound "audio/SFX/static.mp3"
+    scene bg staticeffect
+    with hpunch
+    show static2
+    with hpunch
+    scene bg crying #-----------------------------------------------------------------------------------
 
     "Zoe's eyes searched Tristan's, desperate to leave something behind, some piece of herself in the moment they shared."
 
@@ -276,29 +420,38 @@ label Chapter7:
 
     Tristan "\"wait...\""
 
-    #[Television static fx — fading slowly into silence]
-    #Cuts to Black
+    play sound "audio/SFX/static.mp3"
+    scene bg staticeffect
+    with hpunch
+    show static2
+    with hpunch
+    scene bg blackscreen
 
-    
-    "*cough*{w} *cough*"
+    stop music fadeout 1.0
+
+    "......."
+
+    "....."
+
+    "..."
+
+    play sound "audio/SFX/thud.mp3" volume 0.5
 
     with vpunch
 
-    "*Loud Thud sound*"
+    "{i}Thud{/i}"
+
+    pause 5.0
 
     with fade
 
     #-------------------SCENE 3: HOSPITAL-------------------
 
-    show tristan sadtalking:
-        xoffset 100
-        zoom 1.5
+    play music "audio/Music/hospital.mp3" volume 0.5 fadein 1.0 loop
     
-    with dissolve
+    scene bg hospital
     
     Tristan "\"What is happening… {w} Am I dreaming?\""
-
-    hide tristan sad
 
     with dissolve
 
@@ -316,11 +469,14 @@ label Chapter7:
 
     "Suddenly, Tristan saw some doctors and nurses running through the halls… He realized they are running towards the same direction where Zoe's room is..."
 
+    show bg hallway
     with dissolve
 
     #----------------Black Screen----------------
 
     #----------------POV Scene----------------
+
+    play sound "audio/SFX/running.mp3" volume 0.5 loop
     
     "Panicked, he rushed over to see if they are going to Zoe's room"
 
@@ -332,31 +488,52 @@ label Chapter7:
 
     "Tristan pushes through and disregarded the heeds of the nurses"
 
+    stop sound
+
     "As he looks into the room…"
 
     #----------------POV Scene----------------
 
     #----------------Black Screen----------------
-    with fade
+    
+    play sound "audio/SFX/heartbeat.mp3" volume 0.5 loop
+    scene bg blackscreen
+    with dissolve
 
-    "Tristan stopped"
+    "Tristan stopped..."
     #----------------Black Screen----------------
 
     #----------------Hospital Room----------------
 
     #[Flat line sounds]
+    stop sound
+    play sound "audio/SFX/flatline.mp3" volume 0.5 loop
 
     "beep..."
 
-    #[Television static fx —]
+    play sound "audio/SFX/static.mp3"
+    scene bg staticeffect
+    with hpunch
+    show static2
+    with hpunch
+    scene bg blackscreen
+
+    play sound "audio/SFX/flatline.mp3" volume 0.5 loop
 
     Doctor "\"Time of death-\""
 
     Tristan "\".{w}.{w}.{w}.{w}.\""
 
+    stop sound
+
     #----------------Hospital Room----------------
 
-    #[Television static fx —]
+    play sound "audio/SFX/static.mp3"
+    scene bg staticeffect
+    with hpunch
+    show static2
+    with hpunch
+    scene bg blackscreen
 
     with fade
 
@@ -368,6 +545,11 @@ label Chapter7:
 
     "As he looked down… he saw a piece of paper…"
 
+    play sound "audio/SFX/crumple.mp3"
+
+    scene bg paper
+    with dissolve
+
     "As he finishes unfolding a paper…"
 
     #*show a picture of Zoe’s bucket list with all check marks except one… “To live together with Tristan ”*
@@ -376,7 +558,12 @@ label Chapter7:
 
     #----------------Show Paper----------------
 
-    #[Television static fx —]
+    play sound "audio/SFX/static.mp3"
+    scene bg staticeffect
+    with hpunch
+    show static2
+    with hpunch
+    scene bg blackscreen
 
     #Tristan (voice trembling):
 
@@ -420,7 +607,15 @@ label Chapter7:
 
     Tristan "\"...\""
 
-    #[Long Television static fx —]
+    play sound "audio/SFX/static.mp3"
+    scene bg staticeffect
+    with hpunch
+    show static2
+    with hpunch
+    scene bg blackscreen
+
+    stop music fadeout 1.0
+    with fade
 
     #-------------------SCENE 5: CONVINIENCE STORE-------------------
 
@@ -428,13 +623,17 @@ label Chapter7:
 
     #*cuts back to the very beginning*
 
-    with fade
-
     Girl "\"Earth to mister… Earth to mister!!\""
+
+    scene bg supermarket
+    with dissolve
 
     "Tristan Looks up… hearing a familiar voice."
 
     Tristan "\"eh?\""
+
+    scene bg blackscreen
+    with dissolve
 
     jump FinalChapter
 
