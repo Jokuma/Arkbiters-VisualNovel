@@ -448,7 +448,7 @@ label Chapter5:
         zoom 2
         yoffset 1000
         center
-    stop music fadeout 1.0
+    play music "audio/Music/Thoughts.mp3"
     with dissolve
 
     Chessplayer1 "\"Check!\""
