@@ -10,7 +10,7 @@ screen c5:
         yalign 0.5
         text "Chapter 5 : Pawn's Promotion " yalign 0.5 xalign 0.5
 
-label start:
+label Chapter5:
 
     show screen c5 with fade
     pause 3.0
@@ -448,7 +448,7 @@ label start:
         zoom 2
         yoffset 1000
         center
-    stop music fadeout 1.0
+    play music "audio/Music/Thoughts.mp3"
     with dissolve
 
     Chessplayer1 "\"Check!\""

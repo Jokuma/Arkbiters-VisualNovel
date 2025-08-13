@@ -78,7 +78,8 @@ label Chapter6:
         zoom 1.5
     with dissolve
 
-    Tristan "\"Zoe I have a question… Is there something that you really love to do but you're too afraid to face it head on because of the outcome?\""
+    Tristan "\"Zoe I have a question…\""
+    Tristan "\"Is there something that you really love to do but you're too afraid to face it head on because of the outcome?\""
 
     show tristan nervous:
         xoffset 750
@@ -103,14 +104,16 @@ label Chapter6:
 
     Tristan "\"I remember spending most of my childhood days just trying to get better…\""
 
-    Tristan "\"It sounds kinda silly now… but back then, chess wasn't just a game. It was my reason to get up in the morning. My escape. My purpose.\""
+    Tristan "\"It sounds kinda silly now…\""
+    Tristan "\"but back then, chess wasn't just a game. It was my reason to get up in the morning. My escape. My purpose.\""
 
     Tristan "\"You know? like, chess kinda became part of my life, it gave me the reason to keep looking forward.\""
 
     #--------------scene 1--------------
     #--------------scene 2--------------
 
-    Tristan "\"Then I got good enough to be able to  join tournaments… I was really nervous at first but when I got my first win ever I was thrilled… It was the best feeling ever…\""
+    Tristan "\"Then I got good enough to be able to  join tournaments…\""
+    Tristan "\" I was really nervous at first but when I got my first win ever I was thrilled… It was the best feeling ever…\""
 
     Tristan "\"Heh, it was kinda funny that some even go as far to say that I am a child prodigy…\""
 
@@ -126,11 +129,16 @@ label Chapter6:
     #--------------scene 3--------------
     #--------------scene 4--------------
 
-    Tristan "\"That moment… It stuck with me. Like a stain I couldn't wash off. I swore I'd never let myself feel that kind of shame again.\""
+    Tristan "\"That moment…\""
+    Tristan "\"It stuck with me. Like a stain I couldn't wash off. I swore I'd never let myself feel that kind of shame again.\""
 
-    Tristan "\"I tried to keep going, but the passion that once burned so bright… it just kept fading. Every game felt heavier. Every move felt wrong. Until one day… I just stopped playing altogether.\""
+    Tristan "\"I tried to keep going, but the passion that once burned so bright…\""
+    Tristan "\"it just kept fading...\"" 
+    Tristan "\"Every game felt heavier... Every move felt wrong... Until one day… I just stopped playing altogether.\""
 
-    Tristan "\"Never thought I'd give up on the one thing that made me feel alive. But here I am… walking away from the only thing I ever thought I was good at…\""
+    Tristan "\"Never thought I'd give up on the one thing that made me feel alive.\""
+    Tristan "\"But here I am…\""
+    Tristan "\"Walking away from the only thing I ever thought I was good at…\""
 
     #--------------scene 4--------------
     #--------------Backstory--------------
@@ -162,12 +170,15 @@ label Chapter6:
 
     Zoe "\"Actually… there's something I really love to do too, and for a while… I stopped.\""
 
-    Zoe "\"I told myself it was for the best… that maybe it was safer to just leave it behind. But you know what? That didn't make me happy. It only made me feel like I was losing a part of myself.\""
+    Zoe "\"I told myself it was for the best… that maybe it was safer to just leave it behind...\""
+    Zoe "\"But you know what? That didn't make me happy.\"" 
+    Zoe "\"It only made me feel like I was losing a part of myself.\""
 
-    Zoe "\"The truth is… you only get one life, Tristan. And if you love something, you shouldn't let fear take it away from you. Not pressure, not what people say, not even the chance of failing.\""
+    Zoe "\"The truth is… you only get one life, Tristan.\""
+    Zoe "\"And if you love something, you shouldn't let fear take it away from you. Not pressure, not what people say, not even the chance of failing.\""
 
     show zoe worried:
-        xoffset -400
+        xoffset -400 
         zoom 1.5
 
     show tristan nervoustalking:

@@ -94,11 +94,12 @@ image main_menu_animated:
     "gui/main_menu_2.png"
     pause 0.5
     repeat
+
 ## The images used for the main and game menus.
 define gui.main_menu_background = "main_menu_animated"
 define gui.game_menu_background = "gui/game_menu.png"
 
-
+#
 ## Dialogue ####################################################################
 ##
 ## These variables control how dialogue is displayed on the screen one line at

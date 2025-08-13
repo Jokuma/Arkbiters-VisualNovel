@@ -106,7 +106,7 @@ label Chapter7:
         zoom 1.5
     with dissolve
 
-    Emil "\"Hey, never thought we will be facing head to head again on the big stage...{p}I guess you still have it, huh?\""
+    Emil "\"Hey, never thought we will be facing head to head again on the big stage...I guess you still have it, huh?\""
 
     show emil happy:
         xoffset -400
@@ -376,7 +376,9 @@ label Chapter7:
 
     #Zoe voice breaking:
 
-    Zoe "\"I tried to run away so you don't see me like this… Every time we play, I beat you… I guess i can't beat you in a simple game of hide and seek hehe\""
+    Zoe "\"I tried to run away so you don't see me like this…\"" 
+    Zoe "\"Every time we play, I beat you… \""
+    Zoe "\"I guess i can't beat you in a simple game of hide and seek hehe\""
 
     play sound "audio/SFX/static.mp3"
     scene bg staticeffect
@@ -389,7 +391,10 @@ label Chapter7:
 
     #Zoe Whispers, Barely Audible
 
-    Zoe "\"Thank you… for everything. For the laughter, the dreams, the moments I never thought I'd have. Because of you… I got to cross off my bucket list.\""
+    Zoe "\"Thank you… for everything.\""
+    Zoe "\"For the laughter{p} the dreams{p} the moments I never thought I'd have.\"" 
+    Zoe "\"Because of you...\"" 
+    Zoe "\"I got to cross off my bucket list.\""
 
     #Tristan (voice trembling):
 

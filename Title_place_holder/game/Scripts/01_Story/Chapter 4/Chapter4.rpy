@@ -30,7 +30,7 @@ label Chapter4:
     play sound "audio/SFX/click.mp3"
     "Click..."
 
-    scene bg room
+    scene bg tristanroom
     show tristan normaltalking at center
     play music "audio/Music/tristanhome.ogg" volume 0.03 fadein 1
     with dissolve
@@ -502,7 +502,7 @@ label Chapter4:
 
     hide zoe smug
     hide tristan nervous
-
+    stop music
     jump Chapter5
 
     return
