@@ -40,7 +40,9 @@ label Chapter5:
     play sound "audio/SFX/explosion.wav" volume 0.2
     with hpunch
     
-    show tristan normaltalking
+    show tristan normaltalking:
+        yoffset 600
+        zoom 1.5
     Tristan "\"ughh my head hurts....\""
     
     Tristan "\"I overslept....\""
