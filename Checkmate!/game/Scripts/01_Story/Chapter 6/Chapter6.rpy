@@ -55,7 +55,7 @@ label Chapter6:
 
     with dissolve
 
-    "Tristan looking a bit gloomy remembering the chess match from the perya previously"
+    "Tristan looking a bit gloomy remembering the chess match from the perya previously."
 
     show zoe worried:
         xoffset -200
@@ -78,7 +78,7 @@ label Chapter6:
         zoom 1.5
     with dissolve
 
-    Tristan "\"Zoe I have a question… Is there something that you really love to do but you're too afraid to face it head on because of the outcome?\""
+    Tristan "\"Zoe I have a question… Is there something that you really love to do, but you're too afraid to face it head on because of the outcome?\""
 
     show tristan nervous:
         xoffset 500
@@ -135,7 +135,7 @@ label Chapter6:
         center
     with dissolve
 
-    CrowdM "\"He should've won that match what a waste\""
+    CrowdM "\"He should've won that match what a waste.\""
 
     CrowdF "\"Do you think he has gotten worse?\""
     scene bg blackscreen
@@ -175,7 +175,7 @@ label Chapter6:
         zoom 1.5
     with dissolve
     
-    Tristan "\"hahaha… {w} you might think I'm pretty pathetic letting something like failure bring me down so much…\""
+    Tristan "\"Hahaha… {w} you might think I'm pretty pathetic letting something like failure bring me down so much…\""
 
     show tristan sadhappy:
         xoffset 500
@@ -264,7 +264,7 @@ label Chapter6:
         zoom 1.5
     with dissolve
 
-    Zoe "\"Yeah sure that's what they all say hehe…\""
+    Zoe "\"Yeah sure that's what they all say, hehe…\""
 
     show zoe happy:
         xoffset -200
@@ -275,14 +275,14 @@ label Chapter6:
         zoom 1.5
     with dissolve
 
-    "Tristan looking a bit annoyed"
+    "Tristan looking a bit annoyed."
 
     show tristan sadhappytalking:
         xoffset 500
         zoom 1.5
     with dissolve
 
-    Tristan "\"Hey Zoe thanks for the advice… It really helped clear things that are going through my mind…\""
+    Tristan "\"Hey Zoe, thanks for the advice… It really helped clear things that are going through my mind…\""
 
     show tristan sadhappy:
         xoffset 500
@@ -311,7 +311,7 @@ label Chapter6:
         zoom 1.5
     with dissolve
 
-    Zoe "\"hehe~ did you just blushed just now~\""
+    Zoe "\"Hehe~ did you just blushed right now~\""
 
     show tristan flusteredtalking:
         xoffset 500

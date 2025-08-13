@@ -113,7 +113,7 @@ label FinalChapter:
     
     with dissolve
     
-    Zoe "\"haha...\""
+    Zoe "\"Haha...\""
 
     "Zoe laughs as if he is mocking Tristan."
 
@@ -179,14 +179,14 @@ label FinalChapter:
         zoom 1.5
     with dissolve
 
-    Zoe "\"eh?\""
+    Zoe "\"Eh?\""
 
     show zoe surprisedflustered:
         xoffset 100
         zoom 1.5
     with dissolve
 
-    Zoe "\"eh!?\""
+    Zoe "\"Eh!?\""
 
     hide zoe surprisedflustered
 
@@ -582,7 +582,7 @@ label FinalChapter:
         zoom 1.5
     with dissolve
 
-    Zoe "\"hm?...{w} What do you mean?\""
+    Zoe "\"Hm?...{w} What do you mean?\""
 
     show zoe happytalking:
         xoffset -200

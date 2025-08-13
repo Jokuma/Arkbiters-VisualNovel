@@ -79,7 +79,7 @@ label Chapter4:
     play music "audio/Music/school.mp3" volume 0.3 fadein 1
     with dissolve
 
-    Tristan "\"It's been awhile since I last went here…\""
+    Tristan "\"It's been a while since I last went here…\""
 
     Tristan "\"I honestly can't recall the last time I set foot in this university.\""
 
@@ -236,7 +236,8 @@ label Chapter4:
         center
     with dissolve
 
-    Emil "{i}sighs{/i}{p=0}\"Busy, huh?\""
+    Emil "{i}sighs{/i}"
+    Emil "\"Busy, huh?\""
     Emil "\"I've been checking every tournament list for months. Your name's never there.\""
 
     Tristan "\"...\""

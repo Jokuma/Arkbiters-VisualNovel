@@ -40,7 +40,7 @@ label start:
         xoffset 100
         yoffset 20
         zoom 1.5
-    Tristan "\"ughh my head hurts....\""
+    Tristan "\"Ughh my head hurts....\""
     
     Tristan "\"I overslept....\""
 
@@ -334,7 +334,7 @@ label start:
         left
     with dissolve
 
-    "Girl" "\"hehe.\""
+    "Girl" "\"Hehe.\""
 
     show tristan flustered: 
         yoffset 1000
@@ -360,7 +360,7 @@ label start:
         left
     with dissolve
 
-    Tristan "\"m-hmm...\""
+    Tristan "\"M-hmm...\""
     Tristan "\"Sorry again.\""
     Tristan "\"Miss...\""
 
@@ -430,7 +430,7 @@ label start:
     stop music
     with dissolve
 
-    Tristan "\"eh?\""
+    Tristan "\"Eh?\""
 
     show tristan flusteredtalking:
         yoffset 1000
@@ -440,7 +440,7 @@ label start:
     with dissolve
 
     play sound "audio/SFX/explosion.wav"
-    Tristan "\"eh?!?\"" with hpunch
+    Tristan "\"Eh?!?\"" with hpunch
 
     show tristan flusteredtalking zorder 2:
         yoffset 2000

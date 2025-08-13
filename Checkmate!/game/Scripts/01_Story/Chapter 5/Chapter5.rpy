@@ -121,10 +121,10 @@ label Chapter5:
     scene darts3 with dissolve
     "She smirks."
 
-    Zoe "Let's go! I got a balloon to pop!"
-    Zoe "hehe~"
+    Zoe "\"Let's go! I got a balloon to pop!\""
+    Zoe "\"hehe~\""
 
-    Zoe "You give it a try next, {w}Tristan!"
+    Zoe "\"You give it a try next, {w}Tristan!\""
 
     scene bg perya
     with dissolve
@@ -173,16 +173,16 @@ label Chapter5:
 
     with dissolve
 
-    Zoe "hehe~"
+    Zoe "\"hehe~\""
 
-    Zoe "I guess you're buying isaw this time~"
+    Zoe "\"I guess you're buying isaw this time~\""
 
     show tristan sadhappytalking:
         xoffset 500
         zoom 1.5
     with dissolve
 
-    Tristan "{i}sigh{/i} {p}I guess I don't mind losing this time..."
+    Tristan "\"{i}Sigh{/i} {p}I guess I don't mind losing this time...\""
 
     hide zoe smugtalking
     hide tristan sadhappytalking
@@ -395,7 +395,7 @@ label Chapter5:
         zoom 1.5
     with dissolve
 
-    Tristan "\"nothing...{w} hehe\""
+    Tristan "\"Nothing...{w} hehe\""
 
     show zoe smugtalking:
         xoffset -200
@@ -419,7 +419,7 @@ label Chapter5:
 
     "..."
 
-    "Its Super Effective!"
+    "It's Super Effective!"
 
     show tristan annoyedtalking:
         xoffset 500

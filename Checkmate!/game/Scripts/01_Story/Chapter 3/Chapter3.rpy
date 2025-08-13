@@ -26,7 +26,7 @@ label Chapter3:
     "The faint hum of other rooms singing drifts through the walls. "
     "A table sits between Tristan and Zoe, cluttered with empty cups of soda and a plate of untouched fries."
 
-    "*Zoe is singing in the background*"
+    "Zoe is singing in the background"
     ".{w=0.3}.{w=0.3}."
 
     scene bg karaoke with dissolve
@@ -76,7 +76,7 @@ label Chapter3:
         zoom 2
         right
     with dissolve
-    Tristan "\"...{w}I cant't sing.\""
+    Tristan "\"...{w}I can't sing.\""
     show tristan normaltalking:
         yoffset 1000
         xoffset 500
@@ -113,7 +113,7 @@ label Chapter3:
         zoom 3
         center
     with dissolve
-    Zoe "\"(Leans closer to Tristan)\""
+    "Zoe leans closer to Tristan with teasing look on her face"
     show zoe smugtalking:
         yoffset 1800
         xoffset 0
@@ -191,7 +191,7 @@ label Chapter3:
         zoom 2
         left
     with dissolve
-    Zoe "\"Earth to Tristan!!!{p}oh no, not this again.\""
+    Zoe "\"Earth to Tristan!!!{p}Oh no, not this again.\""
 
     scene bg karaoke
     show tristan nervoustalking:
@@ -294,7 +294,7 @@ label Chapter3:
         left
     with squares
 
-    "As Tristan is singing...{p=0}Zoe smiles at him—warm, genuine, unguarded."
+    "As Tristan is singing...{p=0}Zoe smiles at him—warm, genuine."
     
     # Television static fx again, but this time a flash of another memory bleeds through — the same booth, same song, same smile 
     play music "audio/Music/Thoughts.mp3" volume 0.3 fadein 0.3 loop
@@ -375,7 +375,7 @@ label Chapter3:
         zoom 2
         left
     with dissolve
-    Zoe "\"But i think you're wrong...hehe\""
+    Zoe "\"But I think you're wrong...hehe\""
     show zoe smug:
         yoffset 1000
         xoffset -500
@@ -409,7 +409,7 @@ label Chapter3:
         zoom 2
         left
     with dissolve
-    Zoe "\"Uwaaa!..\""
+    Zoe "\"Uwaaa!..\"" with vpunch
     Zoe "\"I forgot I have school tomorrow! Man that sucks! I was having a lot of fun.\""
     show tristan normaltalking:
         yoffset 1000
@@ -484,7 +484,7 @@ label Chapter3:
         zoom 2
         left
     with dissolve
-    Zoe "\"Alright enough of that… let's make the most of today, your turn to pick my song. And no mercy!\""
+    Zoe "\"Alright enough of that… let's make the most of today, your turn to pick my song, and no mercy!\""
     show zoe smile:
         yoffset 1000
         xoffset -500
@@ -498,7 +498,7 @@ label Chapter3:
         zoom 2
         right
     with dissolve
-    "His eyes keep darting toward Zoe— {p}like a player glancing at a chessboard{p}unsure if the next move will win or lose the game."
+    "His eyes kept darting toward Zoe— {p}like a player glancing at a chessboard{p}unsure if the next move will win or lose the game."
     
     show bg blackscreen
     hide zoe normal

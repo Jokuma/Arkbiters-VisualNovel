@@ -145,7 +145,7 @@ label mate_in_5_puzzle:
     show white_pawn_3 at Position(xalign=0.4265, yalign=0.4900)
     show white_pawn_1 at Position(xalign=0.3278, yalign=0.5825)
 
-    call prompt_for_move("Rxe7") from _call_prompt_for_move
+    call prompt_for_move("Rxe7")
     "Good job! That's the correct move."
     jump sequence_move
     "You find the first move!"
@@ -272,7 +272,7 @@ label prompt_for_move(correct_move):
     show white_pawn_3 at Position(xalign=0.4265, yalign=0.4900)
     show white_pawn_1 at Position(xalign=0.3278, yalign=0.5825)
 
-    call prompt_for_secondmove("Qxd7") from _call_prompt_for_secondmove
+    call prompt_for_secondmove("Qxd7")
     "Good job! That's the correct move."
     jump QueenSequence_move
     "You find the second move!"
@@ -393,7 +393,7 @@ label prompt_for_secondmove(correct_secondmove):
     show white_pawn_3 at Position(xalign=0.4265, yalign=0.4900)
     show white_pawn_1 at Position(xalign=0.3278, yalign=0.5825)
 
-    call prompt_for_thirdmove("Bf5") from _call_prompt_for_thirdmove 
+    call prompt_for_thirdmove("Bf5") 
     "Good job! That's the correct move."
     jump BishopSequence_move
     "You find the third move!"
@@ -514,7 +514,7 @@ label prompt_for_thirdmove(correct_thirdmove):
     show white_pawn_3 at Position(xalign=0.4265, yalign=0.4900)
     show white_pawn_1 at Position(xalign=0.3278, yalign=0.5825)
 
-    call prompt_for_fourthmove("Bd7") from _call_prompt_for_fourthmove  
+    call prompt_for_fourthmove("Bd7")  
     "Good job! That's the correct move."
     jump NextBishopSequence_move
     "You find the fourth move!"
@@ -634,7 +634,7 @@ label prompt_for_fourthmove(correct_fourthmove):
     show white_pawn_3 at Position(xalign=0.4265, yalign=0.4900)
     show white_pawn_1 at Position(xalign=0.3278, yalign=0.5825)
 
-    call prompt_for_CheckMatemove("Be7") from _call_prompt_for_CheckMatemove  
+    call prompt_for_CheckMatemove("Be7")  
     "Good job! That's the correct move."
     jump Final_move
     "You find the Final move!"

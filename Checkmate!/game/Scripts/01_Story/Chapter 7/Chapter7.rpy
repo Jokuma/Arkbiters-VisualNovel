@@ -332,7 +332,7 @@ label Chapter7:
         zoom 1.5
     with dissolve
 
-    Zoe "\"I guess i have to tell you the truth now...\"" #said sadly
+    Zoe "\"I guess I have to tell you the truth now...\"" #said sadly
 
     hide zoe worriedtalking
     hide tristan nervous
@@ -408,7 +408,7 @@ label Chapter7:
 
     Zoe "\"I tried to run away so you don't see me like this…\"" 
     Zoe "\"Every time we play, I beat you… \""
-    Zoe "\"I guess i can't beat you in a simple game of hide and seek hehe\""
+    Zoe "\"I guess I can't beat you in a simple game of hide and seek hehe\""
 
     play sound "audio/SFX/static.mp3"
     scene bg staticeffect
@@ -428,7 +428,7 @@ label Chapter7:
 
     #Tristan (voice trembling):
 
-    Tristan "\"wait...\""
+    Tristan "\"Wait...\""
 
     "Her voice trembled with emotion, as if speaking these words used the last of her strength."
 
@@ -453,7 +453,7 @@ label Chapter7:
 
     #Tristan (voice trembling):
 
-    Tristan "\"wait...\""
+    Tristan "\"Wait...\""
 
     play sound "audio/SFX/static.mp3"
     scene bg staticeffect
@@ -634,13 +634,13 @@ label Chapter7:
 
     Tristan "\"I love you…\""
 
-    Tristan "\"ughhh why didn't I notice sooner!!! Why am I feeling this way again!!!\""
+    Tristan "\"Ughhh why didn't I notice sooner!!! Why am I feeling this way again!!!\""
     
-    Tristan "\"if only i knew… if only i was there for her\""
+    Tristan "\If only I knew… if only I was there for her\""
 
-    Tristan "\"if.....\""
+    Tristan "\"If.....\""
 
-    Tristan "\"if...\""
+    Tristan "\"If...\""
 
     Tristan "\".......\""
 
