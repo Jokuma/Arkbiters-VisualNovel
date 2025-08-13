@@ -144,7 +144,7 @@ default preferences.afm_time = 15
 ## This generally should not be changed, and if it is, should always be a
 ## literal string, not an expression.
 
-define config.save_directory = "Title_place_holder-1754752482"
+define config.save_directory = "Checkmate!-1754752482"
 
 
 ## Icon ########################################################################
