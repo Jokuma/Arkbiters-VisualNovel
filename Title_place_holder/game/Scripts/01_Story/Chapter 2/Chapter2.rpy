@@ -19,7 +19,7 @@ label Chapter2:
     define dissolve = Dissolve(0.2)
 
     scene bg park
-    play music "audio/Music/ParkDay.mp3" volume 0.1 fadein 1
+    play music "audio/Music/ParkDay.mp3" volume 0.3 fadein 1
     with dissolve
 
     "The warm afternoon sun spills over the park. Gentle wind carries the faint scent of flowers. Birds chirp as children run around laughing."
@@ -40,18 +40,18 @@ label Chapter2:
         zoom 2
     with dissolve
 
-    Tristan "(In his head){p=0}Why am I here?!"
-    Tristan "(In his head){p=0}Wait."
-    Tristan "(In his head){p=0}Wait..."
-    Tristan "(In his head){p=0}This is so sudden."
+    Tristan "{i}In his head{/i}{p=0}Why am I here?!"
+    Tristan "{i}In his head{/i}{p=0}Wait."
+    Tristan "{i}In his head{/i}{p=0}Wait..."
+    Tristan "{i}In his head{/i}{p=0}This is so sudden."
     Tristan "..."
-    Tristan "(In his head){p=0}A useless loser like me is on a date?"
-    Tristan "(In his head){p=0}Heck..."
-    Tristan "(In his head){p=0}Why did I even agree to this..."
+    Tristan "{i}In his head{/i}{p=0}A useless loser like me is on a date?"
+    Tristan "{i}In his head{/i}{p=0}Heck..."
+    Tristan "{i}In his head{/i}{p=0}Why did I even agree to this..."
 
     show bg park
     hide thoughts
-    play music "audio/Music/ParkDay.mp3" volume 0.1 fadein 1
+    play music "audio/Music/ParkDay.mp3" volume 0.3 fadein 1
     with dissolve
  
     show tristan normal:
@@ -87,7 +87,7 @@ label Chapter2:
 
     #show cutscene here
     scene bg waterbottle1
-    play music "audio/Music/WaterBottle.mp3" volume 0.1 fadein 1
+    play music "audio/Music/WaterBottle.mp3" volume 0.3 fadein 1
     with dissolve
 
     Tristan "\"H-Hey...\""
@@ -101,16 +101,17 @@ label Chapter2:
     with dissolve
     Zoe "\"Like an ice cream!\""
 
-    #  *Television static fx* 
     play sound "audio/SFX/static.mp3"
     scene bg staticeffect
     with hpunch
+    show static2
     with hpunch
     scene bg waterbottle3
     show thoughts
-    Tristan "(In his head){p=0}That smile again..."
-    Tristan "(In his head){p=0}Why does it feel like I've seen it a before"
-    play music "audio/Music/ParkDay.mp3" volume 0.1 fadein 1
+    with dissolve
+    Tristan "{i}In his head{/i}{p=0}That smile again..."
+    Tristan "{i}In his head{/i}{p=0}Why does it feel like I've seen it a before"
+    play music "audio/Music/ParkDay.mp3" volume 0.3 fadein 1
     
     scene bg park
     show zoe worried:
@@ -169,6 +170,7 @@ label Chapter2:
         xoffset -500
         zoom 2
         left
+    with dissolve
 
     Zoe "\"...\""
     show zoe happytalking:
@@ -468,13 +470,11 @@ label Chapter2:
 
     Zoe "\"I like being mysterious.\""
 
-    #  *Television static fx* 
-
-    scene bg staticeffect
-    stop music
     play sound "audio/SFX/static.mp3"
+    scene bg staticeffect
     with hpunch
-    with hpunch 
+    show static2
+    with hpunch
 
     scene bg park
     show zoe smugtalking:
@@ -488,10 +488,10 @@ label Chapter2:
         xoffset 300
         left
         zoom 2
-    play music "audio/Music/Thoughts.mp3" volume 0.3 fadein 0.3 loop
     with dissolve
+    play music "audio/Music/Thoughts.mp3" volume 0.3 fadein 0.3 loop
 
-    Tristan "(In his head){p=0}That again?!"
+    Tristan "{i}In his head{/i}{p=0}That again?!"
     Tristan "..."
     hide thoughts
     show zoe worriedtalking:
@@ -499,7 +499,8 @@ label Chapter2:
         xoffset -500
         zoom 2
         left
-    play music "audio/Music/ParkDay.mp3" volume 0.1 fadein 1
+    with dissolve
+    play music "audio/Music/ParkDay.mp3" volume 0.3 fadein 1
     Zoe "\"Earth to Tristan!!!\""
 
     show tristan normaltalking:
@@ -620,6 +621,7 @@ label Chapter2:
         zoom 2
         left
     hide zoe happy
+    play sound "audio/SFX/walk.mp3" volume 0.3
     with moveoutleft
 
     "Zoe bolted ahead"
@@ -634,12 +636,12 @@ label Chapter2:
     Tristan "\"Hey! No fair!\""
 
     "Tristan showed a conflicted expression before he breaks into a small, genuine smile and chases after her."
-
+    
+    play sound "audio/SFX/walk.mp3" volume 0.3
     hide tristan flusteredtalking
     with moveoutleft
     with dissolve
 
     stop music
-    with fade
     jump Chapter3
     return

@@ -29,7 +29,7 @@ label FinalChapter:
     "Girl" "\"Hmm?\""
     "Girl" "\"...\""
 
-    scene bg supermarket
+    scene storeentrance
     play music "audio/Music/parknight.mp3" volume 0.3 loop
     with dissolve
 
@@ -140,7 +140,7 @@ label FinalChapter:
     with hpunch
     show static2
     with hpunch
-    scene bg supermarket
+    scene storeentrance
 
     show zoe happy:
         xoffset 100
@@ -177,7 +177,7 @@ label FinalChapter:
 
     Zoe "\"EHHHHH!?!?!\"" with hpunch
 
-    scene bg daypark
+    scene bg park
     with fade
 
     play music "audio/Music/parkday.mp3" volume 0.3 loop
@@ -201,11 +201,11 @@ label FinalChapter:
     Zoe "{i}giggles{\i}"
 
     show zoe happy:
-        xoffset -400
+        xoffset -200
         zoom 1.5
     
     show tristan annoyed:
-        xoffset 750
+        xoffset 500
         zoom 1.5
 
     with dissolve
@@ -236,22 +236,22 @@ label FinalChapter:
     hide zoe happytalking
 
     show zoe happy:
-        xoffset -400
+        xoffset -200
         zoom 1.5
     
     show tristan nervoustalking:
-        xoffset 750
+        xoffset 500
         zoom 1.5
     with dissolve
 
     Tristan "\"T-The words just came right out of my mouth for some reason\""
 
     show tristan nervous:
-        xoffset 750
+        xoffset 500
         zoom 1.5
 
     show zoe happytalking:
-        xoffset -400
+        xoffset -200
         zoom 1.5
     with dissolve
 
@@ -259,7 +259,7 @@ label FinalChapter:
     Zoe "\"Let's race to the ice cream truck!{p}Losers pays the other\""
 
     show zoe giggle:
-        xoffset -400
+        xoffset -200
         zoom 1.5
     with dissolve
 
@@ -274,7 +274,7 @@ label FinalChapter:
     "Zoe rushes to the truck leaving Tristan"
 
     show tristan nervoustalking:
-        xoffset 750
+        xoffset 500
         zoom 1.5
     
     with dissolve
@@ -316,7 +316,7 @@ label FinalChapter:
     "The music from the rides is tinny, slightly warped by old speakers{p}the laughter of children cuts through crisp and bright."
 
     show zoe happytalking:
-        xoffset -400
+        xoffset -200
         zoom 1.5
 
     play sound "audio/SFX/walk.mp3" volume 0.3 fadeout 2.0
@@ -333,11 +333,11 @@ label FinalChapter:
     "She tugs his sleeve like a child dragging a reluctant parent into a toy store."
 
     show zoe happy:
-        xoffset -400
+        xoffset -200
         zoom 1.5
 
     show tristan normaltalking:
-        xoffset 750
+        xoffset 500
         zoom 1.5
 
     with dissolve
@@ -345,7 +345,7 @@ label FinalChapter:
     Tristan "\"Years?{w} I can't remember the last time I went either.\""
 
     show tristan normal:
-        xoffset 750
+        xoffset 500
         zoom 1.5
     with dissolve
 
@@ -369,11 +369,11 @@ label FinalChapter:
     "As if every stall is a little chipped, every prize a little faded."
 
     show zoe happytalking:
-        xoffset -400
+        xoffset -200
         zoom 1.5
     
     show tristan normal:
-        xoffset 750
+        xoffset 500
         zoom 1.5
 
     with dissolve
@@ -381,14 +381,14 @@ label FinalChapter:
     Zoe "\"First stop...{w} Darts!\""
 
     show zoe smug:
-        xoffset -400
+        xoffset -200
         zoom 1.5
     with dissolve
 
     Zoe "\"Loser buys Kwek-kwek\""
 
     show tristan normaltalking:
-        xoffset 750
+        xoffset 500
         zoom 1.5
 
     Tristan "\"That's...{w} an oddly specific bet.\""
@@ -412,18 +412,18 @@ label FinalChapter:
     hide zoe worriedtalking
 
     show zoe worried:
-        xoffset -400
+        xoffset -200
         zoom 1.5
     
     show tristan happy:
-        xoffset 750
+        xoffset 500
         zoom 1.5
     with dissolve
 
     "Tristan smuggly smirks"
 
     show zoe flusteredtalking:
-        xoffset -400
+        xoffset -200
         zoom 1.5
     with dissolve
 
@@ -439,18 +439,18 @@ label FinalChapter:
     Zoe "\"....\""
 
     show tristan normal:
-        xoffset 750
+        xoffset 500
         zoom 1.5 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
     show zoe giggle:
-        xoffset -400
+        xoffset -200
         zoom 1.5
     with dissolve
 
     Zoe "\"What the heck?! HAHAHAHAHAHAHA\""
 
     show tristan happy:
-        xoffset 750
+        xoffset 500
         zoom 1.5
 
     "Zoe burst out laughing… followed by Tristan who drops his smug look and joins laughing."
@@ -481,36 +481,36 @@ label FinalChapter:
     hide zoe worried
 
     show zoe worried:
-        xoffset -400
+        xoffset -200
         zoom 1.5
     
     show tristan nervoustalking:
-        xoffset 750
+        xoffset 500
         zoom 1.5
     with dissolve
 
     Tristan "\"You okay Zoe? That's one nasty cough\""
 
     show tristan nervous:
-        xoffset 750
+        xoffset 500
         zoom 1.5
 
     show zoe smug:
-        xoffset -400
+        xoffset -200
         zoom 1.5
     with dissolve
 
     Zoe "\"More okay than you!\""
 
     show zoe giggle:
-        xoffset -400
+        xoffset -200
         zoom 1.5
     with dissolve
 
     Zoe "\"BWAHAHAHAHAHA\""
 
     show zoe happytalking:
-        xoffset -400
+        xoffset -200
         zoom 1.5
     with dissolve
 
@@ -525,46 +525,46 @@ label FinalChapter:
     scene bg perya
 
     show zoe happy:
-        xoffset -400
+        xoffset -200
         zoom 1.5
     show tristan nervoustalking:
-        xoffset 750
+        xoffset 500
         zoom 1.5
     with dissolve
 
     Tristan "\"Zoe...\""
 
     show tristan nervous:
-        xoffset 750
+        xoffset 500
         zoom 1.5
     with dissolve
 
     Tristan "\"...\""
 
     show tristan nervoustalking:
-        xoffset 750
+        xoffset 500
         zoom 1.5
 
     show zoe worried:
-        xoffset -400
+        xoffset -200
         zoom 1.5
     with dissolve
 
     Tristan "\"You have an illness...{w} Don't you?\""
 
     show tristan nervous:
-        xoffset 750
+        xoffset 500
         zoom 1.5
     
     show zoe worriedtalking:
-        xoffset -400
+        xoffset -200
         zoom 1.5
     with dissolve
 
     Zoe "\"hm?...{w} What do you mean?\""
 
     show zoe happytalking:
-        xoffset -400
+        xoffset -200
         zoom 1.5
     with dissolve
 
@@ -578,11 +578,11 @@ label FinalChapter:
     scene bg perya
 
     show zoe worried:
-        xoffset -400
+        xoffset -200
         zoom 1.5
 
     show tristan nervoustalking:
-        xoffset 750
+        xoffset 500
         zoom 1.5
     with dissolve
 
@@ -601,18 +601,18 @@ label FinalChapter:
     scene bg perya
 
     show zoe worried:
-        xoffset -400
+        xoffset -200
         zoom 1.5
 
     show tristan nervoustalking:
-        xoffset 750
+        xoffset 500
         zoom 1.5
     with dissolve
     
     Tristan "\"Tell me the truth\""
 
     show zoe worriedtalking:
-        xoffset -400
+        xoffset -200
         zoom 1.5
     with dissolve
 
@@ -671,11 +671,11 @@ label FinalChapter:
     scene bg perya
 
     show zoe worried:
-        xoffset -400
+        xoffset -200
         zoom 1.5
 
     show tristan nervoustalking:
-        xoffset 750
+        xoffset 500
         zoom 1.5
     with dissolve
 
@@ -725,7 +725,7 @@ label FinalChapter:
     pause 3.5
     # [ long Television static fx ]
 
-    #-------------------Supermarket-------------------
+    #-------------------storeentrance-------------------
 
     Zoe "\"Earth to mister...{w} Earth to mister!!\""
     Zoe "\"Earth to mister...\""
@@ -809,11 +809,11 @@ label FinalChapter:
 
     hide zoe worriedtalking
     show tristan nervoustalking:
-        xoffset 750
+        xoffset 500
         zoom 1.5
     
     show zoe worried:
-        xoffset -400
+        xoffset -200
         zoom 1.5
     with dissolve
 
@@ -822,10 +822,10 @@ label FinalChapter:
     "The squares fall away into the dark{p}like pawns swept off the board by an unseen hand{p}In the distance, a faint ticking sound echoes — deliberate, cold, mechanical."
 
     show tristan nervous:
-        xoffset 750
+        xoffset 500
         zoom 1.5
     show zoe worriedtalking:
-        xoffset -400
+        xoffset -200
         zoom 1.5
     with dissolve
 
@@ -903,11 +903,11 @@ label FinalChapter:
 
     hide zoe worriedtalking
     show tristan nervoustalking:
-        xoffset 750
+        xoffset 500
         zoom 1.5
 
     show zoe worried:
-        xoffset -400
+        xoffset -200
         zoom 1.5
     with dissolve
 
@@ -943,11 +943,11 @@ label FinalChapter:
     hide zoe giggle
 
     show zoe giggle:
-        xoffset -400
+        xoffset -200
         zoom 1.5
 
     show tristan annoyedtalking:
-        xoffset 750
+        xoffset 500
         zoom 1.5
     with dissolve
 

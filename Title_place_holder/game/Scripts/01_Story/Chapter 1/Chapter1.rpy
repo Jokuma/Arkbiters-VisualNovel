@@ -6,13 +6,10 @@ screen c1:
         yalign 0.5
         text "Chapter 1: Pawn to H-eart's File " yalign 0.5 xalign 0.5
 
-<<<<<<< Updated upstream
 label start:
-    stop music
-=======
-label Chapter5:
 
->>>>>>> Stashed changes
+    stop music
+
     define dissolve = Dissolve(0.2)
     define fade1 = Fade(0.5, 0.0, 0.5)
 
@@ -33,7 +30,6 @@ label Chapter5:
     scene bg tristanroom #place holder 
     
     with fade1
-    show tristan normal
     play music "audio/Music/tristanhome.ogg" volume 0.03 fadein 1.0 loop
     with fade1
 
@@ -41,7 +37,8 @@ label Chapter5:
     with hpunch
     
     show tristan normaltalking:
-        yoffset 600
+        xoffset 100
+        yoffset 20
         zoom 1.5
     Tristan "\"ughh my head hurts....\""
     
@@ -57,15 +54,11 @@ label Chapter5:
         center
 
     show tristan normaltalking:
+        xoffset -50
         yoffset 1000
         zoom 2
-        center
     
-<<<<<<< Updated upstream
-    play sound "audio/SFX/explosion.wav" volume 3
-=======
-    play sound "audio/SFX/explosion.wav" volume 0.2
->>>>>>> Stashed changes
+    play sound "audio/SFX/explosion.wav" volume 0.3
     Tristan "\"Crap!!\"" with hpunch 
     
     show thoughts
@@ -77,33 +70,34 @@ label Chapter5:
     play music "audio/Music/Thoughts.mp3" volume 0.3 fadein 1 loop
     with dissolve
     
-    Tristan "{i}(In his head){/i}{p=0}I gotta go to work!"
+    Tristan "{i}In his head{/i}{p=0}I gotta go to work!"
 
     show tristan normal:
         yoffset 1000
         zoom 2
         center
 
-    Tristan "{i}(In his head){/i}{p=0}Wait..."
-    Tristan "{i}(In his head){/i}{p=0}I have school today."
+    Tristan "{i}In his head{/i}{p=0}Wait..."
+    Tristan "{i}In his head{/i}{p=0}I have school today."
 
     hide tristan normal
     show tristan nervous:
-        yoffset 2000
+        xoffset -700
+        yoffset -200    
         zoom 3
-        center
+    with dissolve
     Tristan "\"...\""
 
     "Tristan looking hesitant..."
 
-    play music "audio/Music/tristanhome.ogg" volume 0.09 fadein 1.0 loop
+    play music "audio/Music/tristanhome.ogg" volume 0.3 fadein 1.0 loop
 
     scene bg tristanroom
     show tristan normal:
         yoffset 1000
         zoom 2
         center
-    play music "audio/Music/tristanhome.ogg" volume 0.03 fadein 1.0 loop
+    play music "audio/Music/tristanhome.ogg" volume 0.3 fadein 1.0 loop
     with dissolve
     
     Tristan "\"Oh well...{w} Who cares anyway.\""
@@ -119,7 +113,7 @@ label Chapter5:
     hide screen c1 with fade
 
     scene storeentrance
-    play music "audio/Music/Supermarket.mp3" volume 0.1 fadein 1 loop
+    play music "audio/Music/Supermarket.mp3" volume 0.3 fadein 1 loop
     with dissolve
     
     "As Tristan enters the store, a lively chime greeted him."
@@ -220,9 +214,10 @@ label Chapter5:
     "As Tristan looks up to see the person."
 
     stop music
-    play sound "audio/SFX/static.mp3" volume 0.5
-    scene bg staticeffect 
+    play sound "audio/SFX/static.mp3"
+    scene bg staticeffect
     with hpunch
+    show static2
     with hpunch
     pause 0.3
 
@@ -240,9 +235,9 @@ label Chapter5:
         left
     stop music 
     play music "audio/Music/Thoughts.mp3" volume 0.3 fadein 0.3 loop
-    Tristan "{i}(In his head){/i}{p=0} That smile....."
-    Tristan "{i}(In his head){/i}{p=0} It seems....."
-    Tristan "{i}(In his head){/i}{p=0} Famillar....."
+    Tristan "{i}In his head{/i}{p=0} That smile....."
+    Tristan "{i}In his head{/i}{p=0} It seems....."
+    Tristan "{i}In his head{/i}{p=0} Famillar....."
 
     show tristan nervous:
         yoffset 1000
@@ -259,7 +254,7 @@ label Chapter5:
     "Girl" "\"Earth to mister....\""
     "Girl" "\"Earth to mister!!!\""
 
-    play music "audio/Music/Supermarket.mp3" volume 0.1 fadein 1
+    play music "audio/Music/Supermarket.mp3" volume 0.3 fadein 1
     hide thoughts
     
     show tristan normaltalking:
@@ -281,7 +276,7 @@ label Chapter5:
     Tristan "\"Uhmm...\""
     Tristan "\"Sorry here is your change.\""
 
-    show thoughts zorder 2
+    show thoughts
     show tristan nervous zorder 2:
         yoffset 1000
         xoffset 500
@@ -291,8 +286,8 @@ label Chapter5:
     play music "audio/Music/Thoughts.mp3" volume 0.3 fadein 0.3 loop
     with dissolve
 
-    Tristan "{i}(In his head){/i}{p=0}Crap I was lost in my thoughts..."
-    Tristan "{i}(In his head){/i}{p=0}I messed up..."
+    Tristan "{i}In his head{/i}{p=0}Crap I was lost in my thoughts..."
+    Tristan "{i}In his head{/i}{p=0}I messed up..."
 
     hide thoughts
     show tristan normal:
@@ -306,7 +301,7 @@ label Chapter5:
         zoom 2
         left
     
-    play music "audio/Music/Supermarket.mp3" volume 0.1 fadein 1
+    play music "audio/Music/Supermarket.mp3" volume 0.3 fadein 1
     hide thoughts
     with dissolve
     
@@ -393,12 +388,13 @@ label Chapter5:
     Zoe "\"Pleasure to meet you.\""
 
     stop music
-    play sound "audio/SFX/static.mp3" volume 0.5
+    play sound "audio/SFX/static.mp3"
     scene bg staticeffect
     with hpunch
+    show static2
     with hpunch
     scene storeentrance
-    play music "audio/Music/Supermarket.mp3" volume 0.1 fadein 1
+    play music "audio/Music/Supermarket.mp3" volume 0.3 fadein 1
     show tristan normal:
         yoffset 1000
         xoffset 500
@@ -459,6 +455,5 @@ label Chapter5:
     show black screen
     hide tristan flusteredtalking
 
-    with fade
     jump Chapter2
     return

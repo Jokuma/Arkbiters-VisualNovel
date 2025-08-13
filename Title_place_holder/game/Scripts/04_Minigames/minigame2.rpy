@@ -2,10 +2,6 @@
     import math, time, random
 
 
-   
-
-
-
     class OsuNote:
         def __init__(self, x, y, appear_time):
             self.x = x
@@ -34,7 +30,7 @@
         last_update_time = start_time
 
         delay = 0.6
-        for i in range(10): ############################################################ how many notes will appear
+        for i in range(50): ############################################################ how many notes will appear
             notes.append(
                 OsuNote(
                     random.randint(200, 1720),
@@ -128,7 +124,7 @@ label minigamerhythm:
     "..."
     "The game is simple."
     "Click the squares on time... An approaching square will indicate when it's time to click"
-    "A simillar game to Osu! (special shoutout)"
+    "A simillar game to osu! (special shoutout)"
     "Let's go!!!"
     window hide
     $ start_rhythm_game()

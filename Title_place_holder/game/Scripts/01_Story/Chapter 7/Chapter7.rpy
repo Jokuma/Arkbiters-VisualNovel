@@ -26,53 +26,62 @@ label Chapter7:
 
     "As he entered, Emil's eyes widened in surprise."
 
-    show emil happytalking:
-        xoffset -400
-        zoom 1.5
+    show emil surprised:
+        yoffset -70
+        xoffset -100
+        zoom 2.0
 
     show tristan normal:
-        xoffset 750
-        zoom 1.5
+        xoffset 350
+        yoffset -80
+        zoom 2.0
     with dissolve
 
     Emil "\"Tristan? You're really here.\""
 
-    show emil happy:
-        xoffset -400
-        zoom 1.5
+    show emil normal:
+        yoffset -70
+        xoffset -100
+        zoom 2.0
 
     show tristan normaltalking:
-        xoffset 750
-        zoom 1.5
+        xoffset 350
+        yoffset -80
+        zoom 2.0
     with dissolve
 
     Tristan "\"Yeah… and Emil, about what happened before… I'm sorry.\""
 
-    show emil happy:
-        xoffset -400
-        zoom 1.5
+    show emil normal:
+        yoffset -70
+        xoffset -100
+        zoom 2.0
 
     show tristan normal:
-        xoffset 750
-        zoom 1.5
+        xoffset 350
+        yoffset -80
+        zoom 2.0
     with dissolve
 
     "Emil shrugged and smirked."
 
-    show emil happytalking:
-        xoffset -400
-        zoom 1.5
+    show emil surprised:
+        yoffset -70
+        xoffset -100
+        zoom 2.0
     with dissolve
 
     Emil "\"If you're really sorry… give me an entertaining chess match.\""
 
-    show emil happy:
-        xoffset -400
-        zoom 1.5
+    show emil normal:
+        yoffset -70
+        xoffset -100
+        zoom 2.0
 
     show tristan sadhappytalking:
-        xoffset 750
-        zoom 1.5
+        xoffset 350
+        yoffset -80
+        zoom 2.0
     with dissolve
 
     Tristan "\"Yeah, you're right... Let's have a fun match, Emil.\""
@@ -97,48 +106,56 @@ label Chapter7:
 
     scene bg gym
 
-    show emil happytalking:
-        xoffset -400
-        zoom 1.5
+    show emil surprised:
+        yoffset -70
+        xoffset -100
+        zoom 2.0
 
     show tristan sadhappy:
-        xoffset 750
-        zoom 1.5
+        xoffset 350
+        yoffset -80
+        zoom 2.0
     with dissolve
 
     Emil "\"Hey, never thought we will be facing head to head again on the big stage...{p}I guess you still have it, huh?\""
 
-    show emil happy:
-        xoffset -400
-        zoom 1.5
+    show emil normal:
+        yoffset -70
+        xoffset -100
+        zoom 2.0
 
     show tristan sadhappytalking:
-        xoffset 750
-        zoom 1.5
+        xoffset 350
+        yoffset -80
+        zoom 2.0
     with dissolve
 
     Tristan "\"Yeah, guess so... I've been preparing after all.\""
 
-    show emil happytalking:
-        xoffset -400
-        zoom 1.5
+    show emil surprised:
+        yoffset -70
+        xoffset -100
+        zoom 2.0
 
     show tristan sadhappy:
-        xoffset 750
-        zoom 1.5
+        xoffset 350
+        yoffset -80
+        zoom 2.0
     with dissolve
 
     Emil "\"Looks like I can't underestimate you...\""
 
     Emil "\"Don't come crying when I win hehehe...\""
 
-    show emil happy:
-        xoffset -400
-        zoom 1.5
+    show emil normal:
+        yoffset -70
+        xoffset -100
+        zoom 2.0
 
     show tristan sadhappytalking:
-        xoffset 750
-        zoom 1.5
+        xoffset 350
+        yoffset -80
+        zoom 2.0
     with dissolve
 
     Tristan "\"Right back at you!\""
@@ -165,66 +182,77 @@ label Chapter7:
 
     Tristan "\"Wow I... {w}Actually won...\""
 
-    show emil happytalking:
-        xoffset -400
-        zoom 1.5
+    show emil surprised:
+        yoffset -70
+        xoffset -100
+        zoom 2.0
 
     show tristan normal:
-        xoffset 750
-        zoom 1.5
+        xoffset 350
+        yoffset -80
+        zoom 2.0
     with dissolve
 
     Emil "\"Damn I lost... haha...\""
 
-    show emil happytalking:
-        xoffset -400
-        zoom 1.5
+    show emil surprised:
+        yoffset -70
+        xoffset -100
+        zoom 2.0
 
     show tristan normal:
-        xoffset 750
-        zoom 1.5
+        xoffset 350
+        yoffset -80
+        zoom 2.0
     with dissolve
 
     Emil "\"I guess I need to get better...\""
 
-    show emil happy:
-        xoffset -400
-        zoom 1.5
+    show emil normal:
+        yoffset -70
+        xoffset -100
+        zoom 2.0
 
     show tristan sadhappytalking:
-        xoffset 750
-        zoom 1.5
+        xoffset 350
+        yoffset -80
+        zoom 2.0
     with dissolve
 
     Tristan "\"Emil...\""
 
-    show emil happytalking:
-        xoffset -400
-        zoom 1.5
+    show emil surprised:
+        yoffset -70
+        xoffset -100
+        zoom 2.0
 
     show tristan sadhappy:
-        xoffset 750
-        zoom 1.5
+        xoffset 350
+        yoffset -80
+        zoom 2.0
     with dissolve
 
     Emil "\"Hey, Tristan...\""
 
-    show emil happy:
-        xoffset -400
-        zoom 1.5
+    show emil normal:
+        yoffset -70
+        xoffset -100
+        zoom 2.0
 
     show tristan sadhappytalking:
-        xoffset 750
-        zoom 1.5
+        xoffset 350
+        yoffset -80
+        zoom 2.0
     with dissolve
 
     Tristan "\"Yeah...?\""
 
     hide tristan sadhappytalking
 
-    show emil happytalking:
-        xoffset 100
-        zoom 1.5
+    show emil normal:
+        yoffset -70
+        xoffset 300
+        zoom 2.0
 
     with dissolve
 
@@ -236,8 +264,9 @@ label Chapter7:
     "Overwhelmed with joy, Tristan looked around the crowd to find Zoe… but she was nowhere."
 
     show tristan nervoustalking:
-        xoffset 100
-        zoom 1.5
+        xoffset -130
+        yoffset -150
+        zoom 2
     
     with dissolve
 
@@ -280,11 +309,11 @@ label Chapter7:
     #Tristan (voice soft, tentative):
 
     show tristan nervoustalking:
-        xoffset 750
+        xoffset 500
         zoom 1.5
 
     show zoe worried:
-        xoffset -400
+        xoffset -200
         zoom 1.5
 
     with dissolve
@@ -292,14 +321,14 @@ label Chapter7:
     Tristan "\"There you are! Why did you leave the gym? Why come here, all alone?\""
 
     show tristan nervous:
-        xoffset 750
+        xoffset 500
         zoom 1.5
     with dissolve
 
     "Zoe's lips trembled, but her voice was barely more than a fragile whisper."
 
     show zoe worriedtalking:
-        xoffset -400
+        xoffset -200
         zoom 1.5
     with dissolve
 
@@ -334,11 +363,11 @@ label Chapter7:
     #Tristan (voice tembling):
 
     show tristan nervoustalking:
-        xoffset 750
+        xoffset 500
         zoom 1.5
 
     show zoe worried:
-        xoffset -400
+        xoffset -200
         zoom 1.5
     
     with dissolve
@@ -346,11 +375,11 @@ label Chapter7:
     Tristan "\"What… what do you mean?\""
 
     show tristan nervous:
-        xoffset 750
+        xoffset 500
         zoom 1.5
     
     show zoe worried:
-        xoffset -400
+        xoffset -200
         zoom 1.5
 
     hide zoe worried

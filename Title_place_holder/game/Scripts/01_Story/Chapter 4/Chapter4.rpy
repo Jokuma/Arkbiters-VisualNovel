@@ -30,9 +30,12 @@ label Chapter4:
     play sound "audio/SFX/click.mp3"
     "Click..."
 
-    scene bg room
-    show tristan normaltalking at center
-    play music "audio/Music/tristanhome.ogg" volume 0.03 fadein 1
+    scene bg tristanroom
+    show tristan normaltalking:
+        xoffset 100
+        yoffset 20
+        zoom 1.5
+    play music "audio/Music/tristanhome.ogg" volume 0.3 fadein 1
     with dissolve
 
     play sound "audio/SFX/explosion.wav"
@@ -54,6 +57,8 @@ label Chapter4:
 
     Tristan "\"What if… {w}Nah, not a chance. {w}You shouldn't get your hopes up, Tristan.\""
 
+    stop music fadeout 1.0
+
     show black screen
     with dissolve
 
@@ -70,7 +75,7 @@ label Chapter4:
     show tristan nervoustalking:
         yoffset 1000
         zoom 2
-    play music "audio/Music/school.mp3" volume 0.1 fadein 1
+    play music "audio/Music/school.mp3" volume 0.3 fadein 1
     with dissolve
 
     Tristan "\"It's been awhile since I last went here…\""
@@ -90,12 +95,11 @@ label Chapter4:
     with dissolve
 
     Tristan "\"...\""
-
-    #  *Television static fx* 
-    scene bg staticeffect
     
-    play sound "audio/SFX/static.mp3" 
+    play sound "audio/SFX/static.mp3"
+    scene bg staticeffect
     with hpunch
+    show static2
     with hpunch
 
 
@@ -122,23 +126,26 @@ label Chapter4:
         center
     with dissolve
     hide tristan normal
-    with slow_right 
-    with fade
+    play sound "audio/SFX/walk.mp3" volume 0.3 loop
+    with slow_right
+    stop sound fadeout 0.5
     scene black screen
+    with fade
+    stop sound
+
     "Afternoon sunlight spills through the tall hallway windows, painting golden streaks across the floor."
     "Students drift past in pairs and groups, chatting as they leave for the day."
     
    
     scene bg schoolhallway
     show thoughts zorder 2
-    play sound "audio/SFX/explosion.wav"
     show tristan nervoustalking zorder 2:
         yoffset 1000
         zoom 2
         center
     with dissolve
 
-    Tristan "(in his head){p=0}Knew it...{w} didn't see her all day."
+    Tristan "{i}In his head{/i}{p=0}Knew it...{w} didn't see her all day."
     
     show tristan normal:
         yoffset 1000
@@ -149,9 +156,9 @@ label Chapter4:
     
     scene black screen
     play sound "audio/SFX/schoolbell.mp3"
-    play music "audio/Music/school.mp3" volume 0.1 fadein 1
+    play music "audio/Music/school.mp3" volume 0.3 fadein 1
     "The bell rings..."
-    "He Steps out of the classroom, adjusting his bag strap."
+    "He steps out of the classroom, adjusting his bag strap."
     "As he turns the corner—" 
     scene bg schoolhallway
     show tristan normal:
@@ -170,10 +177,10 @@ label Chapter4:
         center
     with move
     show emil normal:
-        yoffset 1000
-        xoffset -500
-        zoom 2
-        center
+        yoffset -10
+        xoffset -100
+        zoom 1.9
+
     with moveinleft
 
     "Standing in front of him is Emil Navarro.{p}Taller than before."
@@ -193,6 +200,11 @@ label Chapter4:
         xoffset 500
         zoom 2
         center
+
+    show emil surprised:
+        yoffset -10
+        xoffset -100
+        zoom 1.9
     with dissolve
 
     Emil "\"Man, it's really you.\""
@@ -203,9 +215,18 @@ label Chapter4:
         xoffset 500
         zoom 2
         center
+    show emil normal:
+        yoffset -10
+        xoffset -100
+        zoom 1.9
     with dissolve
 
     Tristan "\"Been...{w} busy.\""
+
+    show emil surprised:
+        yoffset -10
+        xoffset -100
+        zoom 1.9
 
     show tristan nervous:
         yoffset 1000
@@ -218,6 +239,11 @@ label Chapter4:
     Emil "\"I've been checking every tournament list for months. Your name's never there.\""
 
     Tristan "\"...\""
+
+    show emil worried:
+        yoffset -10
+        xoffset -100
+        zoom 1.9
 
     show tristan nervoustalking:
         yoffset 1000
@@ -234,6 +260,10 @@ label Chapter4:
         zoom 2
         center
     pause 1.0
+    show emil frustratedtalking:
+        yoffset -10
+        xoffset -100
+        zoom 1.9
     show tristan normal:
         yoffset 1000
         xoffset 500
@@ -245,11 +275,11 @@ label Chapter4:
     Emil "\"Tristan...{w} you love the game.{p}You fought for every piece on the board.\""
     Emil "\"What happened to you?!\""
 
-    #  *Television static fx* 
-    play music "audio/Music/school.mp3" volume 0.1 fadein 1
-    scene bg staticeffect
+    play music "audio/Music/school.mp3" volume 0.3 fadein 1
     play sound "audio/SFX/static.mp3"
+    scene bg staticeffect
     with hpunch
+    show static2
     with hpunch
 
     scene bg schoolhallway
@@ -258,37 +288,53 @@ label Chapter4:
         xoffset 500
         zoom 2
         center
-    show emil normal:
-        yoffset 1000
-        xoffset -500
-        zoom 2
-        center
+    show emil frustrated:
+        yoffset -10
+        xoffset -100
+        zoom 1.9
     with dissolve
 
     Tristan "\"...\""
+
+    show emil frustratedtalking:
+        yoffset -10
+        xoffset -100
+        zoom 1.9
+    with dissolve
     
     Emil "\"Would you say something!\""
+    show emil frustrated:
+        yoffset -10
+        xoffset -100
+        zoom 1.9
     show tristan nervoustalking:
         yoffset 1000
         xoffset 500
         zoom 2
         center
-    Tristan "\"Like I said…{w}I moved on!\""
+    with dissolve
+    Tristan "\"Like I said…{w} I moved on!\""
     show tristan normal:
         yoffset 1000
         xoffset 500
         zoom 2
         center
+    show emil frustratedtalking:
+        yoffset -10
+        xoffset -100
+        zoom 1.9
     with dissolve
 
     Emil "\"Don't give me that answer...{p=0}We both know you love chess.\""
     Emil "\"As your rival I won't allow this!\""
 
     #  *Television static fx* 
-    scene bg staticeffect
     play sound "audio/SFX/static.mp3"
+    scene bg staticeffect
     with hpunch
+    show static2
     with hpunch
+    scene bg schoolhallway
     
     ########################################################################################## cutscene
 
@@ -335,6 +381,7 @@ label Chapter4:
 
     Zoe "\"Tristan...?\""
 
+    play sound "audio/SFX/walk.mp3"
     hide zoe worriedtalking
     with moveoutleft
 
@@ -355,7 +402,7 @@ label Chapter4:
         zoom 2
         center
     
-    show emil normal:
+    show emil frustrated:
         yoffset 1000
         xoffset -400
         zoom 2
@@ -386,7 +433,7 @@ label Chapter4:
 
     "She says reluctantly."
 
-    show emil normal:
+    show emil worried:
         yoffset 1000
         xoffset -700
         zoom 2
@@ -394,6 +441,13 @@ label Chapter4:
     with move
 
     "Emil lets go of Tristan...{p=0}Tristan slowly walks toward Zoe."
+
+    show emil worriedtalk:
+        yoffset 1000
+        xoffset -700
+        zoom 2
+        center
+    with dissolve
 
     Emil "\"I...{w}I did not mean to-\""
 
@@ -444,7 +498,7 @@ label Chapter4:
         right
     with dissolve
 
-    Tristan "\"It's nothing...{w}just a little bit of catching up with an old friend.\""
+    Tristan "\"It's nothing...{w} just a little bit of catching up with an old friend.\""
 
     show tristan nervous:
         yoffset 1000

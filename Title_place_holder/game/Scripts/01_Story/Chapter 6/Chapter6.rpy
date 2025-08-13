@@ -26,11 +26,11 @@ label Chapter6:
     "After a fun date, Zoe and Tristan sat on a nearby bench for a little breather…"
 
     show zoe happytalking:
-        xoffset -400
+        xoffset -200
         zoom 1.5
     
     show tristan nervous:
-        xoffset 750
+        xoffset 500
         zoom 1.5
 
     with dissolve
@@ -38,11 +38,11 @@ label Chapter6:
     Zoe "\"Wow! Today was so fun~! I haven't had this much fun in awhile!\""
 
     show tristan nervoustalking:
-        xoffset 750
+        xoffset 500
         zoom 1.5
     
     show zoe happy:
-        xoffset -400
+        xoffset -200
         zoom 1.5
     
     with dissolve
@@ -50,7 +50,7 @@ label Chapter6:
     Tristan "\"Yeah I agree…\""
 
     show tristan nervous:
-        xoffset 750
+        xoffset 500
         zoom 1.5
 
     with dissolve
@@ -58,34 +58,34 @@ label Chapter6:
     "Tristan looking a bit gloomy remembering the chess match from the perya previously"
 
     show zoe worried:
-        xoffset -400
+        xoffset -200
         zoom 1.5
         pause 1.0
     
     show zoe worriedtalking:
-        xoffset -400
+        xoffset -200
         zoom 1.5
     with dissolve
 
     Zoe "\"Hey, what's wrong? Is there something on your mind?\""
 
     show zoe worried:
-        xoffset -400
+        xoffset -200
         zoom 1.5
 
     show tristan nervoustalking:
-        xoffset 750
+        xoffset 500
         zoom 1.5
     with dissolve
 
     Tristan "\"Zoe I have a question… Is there something that you really love to do but you're too afraid to face it head on because of the outcome?\""
 
     show tristan nervous:
-        xoffset 750
+        xoffset 500
         zoom 1.5
 
     show zoe worriedtalking:
-        xoffset -400
+        xoffset -200
         zoom 1.5
     with dissolve
 
@@ -139,22 +139,22 @@ label Chapter6:
     with fade
 
     show tristan sadhappytalking:
-        xoffset 750
+        xoffset 500
         zoom 1.5
 
     show zoe worried:
-        xoffset -400
+        xoffset -200
         zoom 1.5
     with dissolve
     
     Tristan "\"hahaha… {w} you might think I'm pretty pathetic letting something like failure bring me down so much…\""
 
     show tristan sadhappy:
-        xoffset 750
+        xoffset 500
         zoom 1.5
     
     show zoe worriedtalking:
-        xoffset -400
+        xoffset -200
         zoom 1.5
     with dissolve
 
@@ -167,11 +167,11 @@ label Chapter6:
     Zoe "\"The truth is… you only get one life, Tristan. And if you love something, you shouldn't let fear take it away from you. Not pressure, not what people say, not even the chance of failing.\""
 
     show zoe worried:
-        xoffset -400
+        xoffset -200
         zoom 1.5
 
     show tristan nervoustalking:
-        xoffset 750
+        xoffset 500
         zoom 1.5
     with dissolve
 
@@ -218,138 +218,138 @@ label Chapter6:
     hide zoe smug
 
     show zoe smug:
-        xoffset -400
+        xoffset -200
         zoom 1.5
 
     show tristan flusteredtalking:
-        xoffset 750
+        xoffset 500
         zoom 1.5
     with dissolve
 
     Tristan "\"Oh stop! I'm not crying! There's just something in my eye is'all\""
 
     show tristan flustered:
-        xoffset 750
+        xoffset 500
         zoom 1.5
 
     show zoe happytalking:
-        xoffset -400
+        xoffset -200
         zoom 1.5
     with dissolve
 
     Zoe "\"Yeah sure that's what they all say hehe…\""
 
     show zoe happy:
-        xoffset -400
+        xoffset -200
         zoom 1.5
 
     show tristan annoyed:
-        xoffset 750
+        xoffset 500
         zoom 1.5
     with dissolve
 
     "Tristan looking a bit annoyed"
 
     show tristan sadhappytalking:
-        xoffset 750
+        xoffset 500
         zoom 1.5
     with dissolve
 
     Tristan "\"Hey Zoe thanks for the advice… It really helped clear things that are going through my mind…\""
 
     show tristan sadhappy:
-        xoffset 750
+        xoffset 500
         zoom 1.5
     
     show zoe happytalking:
-        xoffset -400
+        xoffset -200
         zoom 1.5
     with dissolve
 
     Zoe "\"Yeah of course! I'm your girlfriend after all!\""
 
     show zoe happy:
-        xoffset -400
+        xoffset -200
         zoom 1.5
 
     show tristan flustered:
-        xoffset 750
+        xoffset 500
         zoom 1.5
     with dissolve
 
     Tristan "\"...\""
 
     show zoe smug:
-        xoffset -400
+        xoffset -200
         zoom 1.5
     with dissolve
 
     Zoe "\"hehe~ did you just blushed just now~\""
 
     show tristan flusteredtalking:
-        xoffset 750
+        xoffset 500
         zoom 1.5
     with dissolve
 
     Tristan "\"No I didn't! Stop!\""
 
     show zoe giggle:
-        xoffset -400
+        xoffset -200
         zoom 1.5
     with dissolve
 
     "Zoe chuckles"
 
     show zoe happy:
-        xoffset -400
+        xoffset -200
         zoom 1.5
 
     show tristan sadhappytalking:
-        xoffset 750
+        xoffset 500
         zoom 1.5
     with dissolve
 
     Tristan "\"Anyway I'm thinking of entering this school year's chess tournament… I was wondering if you would like to watch?\""
 
     show zoe happytalking:
-        xoffset -400
+        xoffset -200
         zoom 1.5
 
     show tristan sadhappy:
-        xoffset 750
+        xoffset 500
         zoom 1.5
     with dissolve
 
     Zoe "\"Sure! I would love to watch your match!\""
 
     show zoe happy:
-        xoffset -400
+        xoffset -200
         zoom 1.5
 
     show tristan sadhappytalking:
-        xoffset 750
+        xoffset 500
         zoom 1.5
     with dissolve
 
     Tristan "\"That's great! The tournament starts at 3pm in the school gymnasium!\""
 
     show zoe happytalking:
-        xoffset -400
+        xoffset -200
         zoom 1.5
 
     show tristan sadhappy:
-        xoffset 750
+        xoffset 500
         zoom 1.5
     with dissolve
 
     Zoe "\"I'll be there no matter what! Promise me a good match!\""
 
     show zoe happy:
-        xoffset -400
+        xoffset -200
         zoom 1.5
 
     show tristan sadhappytalking:
-        xoffset 750
+        xoffset 500
         zoom 1.5
     with dissolve
 

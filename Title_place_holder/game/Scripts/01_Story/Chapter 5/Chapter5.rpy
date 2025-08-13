@@ -10,7 +10,7 @@ screen c5:
         yalign 0.5
         text "Chapter 5 : Pawn's Promotion " yalign 0.5 xalign 0.5
 
-label start:
+label Chapter5:
 
     show screen c5 with fade
     pause 3.0
@@ -34,7 +34,7 @@ label start:
     play sound "audio/SFX/walk.mp3" volume 0.3   
 
     show zoe happytalking:
-        xoffset -400
+        xoffset -200
         zoom 1.5
     with moveinright
 
@@ -48,11 +48,11 @@ label start:
     "She tugs his sleeve like a child dragging a reluctant parent into a toy store."
 
     show zoe happy:
-        xoffset -400
+        xoffset -200
         zoom 1.5
 
     show tristan normaltalking:
-        xoffset 750
+        xoffset 500
         zoom 1.5
 
     with dissolve
@@ -71,11 +71,11 @@ label start:
     "As if every stall is a little chipped, every prize a little faded."
 
     show zoe happytalking:
-        xoffset -400
+        xoffset -200
         zoom 1.5
     
     show tristan normal:
-        xoffset 750
+        xoffset 500
         zoom 1.5
 
     with dissolve
@@ -83,14 +83,14 @@ label start:
     Zoe "\"First stop, darts!\""
 
     show zoe smugtalking:
-        xoffset -400
+        xoffset -200
         zoom 1.5
     with dissolve
     
     Zoe "\"Loser buys isaw~\""
 
     show tristan normaltalking:
-        xoffset 750
+        xoffset 500
         zoom 1.5
     with dissolve
     
@@ -131,11 +131,11 @@ label start:
     "he exhales, steadying his hand like a chess player hovering over a piece before committing to the move."
 
     show zoe happytalking:
-        xoffset -400
+        xoffset -200
         zoom 1.5
 
     show tristan normal:
-        xoffset 750
+        xoffset 500
         zoom 1.5
     
     with dissolve
@@ -143,11 +143,11 @@ label start:
     Zoe "\"You're overthinking it...{w} It's not chess Tristan.\""
 
     show zoe happy:
-        xoffset -400
+        xoffset -200
         zoom 1.5
 
     show tristan normaltalking:
-        xoffset 750
+        xoffset 500
         zoom 1.5
     
     with dissolve
@@ -162,11 +162,11 @@ label start:
     "By the end, Zoe wins by a single balloon."
 
     show zoe smugtalking:
-        xoffset -400
+        xoffset -200
         zoom 1.5
 
     show tristan normal:
-        xoffset 750
+        xoffset 500
         zoom 1.5
 
     with dissolve
@@ -176,7 +176,7 @@ label start:
     Zoe "I guess you're buying isaw this time~"
 
     show tristan sadhappytalking:
-        xoffset 750
+        xoffset 500
         zoom 1.5
     with dissolve
 
@@ -236,11 +236,11 @@ label start:
     "He chews slowly, as if the question itself takes time to digest."
 
     show zoe worried:
-        xoffset -400
+        xoffset -200
         zoom 1.5
 
     show tristan nervoustalking:
-        xoffset 750
+        xoffset 500
         zoom 1.5
     
     with dissolve
@@ -248,7 +248,7 @@ label start:
     Tristan "\"Just...{w} thinking about some stuff.\""
 
     show zoe happytalking:
-        xoffset -400
+        xoffset -200
         zoom 1.5
     with dissolve
 
@@ -259,7 +259,7 @@ label start:
     hide tristan nervoustalking
     
     show tristan normal:
-        xoffset 750
+        xoffset 500
         zoom 1.5
     
     with dissolve
@@ -271,11 +271,11 @@ label start:
     hide tristan normal
     
     show tristan laugh:
-        xoffset 750
+        xoffset 500
         zoom 1.5
 
     show zoe happy:
-        xoffset -400
+        xoffset -200
         zoom 1.5
     with dissolve
 
@@ -284,21 +284,21 @@ label start:
     "Tristan laugh showing full expression and laughter"
 
     show zoe happytalking:
-        xoffset -400
+        xoffset -200
         zoom 1.5
     with dissolve
 
     Zoe "\"Hey...{w} Why you are laughing?\""
 
     show zoe giggle:
-        xoffset -400
+        xoffset -200
         zoom 1.5
     with dissolve
 
     "Zoe smiled back...{p}This is the first time she saw Tristan genuinely smile"
 
     show zoe happytalking:
-        xoffset -400
+        xoffset -200
         zoom 1.5
     with dissolve
 
@@ -333,11 +333,11 @@ label start:
     "As Zoe shouted she coughed again… this time it looked worse than usual"
 
     show zoe worried:
-        xoffset -400
+        xoffset -200
         zoom 1.5
 
     show tristan nervoustalking:
-        xoffset 750
+        xoffset 500
         zoom 1.5
     with dissolve
 
@@ -347,21 +347,21 @@ label start:
     with dissolve
 
     show zoe happytalking:
-        xoffset -400
+        xoffset -200
         zoom 1.5
     with dissolve
         
     Zoe "\"More okay than you.{p}HAHAHAHAHAHAHA!\""
 
     show zoe happy:
-        xoffset -400
+        xoffset -200
         zoom 1.5
     with dissolve
 
     "Tristan is worried but still put up a little smile"
 
     show tristan normaltalking:
-        xoffset 750
+        xoffset 500
         zoom 1.5
 
     with dissolve
@@ -376,11 +376,11 @@ label start:
     scene bg perya
 
     show tristan normal:
-        xoffset 750
+        xoffset 500
         zoom 1.5
 
     show zoe happytalking:
-        xoffset -400
+        xoffset -200
         zoom 1.5
     with dissolve
 
@@ -389,14 +389,14 @@ label start:
     show tristan happytalking
 
     show zoe happy:
-        xoffset -400
+        xoffset -200
         zoom 1.5
     with dissolve
 
     Tristan "\"nothing...{w} hehe\""
 
     show zoe smugtalking:
-        xoffset -400
+        xoffset -200
         zoom 1.5
 
     show tristan happy
@@ -411,7 +411,7 @@ label start:
     "Zoe uses punch on Tristan"
 
     show zoe happy:
-        xoffset -400
+        xoffset -200
         zoom 1.5
     with dissolve
 
@@ -420,7 +420,7 @@ label start:
     "Its Super Effective!"
 
     show tristan annoyedtalking:
-        xoffset 750
+        xoffset 500
         zoom 1.5
     with dissolve
 
@@ -429,7 +429,7 @@ label start:
     Tristan "\"Hey cut it out!\""
 
     show zoe smugtalking:
-        xoffset -400
+        xoffset -200
         zoom 1.5
     with dissolve
 
