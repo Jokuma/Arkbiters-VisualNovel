@@ -51,9 +51,10 @@ label Chapter4:
     "A flicker of memory — {p}He remembers Zoe saying they both go to the same school."
     
     show tristan normaltalking:
+        xoffset -100
         yoffset 1000
+        center
         zoom 2
-    with dissolve
 
     Tristan "\"What if… {w}Nah, not a chance. {w}You shouldn't get your hopes up, Tristan.\""
 

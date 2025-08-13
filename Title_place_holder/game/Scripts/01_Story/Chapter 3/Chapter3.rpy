@@ -409,7 +409,8 @@ label Chapter3:
         zoom 2
         left
     with dissolve
-    Zoe "\"Uwaaa… I forgot I have school tomorrow! Man that sucks! I was having a lot of fun.\""
+    Zoe "\"Uwaaa!..\""
+    Zoe "\"I forgot I have school tomorrow! Man that sucks! I was having a lot of fun.\""
     show tristan normaltalking:
         yoffset 1000
         xoffset 500

@@ -88,15 +88,16 @@ label Chapter2:
     #show cutscene here
     scene bg waterbottle1
     play music "audio/Music/WaterBottle.mp3" volume 0.3 fadein 1
-    with dissolve
+    with dissolve  
 
     Tristan "\"H-Hey...\""
     Tristan "\"You didn't have to get me this.\""
-
+    
     Zoe "\"I wanted to!\""
     scene bg waterbottle2
     with dissolve
-    Zoe "\"Besides...{p=1}You looked like you'd melt if you sat here alone too long...\""  
+    Zoe "\"Besides...\""
+    Zoe "\"You looked like you'd melt if you sat here alone too long...\""  
     scene bg waterbottle3
     with dissolve
     Zoe "\"Like an ice cream!\""
