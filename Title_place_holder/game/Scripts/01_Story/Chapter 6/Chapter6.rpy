@@ -99,6 +99,12 @@ label Chapter6:
     #--------------Backstory--------------
     #--------------scene 1--------------
 
+    scene bg blackscreen
+    show fb1:
+        zoom 0.5
+        center
+    with dissolve
+
     Tristan "\"Well... ever since I was a kid... I've been in love with chess.\""
 
     Tristan "\"I remember spending most of my childhood days just trying to get better…\""
@@ -110,12 +116,24 @@ label Chapter6:
     #--------------scene 1--------------
     #--------------scene 2--------------
 
+    scene bg blackscreen
+    show fb2:
+        zoom 0.5
+        center
+    with dissolve
+
     Tristan "\"Then I got good enough to be able to  join tournaments… I was really nervous at first but when I got my first win ever I was thrilled… It was the best feeling ever…\""
 
     Tristan "\"Heh, it was kinda funny that some even go as far to say that I am a child prodigy…\""
 
     #--------------scene 2--------------
     #--------------scene 3--------------
+
+    scene bg blackscreen
+    show fb3:
+        zoom 0.5
+        center
+    with dissolve
 
     CrowdM "\"He should've won that match what a waste\""
 
@@ -125,6 +143,12 @@ label Chapter6:
 
     #--------------scene 3--------------
     #--------------scene 4--------------
+
+    scene bg blackscreen
+    show fb4:
+        zoom 0.5
+        center
+    with dissolve
 
     Tristan "\"That moment… It stuck with me. Like a stain I couldn't wash off. I swore I'd never let myself feel that kind of shame again.\""
 
@@ -179,7 +203,6 @@ label Chapter6:
 
     hide zoe worried
     hide tristan nervoustalking
-    hide bg parknight
     with dissolve
 
     #High Impact Scene

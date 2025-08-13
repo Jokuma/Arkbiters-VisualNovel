@@ -6,6 +6,23 @@ screen cFinal:
         yalign 0.5
         text "Chapter ??? : Checkmate! " yalign 0.5 xalign 0.5
 
+image flashback:
+    "images/Background/storeentrance.png"
+    pause 0.2
+    "images/Background/bg park.png"
+    pause 0.2
+    "images/Background/bg karaoke.png"
+    pause 0.2
+    "images/Background/bg schoolhallway.png"
+    pause 0.2
+    "images/Background/bg perya.png"
+    pause 0.2
+    "images/Background/bg parknight.png"
+    pause 0.2
+    "images/Background/bg hospital.png"
+    pause 0.2
+    repeat
+
 label FinalChapter:
 
     show screen cFinal with fade
@@ -168,13 +185,17 @@ label FinalChapter:
         xoffset 100
         zoom 1.5
     with dissolve
-    with hpunch
 
     Zoe "\"eh!?\""
 
     hide zoe surprisedflustered
-    with dissolve
 
+    show zoe surprisedflustered:
+        xoffset -165
+        yoffset -50
+        zoom 2.0
+
+    play sound "audio/SFX/explosion.wav" volume 0.3
     Zoe "\"EHHHHH!?!?!\"" with hpunch
 
     scene bg park
@@ -727,6 +748,9 @@ label FinalChapter:
 
     #-------------------storeentrance-------------------
 
+    scene storeentrance
+    with dissolve
+
     Zoe "\"Earth to mister...{w} Earth to mister!!\""
     Zoe "\"Earth to mister...\""
 
@@ -757,7 +781,7 @@ label FinalChapter:
     show static2
     with hpunch
     with dissolve
-    scene bg blackscreen
+    scene storeentrance
     
     show zoe worriedtalking:
         xoffset 100
@@ -767,6 +791,7 @@ label FinalChapter:
     Zoe "\"What is happening... That noise again\""
 
     hide zoe worried
+    scene bg blackscreen
     with dissolve
 
     "The random noise and pain shows up frequently...{p}The both of them don't know what's happening and what's causing it.."
@@ -790,11 +815,12 @@ label FinalChapter:
     show static2
     with hpunch
     with dissolve
-    scene bg blackscreen
+    scene bg void
 
     play music "audio/Music/BlackVoid.mp3" volume 0.3 loop
 
     #--------------------------------Black Void--------------------------------
+
 
     "The world is gone."
     "No streetlights, no park benches— just an endless black void with faint, drifting squares of white and gray floating like broken pieces of a chessboard."
@@ -839,15 +865,13 @@ label FinalChapter:
     "He looks at her..."
     "he's trembling — not from the cold, but from something deeper{p}Her breaths are short, strained, like every inhale is borrowed time"
 
-
     play sound "audio/SFX/static.mp3"
     scene bg staticeffect
     with hpunch
     show static2
     with hpunch
     with dissolve
-    scene bg blackscreen
-
+    scene bg void
 
     "Tristan's grip loosens...{p}His eyes are wide, but no longer frantic."
 
@@ -859,12 +883,18 @@ label FinalChapter:
     with dissolve
     scene bg blackscreen
 
-    show tristan normaltalking:
-        xoffset 100
-        zoom 1.5
+    show flashback
+
+    show thoughts zorder 2
+    show tristan normaltalking zorder 2:
+        yoffset -200
+        xoffset -380
+        zoom 2.5
     with dissolve
     
     Tristan "\"...{w} I remember it now\""
+
+    scene bg void
 
     hide tristan normaltalking
     show zoe worriedtalking:
@@ -890,14 +920,18 @@ label FinalChapter:
     show static2
     with hpunch
     with dissolve
-    scene bg blackscreen
+    show flashback
 
-    show zoe worriedtalking:
+    show thoughts zorder 2
+    show zoe worriedtalking zorder 2:
         xoffset 100
         zoom 1.5
     with dissolve
 
     Zoe "\"...{w} I remember it now too.\""
+
+    scene bg void
+    with dissolve
 
     "A tear slips down Tristan's cheek"
 
@@ -982,13 +1016,14 @@ label FinalChapter:
     show static2
     with hpunch
     with dissolve
-    scene bg blackscreen
+    scene bg void
 
     # The screen floods with harsh white noise.
 
     #push sound effect
 
-    "Zoe pushes away from Tristan..."
+    play sound "audio/SFX/thud.mp3"
+    "Zoe pushes away from Tristan..." with hpunch
 
     show zoe worriedtalking:
         xoffset 100
@@ -1040,13 +1075,46 @@ label FinalChapter:
     #--------------------------montage style--------------------------
     "Months pass..."
     "The seasons change{p}squares of light and shadow shifting across the city."
+
+    scene bg park
+    show thoughts
+    with dissolve
+
     "Tristan visits the park — the same square where the game had begun."
+
+    scene bg perya
+    show thoughts
+    with dissolve
+
     "Sometimes he stops at the perya{p}buys kwek-kwek and isaw, and leaves half on the bench beside him{p}as if saving it for a missing piece."
+
+    scene bg schoolhallway
+    show thoughts
+    with dissolve
+
     "When people ask about Zoe...{w} he doesn't speak of the loss."
+
+    scene bg darts
+    show thoughts
+    with dissolve
+
     "He tells them of her daring move...{p}her sharp laughter...{p}the way she'd tilt the game in her favor with a single smile."
+
+    scene bg tristanroom
+    show thoughts
+    with dissolve
+
     "Some nights, when the room is quiet and the pieces rest in still formation, he almost hears it —"
+
+    scene bg blackscreen
+    with dissolve
+
     "A soft, teasing voice across the board"
+
+    "..."
     
     "Checkmate."
+
+    with fade
 
     return

@@ -499,7 +499,7 @@ label Chapter3:
     with dissolve
     "His eyes keep darting toward Zoe— {p}like a player glancing at a chessboard{p}unsure if the next move will win or lose the game."
     
-    show bg thoughts
+    show bg blackscreen
     hide zoe normal
     hide tristan flustered
     stop music fadeout 1.0

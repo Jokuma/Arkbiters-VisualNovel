@@ -470,6 +470,7 @@ label Chapter5:
     "Zoe and Tristan then proceed to conclude their perya date and are heading to the park..."
 
     scene black screen
+    stop music fadeout 1.0
     with dissolve
 
     jump Chapter6
