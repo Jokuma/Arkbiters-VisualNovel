@@ -21,21 +21,22 @@ label Chapter4:
     define slow_right = MoveTransition(2.0, leave=offscreenright, leave_time_warp=_warper.easeout)
     define slow_left = MoveTransition(2.0, leave=offscreenleft, leave_time_warp=_warper.easeout)
 
-    play sound "audio/beep.mp3"
+    play sound "audio/SFX/beep.mp3"
     "BEEP!..."
-    play sound "audio/beep.mp3"
+    play sound "audio/SFX/beep.mp3"
     "BEEP!....."
-    play sound "audio/beep.mp3"
+    play sound "audio/SFX/beep.mp3"
     "BEEP!......."
-
+    play sound "audio/SFX/click.mp3"
     "Click..."
 
     scene bg room
     show tristan normaltalking at center
-
+    play music "audio/Music/tristanhome.ogg" volume 0.03 fadein 1
     with dissolve
-    
-    Tristan "{i}grunts{/i}"
+
+    play sound "audio/SFX/explosion.wav"
+    Tristan "{i}grunts{/i}" with hpunch
 
     Tristan "\"I feel exhausted from last time… but it sure is fun.\""
 
@@ -56,8 +57,8 @@ label Chapter4:
     show black screen
     with dissolve
 
-    "Tristan then went to school hoping to meet Zoe."
-
+    "Tristan then went to school."
+    stop music
     show screen c4 with fade
     pause 5.0
     hide screen c4 with fade
@@ -69,7 +70,7 @@ label Chapter4:
     show tristan nervoustalking:
         yoffset 1000
         zoom 2
-    
+    play music "audio/Music/school.mp3" volume 0.1 fadein 1
     with dissolve
 
     Tristan "\"It's been awhile since I last went here…\""
@@ -92,12 +93,15 @@ label Chapter4:
 
     #  *Television static fx* 
     scene bg staticeffect
-    play sound "audio/static.mp3"
+    
+    play sound "audio/SFX/static.mp3" 
     with hpunch
     with hpunch
 
+
     scene bg schoolhallway
-    show tristan annoyedtalking:
+    show thoughts zorder 2
+    show tristan annoyedtalking zorder 2:
         yoffset 1000
         zoom 2
         center
@@ -118,23 +122,24 @@ label Chapter4:
         center
     with dissolve
     hide tristan normal
-    with slow_right
+    with slow_right 
     with fade
-
+    scene black screen
     "Afternoon sunlight spills through the tall hallway windows, painting golden streaks across the floor."
-    
     "Students drift past in pairs and groups, chatting as they leave for the day."
     
-    scene bg thoughts
-    show tristan nervoustalking:
+   
+    scene bg schoolhallway
+    show thoughts zorder 2
+    play sound "audio/SFX/explosion.wav"
+    show tristan nervoustalking zorder 2:
         yoffset 1000
         zoom 2
         center
     with dissolve
 
     Tristan "(in his head){p=0}Knew it...{w} didn't see her all day."
-
-    scene bg schoolhallway
+    
     show tristan normal:
         yoffset 1000
         zoom 2
@@ -142,10 +147,13 @@ label Chapter4:
     hide tristan normal
     with dissolve
     
-    play sound "audio/bell.mp3"
+    scene black screen
+    play sound "audio/SFX/schoolbell.mp3"
+    play music "audio/Music/school.mp3" volume 0.1 fadein 1
     "The bell rings..."
     "He Steps out of the classroom, adjusting his bag strap."
     "As he turns the corner—" 
+    scene bg schoolhallway
     show tristan normal:
         yoffset 1000
         zoom 2
@@ -238,8 +246,9 @@ label Chapter4:
     Emil "\"What happened to you?!\""
 
     #  *Television static fx* 
+    play music "audio/Music/school.mp3" volume 0.1 fadein 1
     scene bg staticeffect
-    play sound "audio/static.mp3"
+    play sound "audio/SFX/static.mp3"
     with hpunch
     with hpunch
 
@@ -277,25 +286,27 @@ label Chapter4:
 
     #  *Television static fx* 
     scene bg staticeffect
-    play sound "audio/static.mp3"
+    play sound "audio/SFX/static.mp3"
     with hpunch
     with hpunch
-    scene bg schoolhallway
+    
+    ########################################################################################## cutscene
 
     "Emil grabs Tristan by the collar."
 
     Emil "\"As your friend...{w} I won't allow this!\""
 
     "The air feels tense and heavy…"
-
-    scene bg thoughts
-    show zoe happytalking:
+    
+    scene bg schoolhallway
+    show thoughts zorder 2
+    show zoe happytalking zorder 2:
         yoffset 1000
-        zoom 2
         center
+        zoom 2
     with fade
 
-    Zoe "{i}in her head{/i}{p=0}Is that Tristan's voice?"
+    Zoe "{i}(in her head){/i}{p=0}Is that Tristan's voice?"
 
     scene bg schoolhallway
     show zoe happytalking:

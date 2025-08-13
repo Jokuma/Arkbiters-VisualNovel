@@ -19,6 +19,7 @@ label Chapter2:
     define dissolve = Dissolve(0.2)
 
     scene bg park
+    play music "audio/Music/ParkDay.mp3" volume 0.1 fadein 1
     with dissolve
 
     "The warm afternoon sun spills over the park. Gentle wind carries the faint scent of flowers. Birds chirp as children run around laughing."
@@ -31,11 +32,12 @@ label Chapter2:
    
     "Tristan waits nervously in the park"
 
-    show bg thoughts
-    show tristan nervous:
+    show thoughts
+    play music "audio/Music/Thoughts.mp3" volume 0.3 fadein 0.3 loop
+    show tristan nervous zorder 2:
         yoffset 1000
-        zoom 2
         center
+        zoom 2
     with dissolve
 
     Tristan "(In his head){p=0}Why am I here?!"
@@ -48,6 +50,8 @@ label Chapter2:
     Tristan "(In his head){p=0}Why did I even agree to this..."
 
     show bg park
+    hide thoughts
+    play music "audio/Music/ParkDay.mp3" volume 0.1 fadein 1
     with dissolve
  
     show tristan normal:
@@ -83,6 +87,7 @@ label Chapter2:
 
     #show cutscene here
     scene bg waterbottle1
+    play music "audio/Music/WaterBottle.mp3" volume 0.1 fadein 1
     with dissolve
 
     Tristan "\"H-Hey...\""
@@ -91,11 +96,10 @@ label Chapter2:
     Zoe "\"I wanted to!\""
     scene bg waterbottle2
     with dissolve
-    pause 1
+    Zoe "\"Besides...{p=1}You looked like you'd melt if you sat here alone too long...\""  
     scene bg waterbottle3
     with dissolve
-
-    Zoe "\"You looked like you'd melt if you sat here alone too long.\""
+    Zoe "\"Like an ice cream!\""
 
     #  *Television static fx* 
     play sound "audio/SFX/static.mp3"
@@ -103,9 +107,11 @@ label Chapter2:
     with hpunch
     with hpunch
     scene bg waterbottle3
+    show thoughts
     Tristan "(In his head){p=0}That smile again..."
     Tristan "(In his head){p=0}Why does it feel like I've seen it a before"
-
+    play music "audio/Music/ParkDay.mp3" volume 0.1 fadein 1
+    
     scene bg park
     show zoe worried:
         yoffset 1000
@@ -118,7 +124,7 @@ label Chapter2:
         xoffset 300
         zoom 2
         left
-    
+    hide thoughts
     with dissolve
 
     "Zoe notices his expression."
@@ -260,7 +266,6 @@ label Chapter2:
         zoom 2
         left
     with dissolve
-
     Tristan "\"I just...{w} Stopped.\""
     Tristan "\"Lost interest...{w} I guess.\""
     
@@ -284,7 +289,6 @@ label Chapter2:
         zoom 2
         left
     with dissolve
-
     Zoe "\"Such a Shame.\""
     Zoe "\"You probably would've crushed me in a match.\""
 
@@ -465,28 +469,37 @@ label Chapter2:
     Zoe "\"I like being mysterious.\""
 
     #  *Television static fx* 
-    scene bg staticeffect
-    play sound "audio/static.mp3"
-    hide zoe smugtalking
-    with hpunch
-    with hpunch
-    show tristan nervous:
-        yoffset 1000
-        xoffset 300
-        zoom 2
-        left
 
-    hide zoe happy
-    show bg thoughts
-    show tristan nervous:
+    scene bg staticeffect
+    stop music
+    play sound "audio/SFX/static.mp3"
+    with hpunch
+    with hpunch 
+
+    scene bg park
+    show zoe smugtalking:
         yoffset 1000
-        xoffset 300
+        xoffset -500
         zoom 2
         left
+    show thoughts zorder 2
+    show tristan nervous zorder 2:
+        yoffset 1000
+        xoffset 300
+        left
+        zoom 2
+    play music "audio/Music/Thoughts.mp3" volume 0.3 fadein 0.3 loop
     with dissolve
 
     Tristan "(In his head){p=0}That again?!"
     Tristan "..."
+    hide thoughts
+    show zoe worriedtalking:
+        yoffset 1000
+        xoffset -500
+        zoom 2
+        left
+    play music "audio/Music/ParkDay.mp3" volume 0.1 fadein 1
     Zoe "\"Earth to Tristan!!!\""
 
     show tristan normaltalking:
@@ -626,6 +639,7 @@ label Chapter2:
     with moveoutleft
     with dissolve
 
-    jump Chapter3
+    stop music
     with fade
+    jump Chapter3
     return

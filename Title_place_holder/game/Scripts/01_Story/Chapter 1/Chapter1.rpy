@@ -5,10 +5,9 @@ screen c1:
         xalign 0.5
         yalign 0.5
         text "Chapter 1: Pawn to H-eart's File " yalign 0.5 xalign 0.5
-        
 
 label start:
-
+    stop music
     define dissolve = Dissolve(0.2)
     define fade1 = Fade(0.5, 0.0, 0.5)
 
@@ -30,7 +29,7 @@ label start:
     
     with fade1
     show tristan normal
-    play music "audio/Music/tristanhome.ogg" volume 0.09 fadein 1.0 loop
+    play music "audio/Music/tristanhome.ogg" volume 0.03 fadein 1.0 loop
     with fade1
     with hpunch
     
@@ -53,17 +52,16 @@ label start:
         zoom 2
         center
     
-    play sound "audio/SFX/explosion.wav"
+    play sound "audio/SFX/explosion.wav" volume 3
     Tristan "\"Crap!!\"" with hpunch 
     
-    scene bg thoughts
+    show thoughts
 
-    show tristan normal:
+    show tristan normal zorder 2:
         yoffset 1000
         zoom 2
-        center
     stop music 
-    play music "audio/Music/Thoughts.mp3" volume 0.09 fadein 1 loop
+    play music "audio/Music/Thoughts.mp3" volume 0.3 fadein 1 loop
     with dissolve
     
     Tristan "{i}(In his head){/i}{p=0}I gotta go to work!"
@@ -90,8 +88,9 @@ label start:
         yoffset 1000
         zoom 2
         center
+    play music "audio/Music/tristanhome.ogg" volume 0.03 fadein 1.0 loop
     with dissolve
-
+    
     Tristan "\"Oh well...{w} Who cares anyway.\""
 
     hide tristan normal
@@ -101,11 +100,11 @@ label start:
     stop music fadeout 1
     
     show screen c1 with fade
-    pause 3.0
+    pause 3.0 
     hide screen c1 with fade
 
-    show bg store 
-    play music "audio/store.ogg" volume 0.05 fadein 1 loop
+    scene storeentrance
+    play music "audio/Music/Supermarket.mp3" volume 0.1 fadein 1 loop
     with dissolve
     
     "As Tristan enters the store, a lively chime greeted him."
@@ -113,14 +112,12 @@ label start:
     "Following with the look of his manager."
 
     show tristan normal:
-        xoffset 600
-        zoom 1.5
-    with dissolve
+        yoffset 1000
+        center
+        zoom 2
+    with moveinright
 
     play sound "audio/SFX/walk.mp3"
-    show manager normal:
-        left
-    with moveinleft
 
     Manager "\"Oh...\""
     Manager "\"You're finally here Tristan.\""
@@ -131,8 +128,9 @@ label start:
     Manager "\"You don't look so good.\""
 
     show tristan normaltalking:
-        xoffset 600
-        zoom 1.5
+        yoffset 1000
+        center
+        zoom 2
     with dissolve
 
     Tristan "\"Yeah.\""
@@ -140,8 +138,9 @@ label start:
     Tristan "\"I'm in tip-top shape.\""
 
     show tristan normal:
-        xoffset 600
-        zoom 1.5
+        yoffset 1000
+        center
+        zoom 2
     with dissolve
 
     Manager "\"How can you say that in that state.\""
@@ -151,24 +150,30 @@ label start:
     Manager "\"Look out for yourself okay?\""
 
     "Tristan nods as prepares to work the cash register."
-    hide manager normal
+    scene storecashregister
     hide tristan normal
-
+    hide storeentrance
     with squares
+    jump registerminigame
 
+    ####################################################################################
+
+    label Chapter1continue:
+    scene storeentrance
+    with squares
     show tristan normal:
         yoffset 1000
-        zoom 2
         center
+        zoom 2
     with dissolve
 
     "Tristan is scanning the products with a flatest expression on his face. "
-
+ 
 
     show tristan normaltalking:
         yoffset 1000
-        zoom 2
         center
+        zoom 2
     with dissolve
 
     Tristan "\"Will that be all?\""
@@ -185,7 +190,7 @@ label start:
 
     show tristan normal:
         yoffset 1000
-        xoffset 450
+        xoffset 500
         zoom 2
         left
     with move
@@ -201,19 +206,25 @@ label start:
 
     stop music
     play sound "audio/SFX/static.mp3" volume 0.5
-    scene bg staticeffect
+    scene bg staticeffect 
     with hpunch
     with hpunch
     pause 0.3
-    scene bg thoughts
 
-    show tristan nervous:
+    scene storeentrance
+    show thoughts zorder 2
+    show tristan nervous zorder 2:
         yoffset 1000
         xoffset 500
+        left
+        zoom 2
+    show zoe happy:
+        yoffset 1000
+        xoffset -700
         zoom 2
         left
     stop music 
-    play music "audio/thoughts.ogg" volume 0.05 fadein 0.3 loop
+    play music "audio/Music/Thoughts.mp3" volume 0.3 fadein 0.3 loop
     Tristan "{i}(In his head){/i}{p=0} That smile....."
     Tristan "{i}(In his head){/i}{p=0} It seems....."
     Tristan "{i}(In his head){/i}{p=0} Famillar....."
@@ -225,11 +236,16 @@ label start:
         left
 
     "Tristan was in a daze-{p=0}His mind wonders elsewhere."
-
+    show zoe happytalking:
+        yoffset 1000
+        xoffset -700
+        zoom 2
+        left
     "Girl" "\"Earth to mister....\""
     "Girl" "\"Earth to mister!!!\""
-    
-    show bg store
+
+    play music "audio/Music/Supermarket.mp3" volume 0.1 fadein 1
+    hide thoughts
     
     show tristan normaltalking:
         yoffset 1000
@@ -238,34 +254,32 @@ label start:
         left
     show zoe happy:
         yoffset 1000
-        xoffset -500
+        xoffset -700
         zoom 2
         left
-    play music "audio/store.ogg" volume 0.05 fadein 1
+    
     with dissolve
-
+ 
     play sound "audio/SFX/explosion.wav"
     Tristan "\"Huh?\"" with hpunch
     Tristan "\"Oh...\""
     Tristan "\"Uhmm...\""
     Tristan "\"Sorry here is your change.\""
 
-    hide zoe happy
-    show bg thoughts
-
-    show tristan nervous:
+    show thoughts zorder 2
+    show tristan nervous zorder 2:
         yoffset 1000
         xoffset 500
         zoom 2
         left
     stop music
-    play music "audio/thoughts.ogg" volume 0.05 fadein 0.3 loop
+    play music "audio/Music/Thoughts.mp3" volume 0.3 fadein 0.3 loop
     with dissolve
 
     Tristan "{i}(In his head){/i}{p=0}Crap I was lost in my thoughts..."
     Tristan "{i}(In his head){/i}{p=0}I messed up..."
 
-    show bg store
+    hide thoughts
     show tristan normal:
         yoffset 1000
         xoffset 500
@@ -273,11 +287,12 @@ label start:
         left
     show zoe worriedtalking:
         yoffset 1000
-        xoffset -500
+        xoffset -700
         zoom 2
         left
     
-    play music "audio/store.ogg" volume 0.05 fadein 1
+    play music "audio/Music/Supermarket.mp3" volume 0.1 fadein 1
+    hide thoughts
     with dissolve
     
     "Girl" "\"It's all goodiee!\""
@@ -286,7 +301,7 @@ label start:
 
     show zoe happy:
         yoffset 1000
-        xoffset -500
+        xoffset -700
         zoom 2
         left
     with dissolve
@@ -295,7 +310,7 @@ label start:
 
     show zoe happytalking:
         yoffset 1000
-        xoffset -500
+        xoffset -700
         zoom 2
         left
     with dissolve
@@ -304,7 +319,7 @@ label start:
 
     show zoe giggle:
         yoffset 1000
-        xoffset -500
+        xoffset -700
         zoom 2
         left
     with dissolve
@@ -324,7 +339,7 @@ label start:
 
     show zoe happy:
         yoffset 1000
-        xoffset -500
+        xoffset -700
         zoom 2
         left
 
@@ -346,7 +361,7 @@ label start:
         left
     show zoe happytalking:
         yoffset 1000
-        xoffset -500
+        xoffset -700
         zoom 2
         left
     with dissolve
@@ -354,7 +369,7 @@ label start:
     Zoe "\"Zoe Gonzales reporting in!\""
     show zoe giggle:
         yoffset 1000
-        xoffset -500
+        xoffset -700
         zoom 2
         left
     with dissolve
@@ -367,8 +382,8 @@ label start:
     scene bg staticeffect
     with hpunch
     with hpunch
-    scene bg store
-    play music "audio/store.ogg" volume 0.03 fadein 1
+    scene storeentrance
+    play music "audio/Music/Supermarket.mp3" volume 0.1 fadein 1
     show tristan normal:
         yoffset 1000
         xoffset 500
@@ -376,13 +391,13 @@ label start:
         left
     show zoe happy:
         yoffset 1000
-        xoffset -500
+        xoffset -700
         zoom 2
         left
     Zoe "\"...\""
     show zoe smugtalking:
         yoffset 1000
-        xoffset -500
+        xoffset -700
         zoom 2
         left
     with dissolve
@@ -392,7 +407,7 @@ label start:
     
     show zoe smug:
         yoffset 1000
-        xoffset -500
+        xoffset -700
         zoom 2
         left
 
@@ -416,19 +431,19 @@ label start:
     play sound "audio/SFX/explosion.wav"
     Tristan "\"eh?!?\"" with hpunch
 
-    show tristan flusteredtalking:
+    show tristan flusteredtalking zorder 2:
         yoffset 2000
         xoffset -100
-        zoom 3
         left
+        zoom 3
     with dissolve
 
     play sound "audio/SFX/explosion.wav"
     Tristan "\"EHHHHH!?!?\"" with hpunch
 
     show black screen
+    hide tristan flusteredtalking
 
-    with dissolve
-
+    with fade
     jump Chapter2
     return
