@@ -146,6 +146,7 @@ label mate_in_5_puzzle:
     show white_pawn_1 at Position(xalign=0.3278, yalign=0.5825)
 
     call prompt_for_move("Rxe7")
+    play sound "audio/SFX/chesspiece.mp3"
     "Good job! That's the correct move."
     jump sequence_move
     "You find the first move!"
@@ -235,6 +236,7 @@ label prompt_for_move(correct_move):
     show white_pawn_5 at Position(xalign=0.5735, yalign=0.2175)
     show white_pawn_3 at Position(xalign=0.4265, yalign=0.4900)
     show white_pawn_1 at Position(xalign=0.3278, yalign=0.5825)
+    play sound "audio/SFX/chesspiece.mp3"
     "Knight Takes the Rook on e7. Double click to continue."
     pause
 
@@ -273,6 +275,7 @@ label prompt_for_move(correct_move):
     show white_pawn_1 at Position(xalign=0.3278, yalign=0.5825)
 
     call prompt_for_secondmove("Qxd7")
+    play sound "audio/SFX/chesspiece.mp3"
     "Good job! That's the correct move."
     jump QueenSequence_move
     "You find the second move!"
@@ -357,6 +360,7 @@ label prompt_for_secondmove(correct_secondmove):
     show white_pawn_5 at Position(xalign=0.5735, yalign=0.2175)
     show white_pawn_3 at Position(xalign=0.4265, yalign=0.4900)
     show white_pawn_1 at Position(xalign=0.3278, yalign=0.5825)
+    play sound "audio/SFX/chesspiece.mp3"
     "King takes the Queen on d7. Double click to continue."
     pause
 
@@ -393,7 +397,8 @@ label prompt_for_secondmove(correct_secondmove):
     show white_pawn_3 at Position(xalign=0.4265, yalign=0.4900)
     show white_pawn_1 at Position(xalign=0.3278, yalign=0.5825)
 
-    call prompt_for_thirdmove("Bf5") 
+    call prompt_for_thirdmove("Bf5")
+    play sound "audio/SFX/chesspiece.mp3"
     "Good job! That's the correct move."
     jump BishopSequence_move
     "You find the third move!"
@@ -478,6 +483,7 @@ label prompt_for_thirdmove(correct_thirdmove):
     show white_pawn_5 at Position(xalign=0.5735, yalign=0.2175)
     show white_pawn_3 at Position(xalign=0.4265, yalign=0.4900)
     show white_pawn_1 at Position(xalign=0.3278, yalign=0.5825)
+    play sound "audio/SFX/chesspiece.mp3"
     "King goes to e8. Double click to continue."
     pause
     
@@ -514,7 +520,8 @@ label prompt_for_thirdmove(correct_thirdmove):
     show white_pawn_3 at Position(xalign=0.4265, yalign=0.4900)
     show white_pawn_1 at Position(xalign=0.3278, yalign=0.5825)
 
-    call prompt_for_fourthmove("Bd7")  
+    call prompt_for_fourthmove("Bd7")
+    play sound "audio/SFX/chesspiece.mp3"
     "Good job! That's the correct move."
     jump NextBishopSequence_move
     "You find the fourth move!"
@@ -599,6 +606,7 @@ label prompt_for_fourthmove(correct_fourthmove):
     show white_pawn_5 at Position(xalign=0.5735, yalign=0.2175)
     show white_pawn_3 at Position(xalign=0.4265, yalign=0.4900)
     show white_pawn_1 at Position(xalign=0.3278, yalign=0.5825)
+    play sound "audio/SFX/chesspiece.mp3"
     "King goes to f8. Double click to continue."
     pause
 
@@ -635,6 +643,7 @@ label prompt_for_fourthmove(correct_fourthmove):
     show white_pawn_1 at Position(xalign=0.3278, yalign=0.5825)
 
     call prompt_for_CheckMatemove("Be7")  
+    play sound "audio/SFX/chesspiece.mp3"
     "Good job! That's the correct move."
     jump Final_move
     "You find the Final move!"
