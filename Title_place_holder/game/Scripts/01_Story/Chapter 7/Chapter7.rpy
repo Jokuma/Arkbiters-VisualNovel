@@ -481,7 +481,8 @@ label Chapter7:
 
     #-------------------SCENE 3: HOSPITAL-------------------
 
-    play music "audio/Music/hospital.mp3" volume 0.5 fadein 1.0 loop
+    play music "audio/Music/hospital.mp3" volume 0.5 fadein 0.2 loop
+    play sound "audio/SFX/hospitalambience.mp3" volume 0.1 fadein 0.2 loop
     
     scene bg hospital
     
@@ -567,7 +568,7 @@ label Chapter7:
     with hpunch
     show static2
     with hpunch
-    scene bg blackscreen
+    scene bg parknight
 
     with fade
 
@@ -597,7 +598,7 @@ label Chapter7:
     with hpunch
     show static2
     with hpunch
-    scene bg blackscreen
+    scene bg parknight
 
     #Tristan (voice trembling):
 
@@ -659,7 +660,7 @@ label Chapter7:
 
     Girl "\"Earth to mister… Earth to mister!!\""
 
-    scene bg supermarket
+    scene storeentrance
     with dissolve
 
     "Tristan Looks up… hearing a familiar voice."
