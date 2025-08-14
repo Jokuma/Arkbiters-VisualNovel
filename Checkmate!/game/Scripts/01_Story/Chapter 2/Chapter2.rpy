@@ -94,11 +94,11 @@ label Chapter2:
     Tristan "\"You didn't have to get me this.\""
     
     Zoe "\"I wanted to!\""
-    scene bg waterbottle2
+    scene bg waterbottle1
     with dissolve
     Zoe "\"Besides...\""
     Zoe "\"You looked like you'd melt if you sat here alone too long...\""  
-    scene bg waterbottle3
+    scene bg waterbottle1
     with dissolve
     Zoe "\"Like an ice cream!\""
 
@@ -107,7 +107,7 @@ label Chapter2:
     with hpunch
     show static2
     with hpunch
-    scene bg waterbottle3
+    scene bg waterbottle1
     show thoughts
     with dissolve
     Tristan "{i}In his head{/i}{p=0}That smile again..."
