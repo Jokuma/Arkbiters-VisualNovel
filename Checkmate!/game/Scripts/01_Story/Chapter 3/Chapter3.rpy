@@ -11,7 +11,7 @@ screen c3:
         text "Chapter 3 : Harmony on the Board " yalign 0.5 xalign 0.5
 
 label Chapter3:
-
+    
     show black screen
     with dissolve
 
@@ -20,7 +20,7 @@ label Chapter3:
     hide screen c3 with fade
 
     define dissolve = Dissolve(0.2)
-
+    
     play music "audio/Music/Karaoke.mp3" volume 0.3 fadein 1
 
     "The faint hum of other rooms singing drifts through the walls. "
@@ -29,45 +29,32 @@ label Chapter3:
     "Zoe is singing in the background"
     ".{w=0.3}.{w=0.3}."
 
-    scene bg karaoke with dissolve
-    
-    show zoe happytalking:
-        yoffset 1000
-        xoffset 0
-        zoom 2
-        center
-    with dissolve
+     
+    scene karaokesing
     Zoe "\"Alright, Tristan Garcia--\""
-    show zoe worriedtalking:
-        yoffset 1000
-        xoffset 0
-        zoom 2
-        center
+    scene karaokesing2
     with dissolve
     play sound "audio/SFX/explosion.wav"
     Zoe "*cough*" with hpunch
-    show zoe happytalking:
-        yoffset 1000
-        xoffset 0
-        zoom 2
-        center
+    scene karaokesing
     with dissolve
     Zoe "\"It's your turn to sing!\""
     play sound "audio/SFX/explosion.wav"
     with hpunch
     "Zoe throws the microphone towards him with a grin"
+    scene bg karaoke
+    with dissolve
     show zoe happy:
         yoffset 1000
         xoffset -500
         zoom 2
         left
-    with move
-    show tristan flusteredtalking:
+    show tristan flusteredtalking with moveinright:
         yoffset 1000
         xoffset 500
         zoom 2
         right
-    with moveinright
+    
     Tristan "\"M-me?\""
     Tristan "\"No way!\""
     show tristan nervoustalking:

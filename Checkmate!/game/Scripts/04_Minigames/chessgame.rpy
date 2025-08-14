@@ -145,7 +145,7 @@ label mate_in_5_puzzle:
     show white_pawn_3 at Position(xalign=0.4265, yalign=0.4900)
     show white_pawn_1 at Position(xalign=0.3278, yalign=0.5825)
 
-    call prompt_for_move("Rxe7")
+    call prompt_for_move("Rxe7") from _call_prompt_for_move
     play sound "audio/SFX/chesspiece.mp3"
     "Good job! That's the correct move."
     jump sequence_move
@@ -274,7 +274,7 @@ label prompt_for_move(correct_move):
     show white_pawn_3 at Position(xalign=0.4265, yalign=0.4900)
     show white_pawn_1 at Position(xalign=0.3278, yalign=0.5825)
 
-    call prompt_for_secondmove("Qxd7")
+    call prompt_for_secondmove("Qxd7") from _call_prompt_for_secondmove
     play sound "audio/SFX/chesspiece.mp3"
     "Good job! That's the correct move."
     jump QueenSequence_move
@@ -397,7 +397,7 @@ label prompt_for_secondmove(correct_secondmove):
     show white_pawn_3 at Position(xalign=0.4265, yalign=0.4900)
     show white_pawn_1 at Position(xalign=0.3278, yalign=0.5825)
 
-    call prompt_for_thirdmove("Bf5")
+    call prompt_for_thirdmove("Bf5") from _call_prompt_for_thirdmove
     play sound "audio/SFX/chesspiece.mp3"
     "Good job! That's the correct move."
     jump BishopSequence_move
@@ -520,7 +520,7 @@ label prompt_for_thirdmove(correct_thirdmove):
     show white_pawn_3 at Position(xalign=0.4265, yalign=0.4900)
     show white_pawn_1 at Position(xalign=0.3278, yalign=0.5825)
 
-    call prompt_for_fourthmove("Bd7")
+    call prompt_for_fourthmove("Bd7") from _call_prompt_for_fourthmove
     play sound "audio/SFX/chesspiece.mp3"
     "Good job! That's the correct move."
     jump NextBishopSequence_move
@@ -642,7 +642,7 @@ label prompt_for_fourthmove(correct_fourthmove):
     show white_pawn_3 at Position(xalign=0.4265, yalign=0.4900)
     show white_pawn_1 at Position(xalign=0.3278, yalign=0.5825)
 
-    call prompt_for_CheckMatemove("Be7")  
+    call prompt_for_CheckMatemove("Be7") from _call_prompt_for_CheckMatemove  
     play sound "audio/SFX/chesspiece.mp3"
     "Good job! That's the correct move."
     jump Final_move
